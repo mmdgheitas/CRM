@@ -1,0 +1,50 @@
+﻿.all-content {
+    direction: rtl;
+}
+.toast {
+    direction: rtl;
+}
+.form-control {
+    padding-top: 0;
+}
+
+
+.alt .panel {
+    background-color: #fbf981;
+}
+
+.alt .arrow-alt {
+    color: #fbf981;
+}
+
+.message-title {
+    text-align: center;
+    font-weight: 900;
+}
+
+.activity.terques h5 {
+    color: #8dd7d6;
+}
+
+ul li span {
+    font-weight: bold;
+}
+
+.profile-activity .terques .activity-desk .usermessageMe {
+    background: #f1f1f1 !important;
+}
+.profile-activity .terques .activity-desk .usermessage {
+    background: #fbf981 !important;
+}
+.sky-form {
+    direction: rtl;
+}
+.field-validation-error {
+    color:darkred;
+}
+.star-red {
+    color:red;
+}
+.field-validation-error , .valid-error {
+    color:#e43131;
+}

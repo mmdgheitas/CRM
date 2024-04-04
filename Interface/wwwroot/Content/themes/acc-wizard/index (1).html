@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Billing wizard</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/acc-wizard.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row acc-wizard">
+            <!--<div class="col-md-4">
+                <ol class="acc-wizard-sidebar">
+                    <li class="acc-wizard-todo"><a href="#prerequisites">Billing Address</a></li>
+                    <li class="acc-wizard-todo"><a href="#addwizard">Review Estimate </a></li>
+                    <li class="acc-wizard-todo"><a href="#adjusthtml">Schadule Measurment Appoinment </a></li>
+                    <li class="acc-wizard-todo"><a href="#viewpage">Order Review</a></li>
+                    <li class="acc-wizard-todo"><a href="#billing-summary">Billing Summary</a></li>
+                </ol>
+            </div>-->
+            <div class="col-md-12">
+                <div id="accordion-demo" class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="title" href="#profile" data-parent="#accordion-demo" data-toggle="collapse">
+                                    My Profile
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="profile" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <a href="#" class="btn-pro-info"><i class="fa fa-edit"></i>Edit</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <h3 class="profile-title">Billing Info</h3>
+                                        <ul class="profile-info">
+                                            <li><span class="title">full name</span><span class="text">reza aliabdol</span></li>
+                                            <li><span class="title">email</span><span class="text">rezaaliabdol@gmail.com</span></li>
+                                            <li><span class="title">default currency</span><span class="text">usd</span></li>
+                                            <li><span class="title">street address</span><span class="text">USA. Seattle </span></li>
+                                            <li><span class="title">zip code</span><span class="text">9918</span></li>
+                                            <li><span class="title">phone</span><span class="text">206 3309103</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <div id="moreinfo">
+                                            <h3 class="profile-title">shipping Info</h3>
+                                            <ul class="profile-info" >
+                                                <li><span class="title">full name</span><span class="text">reza aliabdol</span></li>
+                                                <li><span class="title">email</span><span class="text">rezaaliabdol@gmail.com</span></li>
+                                                <li><span class="title">default currency</span><span class="text">usd</span></li>
+                                                <li><span class="title">street address</span><span class="text">USA. Seattle </span></li>
+                                                <li><span class="title">zip code</span><span class="text">9918</span></li>
+                                                <li><span class="title">phone</span><span class="text">206 3309103</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row btn-container">
+                                    <button id="toggle">View More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="title" href="#prerequisites" data-parent="#accordion-demo" data-toggle="collapse">
+                                    Billing and Shipping
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="prerequisites" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <form class="billing-form">
+                                    <div class="form-group row">
+                                        <label class="control-label" for="user">Name</label>
+                                        <input type="text" class="form-control" id="user" title="" placeholder="">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label" for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label" for="address">Street Address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label" for="state">State/Provine</label>
+                                        <select class="form-control" id="state">
+                                            <option>canada</option>
+                                            <option>seattle</option>
+                                            <option>tukwilla</option>
+                                            <option>belevuw</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label" for="city">City</label>
+                                        <input type="text" class="form-control" id="city" placeholder="">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label" for="zipcode">Zip/Postal Code</label>
+                                        <input type="text" class="form-control" id="zipcode" placeholder="">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label" for="phone">Phone</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="">
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox"> My billing and project address are the same</label>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label" for="address">Street Address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label" for="state">State/Provine</label>
+                                        <select class="form-control" id="state">
+                                            <option>canada</option>
+                                            <option>seattle</option>
+                                            <option>tukwilla</option>
+                                            <option>belevuw</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label" for="city">City</label>
+                                        <input type="text" class="form-control" id="city" placeholder="">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="control-label" for="zipcode">Zip/Postal Code</label>
+                                        <input type="text" class="form-control" id="zipcode" placeholder="">
+                                    </div>
+                                    <!--<div class="space-30"></div>
+                    <a href="#" type="btn" class="btn-confirm">Confirm Information</a>-->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#adjusthtml" data-parent="#accordion-demo" data-toggle="collapse">
+                                    Appoinment
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="adjusthtml" class="panel-collapse collapse ">
+                            <div class="panel-body">
+                                <div class="seprate-calender margin-top-30">
+                                    <div class="row margin-btm-30">
+                                        <div class="seprate-calender">
+                                            <div class="hours">
+                                                <div class="owl-carousel owl-theme" id="owl-demo">
+                                                    <a class="item link">
+                                                        <span class="day">Sun</span>
+                                                        <div class="date unactive">
+                                                            <span class="num">28</span>
+                                                            <span class="month">Dec</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="item link">
+                                                        <span class="day">Mon</span>
+                                                        <div class="date">
+                                                            <span class="num">27</span>
+                                                            <span class="month">Dec</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="item link">
+                                                        <span class="day">Tue</span>
+                                                        <div class="date">
+                                                            <span class="num">28</span>
+                                                            <span class="month">Dec</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="item link">
+                                                        <span class="day">Wed</span>
+                                                        <div class="date">
+                                                            <span class="num">28</span>
+                                                            <span class="month">Dec</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="item link">
+                                                        <span class="day">Thu</span>
+                                                        <div class="date">
+                                                            <span class="num">28</span>
+                                                            <span class="month">Dec</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="item link">
+                                                        <span class="day">Fri</span>
+                                                        <div class="date unactive">
+                                                            <span class="num">28</span>
+                                                            <span class="month">Dec</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="item link">
+                                                        <span class="day">Sat</span>
+                                                        <div class="date">
+                                                            <span class="num">28</span>
+                                                            <span class="month">Dec</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="item link">
+                                                        <span class="day">Fri</span>
+                                                        <div class="date unactive">
+                                                            <span class="num">28</span>
+                                                            <span class="month">Dec</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="item link">
+                                                        <span class="day">Sat</span>
+                                                        <div class="date">
+                                                            <span class="num">28</span>
+                                                            <span class="month">Dec</span>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row text-content">
+                                        <div class="col-md-6">
+                                            <h3 class="title-work">What Time works for you? </h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="text">
+                                                <p>2hours Time-Window for technician</p>
+                                                <p>Travel and taking Measurment</p>
+                                            </div>
+                                        </div>
+
+                                        <!--<div class="date-selection">
+                            <div class="col-sm-9"><p class="reserve-time">Monday,13 May 2020, 1 PM to 3 PM</p></div>
+                            <div class="col-sm-3 no-padding"><button class="btn" type="button">select</button></div>
+                        </div>-->
+                                    </div>
+                                    <div class="row times-list">
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                        <a href="#" class="btn-time">9:00 <span>am</span></a>
+                                    </div>
+                                    <div class="row schedule-table">
+                                        <div class="table-items">
+                                            <div class="display-in-mobile items-info">Appointment Info</div>
+                                            <table cellspacing="0">
+                                                <tr>
+                                                    <th>Date Time</th>
+                                                    <th>Type</th>
+                                                    <th>Address</th>
+                                                    <th>Action</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><span>2022/12/10</span><span class="time">9:00 Am</span></td>
+                                                    <td>Estimation</td>
+                                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-cancel">Cancel</a>
+                                                        <a href="#" class="btn btn-reschedule">Reschedule</a>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#viewpage" data-parent="#accordion-demo" data-toggle="collapse">
+                                    Order Review
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="viewpage" class="panel-collapse collapse ">
+                            <div class="panel-body">
+                                <div class="table-items">
+                                    <div class="display-in-mobile items-info">Items Info</div>
+                                    <table cellspacing="0">
+                                        <tr>
+                                            <th>Item</th>
+                                            <th class="item-description">Description</th>
+                                            <th>Price</th>
+                                            <th>Q</th>
+                                            <th>Amount</th>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="img/2.jpg" alt="" /></td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                                            <td>100$</td>
+                                            <td>2</td>
+                                            <td>200$</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="img/3.jpg" alt="" /></td>
+                                            <td>Blanditiis, aliquid numquam iure voluptatibus ut maiores explicabo ducimus neque, nesciunt rerum perferendis, inventore.</td>
+                                            <td>100$</td>
+                                            <td>2</td>
+                                            <td>200$</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="img/4.jpg" alt="" /></td>
+                                            <td> Culpa praesentium unde pariatur fugit eos recusandae voluptas.</td>
+                                            <td>100$</td>
+                                            <td>2</td>
+                                            <td>200$</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="img/1.jpg" alt="" /></td>
+                                            <td>Aut voluptatum accusantium, eveniet, sapiente quaerat adipisci consequatur maxime temporibus quas, dolorem impedit.</td>
+                                            <td>100$</td>
+                                            <td>2</td>
+                                            <td>200$</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="title" href="#billing-summary" data-parent="#accordion-demo" data-toggle="collapse">
+                                    Billing Summary
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="billing-summary" class="panel-collapse collapse ">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><span>Subtotal</span><span>$3720.27</span></li>
+                                    <li><span>Tax%</span><span>%10.25</span></li>
+                                    <li><span>Tax$</span><span>$10.25</span></li>
+                                </ul>
+                                <ul class="general-total">
+                                    <li><span>General Total</span><span>$3.439.00</span></li>
+                                    <li><span>Deposit</span><span>$1.000.00</span><br /></li>
+                                    <li><span>Pay today to order</span></li>
+                                    <li><span>Final Payment</span><span>$2.439.00</span></li>
+                                    <li><span>Payment due on complition</span></li>
+                                </ul>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Please check to acknowledge our <a href="#">Privacy & Term Policy</a></label>
+                                </div>
+                                <a href="#" type="btn" class="btn-confirm">Pay $1.000.00</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                var elem = $("#toggle").text();
+                if (elem == "View More") {
+                    //Stuff to do when btn is in the read more state
+                    $("#toggle").text("View Less");
+                    $("#moreinfo").slideDown();
+                } else {
+                    //Stuff to do when btn is in the read less state
+                    $("#toggle").text("View More");
+                    $("#moreinfo").slideUp();
+                }
+            });
+        });
+    </script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 0,
+                nav: true,
+                dots: false,
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    600: {
+                        items: 5
+                    },
+                    1000: {
+                        items: 7
+                    }
+                }
+            });
+
+            $('.date').on('click', function (event) {
+                var $this = $(this);
+                if ($this.hasClass('clicked')) {
+                    $this.removeAttr('style').removeClass('clicked');
+                } else {
+                    $this.css({ background: "#23c99d ", color: "#fff" }).addClass('clicked');
+                }
+            });
+
+        });
+    </script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/acc-wizard.js"></script>
+    <script>
+        function onNext(parent, panel) {
+            hash = "#" + panel.id;
+            $(".acc-wizard-sidebar", $(parent))
+                .children("li")
+                .children("a[href='" + hash + "']")
+                .parent("li")
+                .removeClass("acc-wizard-todo")
+                .addClass("acc-wizard-completed");
+        }
+        $(window).load(function () {
+            $(".acc-wizard").accwizard({ onNext: onNext });
+        })
+    </script>
+    
+</body>
+
+</html>

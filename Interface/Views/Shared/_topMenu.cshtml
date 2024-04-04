@@ -1,0 +1,920 @@
+﻿@using Microsoft.AspNet.Identity
+@using System.Security.Claims
+
+@inject Wangkanai.Detection.Services.IDetectionService DetectionService
+@inject Interface.Models.Access.IAccess Access
+
+<link href="~/Content/themes/AccountingAdmin/assets/css/mobile-menu.css" rel="stylesheet" />
+<link href="~/content/dropdownsearch/ultimate/select2.css" rel="stylesheet" />
+<link href="~/content/dropdownsearch/ultimate/select2-bootstrap.css" rel="stylesheet" />
+<link rel="stylesheet" href="~/Content/themes/AccountingAdmin/assets/plugins/lobibox/dist/css/lobibox.min.css" />
+<link href="~/Content/themes/AccountingAdmin/assets/plugins/waitMe/waitMe.css" rel="stylesheet" />
+
+
+<link href="~/Content/clockpicker-gh-pages/dist/bootstrap-clockpicker.min.css" rel="stylesheet" />
+<link href="~/Content/clockpicker-gh-pages/assets/css/github.min.css" rel="stylesheet" />
+<script src="~/Content/clockpicker-gh-pages/dist/bootstrap-clockpicker.min.js"></script>
+@{
+    // var Access = new Interface.Models.Access.Access(true, User.Identity.GetUserId());
+
+    var Controller = ViewContext.RouteData.Values["controller"].ToString();
+    var Action = ViewContext.RouteData.Values["action"].ToString();
+
+    var activeMobileMemu = Controller.MobileMenuActive(Action);
+    var TaskCount = 0 ;// User.GetTaskCount();
+    var IsInstaller = User.IsInRole("Installer") || User.IsInRole("Estimator");
+
+}
+@if (activeMobileMemu && !IsInstaller)
+{
+    <nav class="mobile-bottom-nav">
+        <div class="mobile-bottom-nav-item   @((Controller == "Admin" & Action == "Index") ? "mobile-bottom-nav-item-active" : "")">
+            <a href="/" class="mobile-bottom-nav-item-content touch" onclick="Preloading(this)">
+                <i class="fa fa-home"></i>
+                Home
+            </a>
+        </div>
+        <div class="mobile-bottom-nav-item   @((Controller == "Factor" & Action == "Factors") ? "mobile-bottom-nav-item-active" : "")">
+            <a href="/Factor/Factors" onclick="Preloading(this)" class="mobile-bottom-nav-item-content touch">
+                <i class="fa fa-cubes"></i>
+                Projects
+            </a>
+        </div>
+        <div class="mobile-bottom-nav-item add-item">
+            <div class="mobile-bottom-nav-item-content ">
+                <button class="menu-button">
+                    <i class="fa fa-plus-square-o"></i>
+                </button>
+                <section class="menu-body" hidden="hidden">
+                    <div class="menu-header">
+                        <span class="title"><i class="fa fa-tasks"></i> Add Menu</span>
+                        <button title="Close" class="close">
+                            <span>×</span>
+                        </button>
+                    </div>
+                    <div class="menu-inner">
+                        <div class="menu-links">
+                            <ul>
+                                <li><a href="/Factor/Add" onclick="hideAddMenu(this);Preloading(this)"><i class="fa fa-cubes"></i>+ Project</a></li>
+                                <li><a href='javascript:;' onclick="UploadPic(this);Preloading(this)"><i class="fa fa-camera"></i>+ Upload</a></li>
+                                <li><a href='javascript:;' onclick="NewExpense(this)"><i class="fa fa-credit-card"></i>+ Expense</a></li>
+                                <li><a href='javascript:;' onclick="hideAddMenu(this);NewFactorTask(this)"><i class="fa fa-calendar-check-o"></i>+  Task</a></li>
+
+                                <li><a href='javascript:;' onclick="NewInstallation(this)"><i class="fa fa-calendar"></i>+ Installation</a></li>
+                                <li><a href='javascript:;' onclick="NewEstimation(this)"><i class="fa fa-calendar-check-o"></i>+ Estimation</a></li>
+                                @*<li><a href='javascript:;' onclick="NewTask(this)"><i class="fa fa-file-text-o"></i>+ Task</a></li>*@
+                                @if (Access.isAccessInLayout("Price") & !(User.IsInRole("Installer") | User.IsInRole("Estimator")))
+                                {
+                                    <li><a href="/Price/Index" onclick="hideAddMenu(this);Preloading(this)"><i class="fa fa-dollar"></i>&nbsp;&nbsp;Glass Price</a></li>
+                                }
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+                @*<div class="menu-overlay" hidden="hidden"></div>*@
+            </div>
+        </div>
+        <div class="mobile-bottom-nav-item add-tools">
+            <div class="mobile-bottom-nav-item-content">
+                <button class="menu-button-tools">
+                    <i class="fa fa-th"></i>
+                    <span>Tools</span>
+                </button>
+                <section class="menu-body-tools" hidden="hidden">
+                    <div class="menu-header-tools">
+
+                        <span class="title"><i class="fa fa-th"></i> Tools</span>
+                        <button title="Close" class="close">
+                            <span>×</span>
+                        </button>
+                    </div>
+                    <div class="menu-inner">
+                        <div class="menu-links">
+                            <ul>
+
+                                @if (Access.isAccessInLayout("Accounting"))
+                                {
+                                    <li><a href="/Plaid/PlaidPublicTokens" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-building"></i>Plaid</a></li>
+                                    <li><a href="/Plaid/ShowTransactoin" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-bank"></i>Accounting</a></li>
+                                }
+                                @if (Access.isAccessInLayout("Payment"))
+                                {
+                                    <li><a href="/Factor/Payments" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-credit-card"></i>Payments</a></li>
+                                    <li><a href="/Factor/ExcelPayment" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-credit-card"></i>Excel Payment</a></li>
+
+                                }
+                                @if (Access.isAccessInLayout("Reports"))
+                                {
+                                    <li><a href="/Report/Reports" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-bar-chart"></i>Reports</a></li>
+
+                                    <li><a href="/Report/ReportExcel" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-file-excel-o"></i>Export Excel</a></li>
+                                }
+
+                                <li>
+                                    <a href="/Admin/MyCalendar6" onclick="hideMenu(this);Preloading(this)">
+                                        <i class="fa fa-calendar-check-o"></i>Calendar
+
+                                    </a>
+                                </li>
+
+                                @if (Access.isAccessInLayout("TimeCard"))
+                                {
+                                    <li><a href="/Time/MyTimeCards" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-clock-o"></i>Time Card</a></li>
+                                }
+
+                                <li><a href="/Admin/WorkSchedulingPanel" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-calendar-plus-o"></i>Work Scheduling</a></li>
+
+                                @if (!(User.IsInRole("Installer") | User.IsInRole("Estimator")))
+                                {
+                                    <li><a href="/Admin/OtherUsers" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-user"></i>Users</a></li>
+                                }
+                                @if (Access.isAccessInLayout("Default"))
+                                {
+                                    <li><a href="/Base/Default" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-cogs"></i>Setting</a></li>
+                                    <li><a href="/Admin/Index" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-list-ol"></i>Sorted Project</a></li>
+                                    <li><a href="/Admin/Index#tab-gallery" onclick="hideMenu(this);Preloading(this)"><i class="fa fa-image"></i> Unsorted Galleries</a></li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+                @*<div class="menu-overlay-tools" hidden="hidden"></div>*@
+            </div>
+        </div>
+
+        <div class="mobile-bottom-nav-item @((Controller == "Admin" &  Action == "MyCalendar6" ) ? "mobile-bottom-nav-item-active" : "")">
+            <a href="/Task/TimeLine/@User.Identity.GetUserId()" onclick="Preloading(this)" class="mobile-bottom-nav-item-content touch">
+                <i class="fa fa-calendar-check-o"></i>
+                @if (TaskCount > 0)
+                {
+                    <span class="lable lable-info project-count-bold">@TaskCount</span>
+                }
+                else
+                {
+                    @Html.Raw("Task");
+                }
+
+
+            </a>
+        </div>
+    </nav>
+}
+<div class="col-md-10 col-sm-8 col-xs-10 no-padding" style="float:right">
+
+    <div class="advance-search" id="searchfactorId">
+
+    </div>
+
+    <div class="icons">
+        <ul class="list-inline">
+            @*@if (Access.isAccessInLayout("Item") | Access.isAccessInLayout("Calendar") | Access.isAccessInLayout("TimeCard") | Access.isAccessInLayout("Payment") | Access.isAccessInLayout("Order") | Access.isAccessInLayout("Accounting"))
+                {*@
+            <li class="dropdown mobile-hidden">
+                <a href="#" class="dropdown-toggle " id="new-menu" data-toggle="dropdown"><i class="fa fa-plus-circle"></i></a>
+                <ul class="dropdown-menu icon-dropdown">
+
+                    <li><a href='@Url.Action("Add","Factor")' onclick="Preloading(this)">+ Project </a></li>
+
+                    <li><a href='javascript:;' onclick="UploadPic(this)">+ Upload </a></li>
+                    <li><a href='javascript:;' onclick="NewExpense(this)">+ Expense </a></li>
+                    <li><a href='javascript:;' onclick="NewFactorTask(this)">+ Task </a></li>
+            
+                    @* <li><a href='javascript:;' onclick="NewInstallation(this)">+ Install</a></li>
+
+                    <li><a href='javascript:;' onclick="NewEstimation(this)">+ Estimate</a></li>
+
+                    <li><a href='javascript:;' onclick="NewClient(this)">+ Client </a></li>
+
+                    <li><a href='javascript:;' onclick="NewEstimator(this)">+ Estimator </a></li>
+
+                    <li><a href='javascript:;' onclick="NewInstaller(this)">+ Installer </a></li> *@
+
+
+
+
+
+                </ul>
+            </li>
+
+            @if (Access.isAccessInLayout("Price"))
+            {
+                <li><a href="/Price/Index" class="mobile-hidden" onclick="Preloading(this)"><i class="fa fa-dollar "></i></a></li>
+            }
+            <li><a href="/Time/MyTimeCards" class="desktop-hidden " onclick="Preloading(this)"><i class="fa fa-clock-o " style="margin-top:4px;font-size:25px;"></i></a></li>
+    
+        </ul>
+    </div>
+    <nav class="navbar new-top-nav navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <ul class="user-dropdown no-padding">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="javascript:;" onclick="removeDropdownBackdrop()" data-toggle="dropdown"><i class="fa fa-user user-nav"></i></a>
+                        <ul class="dropdown-menu icon-dropdown">
+                      
+
+
+                            <li><a href="/User/EditProfile" class="btn-sm btn-edit-profile" onclick="Preloading(this)"><i class="fa fa-edit"></i> Edit Profile </a>  </li>
+
+                            <li><a href='javascript:;' onclick="LogOff()" class="btn-sm btn-clockout" style="width:40%"><i class="fa fa-power-off"></i> Exit </a>  </li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+
+
+            <div id="navbar1" class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav">
+
+
+
+
+                    @if (Access.isAccessInLayout("Factors"))
+                    {
+                        <li class="dropdown ">
+                            <a href="@Url.Action("Factors", "Factor") " onclick="Preloading(this)">Projects</a>
+                        </li>
+                    }
+                    @if (Access.isAccessInLayout("Item") | Access.isAccessInLayout("Calendar") | Access.isAccessInLayout("TimeCard") | Access.isAccessInLayout("Payment") | Access.isAccessInLayout("Order") | Access.isAccessInLayout("Accounting"))
+                    {
+                        <li class="dropdown">
+                            <a href="javascript:;" class="dropdown-toggle" id="tools-menu" data-toggle="dropdown">Tools<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+
+
+
+                                @if (Access.isAccessInLayout("Accounting"))
+                                {
+                                    <li><a href='@Url.Action("PlaidPublicTokens", "Plaid")' onclick="Preloading(this)">Plaid</a></li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "ShowTransactoin" ? "active" : "")"><a href='@Url.Action("ShowTransactoin", "Plaid")' onclick="Preloading(this)">Accounting</a></li>
+                                }
+
+                                @if (Access.isAccessInLayout("Payment"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Payments" ? "active" : "")"><a href='@Url.Action("Payments", "Factor")' onclick="Preloading(this)">Payments</a></li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "ExcelPayment" ? "active" : "")"><a href='@Url.Action("ExcelPayment", "Factor")' onclick="Preloading(this)">Excel Payment</a></li>
+
+                                }
+                                @if (Access.isAccessInLayout("Reports"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Reports" ? "active" : "")"><a href='@Url.Action("Reports", "Report")' onclick="Preloading(this)">Reports</a></li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "ReportExcel" ? "active" : "")"><a href='@Url.Action("ReportExcel", "Report")' onclick="Preloading(this)">Export Excel</a></li>
+
+                                }
+
+
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "TimeLine" ? "active" : "")"><a href='@Url.Action("TimeLine", "Task")' onclick="Preloading(this)"> Tasks </a></li>
+
+                                @if (Access.isAccessInLayout("TimeCard"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "MyTimeCards" ? "active" : "")"><a href='@Url.Action("MyTimeCards", "Time")' onclick="Preloading(this)">Time Card</a></li>
+                                }
+                                @if (Access.isAccessInLayout("Price"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Index" ? "active" : "")"><a href='@Url.Action("Index", "Price")' onclick="Preloading(this)">Glass Price</a></li>
+                                }
+                                @if (Access.isAccessInLayout("Calendar"))
+                                {
+                                    <li><a href='@Url.Action("WorkSchedulingPanel", "Admin")' onclick="Preloading(this)">Work Scheduling</a></li>
+
+                                }
+
+
+
+
+
+                                @if (Access.isAccessInLayout("Item"))
+                                {
+                                    <li><a href='@Url.Action("Items", "Item")' onclick="Preloading(this)">Items</a></li>
+                                }
+
+                                @if (Access.isAccessInLayout("Order"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Orders" ? "active" : "")"><a href='@Url.Action("Orders", "Factor")' onclick="Preloading(this)">Orders</a></li>
+                                }
+                                @if (Access.isAccessInLayout("MyToools"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "MyTools" ? "active" : "")"><a href='@Url.Action("MyTools", "Factor")' onclick="Preloading(this)">Tools</a></li>
+                                }
+
+                                @*@if (Access.isAccessInLayout("EmployePayment"))
+        {
+            <li class="@(ViewContext.RouteData.Values["action"].ToString() == "MyPayments" ? "active" : "")"><a href='@Url.Action("MyPayments", "Factor")'>My Payments</a></li>
+        }*@
+                                <!--
+    <li role="separator" class="divider"></li>
+    <li class="dropdown-header">SETTINGS FOR YOUR COMPANY</li>
+    <li>
+        <a href="#">billing</a>
+
+    </li>
+    <li>
+        <a href="#">users</a>
+
+    </li>
+    -->
+                            </ul>
+                        </li>
+                    }
+                    <li class="dropdown">
+                        <a href="javascript:;" id="setting-menu" class="dropdown-toggle" data-toggle="dropdown">Setting<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+
+
+
+
+                            @if (Access.isAccessInLayout("Default"))
+                            {
+                                <li class="dropdown dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Basic Information</a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="@Url.Action("Default", "Base")" onclick="Preloading(this)">System Configure</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("SortedProject", "Base")" onclick="Preloading(this)">Sorted Project</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("EmailSetting", "Base")" onclick="Preloading(this)">Email Service</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("State", "Base")" onclick="Preloading(this)">State </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Cities", "Base")" onclick="Preloading(this)">Citie's Tax </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Vendors", "Base")" onclick="Preloading(this)">Vendors </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Shipping", "Base")" onclick="Preloading(this)">Shipping </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("PageViews", "Base")" onclick="Preloading(this)">Page Views Statistic</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Status", "Base")" onclick="Preloading(this)">Status Notification </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("JobTypes", "Base")" onclick="Preloading(this)">Project Types </a>
+
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+                            }
+
+                            @if (Access.isAccessInLayout("Reports"))
+                            {
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Reports" ? "active" : "")"><a href='@Url.Action("Reports", "Report")' onclick="Preloading(this)">Reports</a></li>
+
+                            }
+
+                            @if (Access.isAccessInLayout("Admin"))
+                            {
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Operator" ? "active" : "")"><a href='@Url.Action("Operator", "Admin")' onclick="Preloading(this)">Admin Users </a></li>
+                            }
+
+                            @if (!(User.IsInRole("Installer") | User.IsInRole("Estimator")))
+                            {
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "OtherUsers" ? "active" : "")"><a href='@Url.Action("OtherUsers", "Admin")' onclick="Preloading(this)">Employees </a></li>
+                            }
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">User Setting</li>
+
+                            <li class="@(ViewContext.RouteData.Values["action"].ToString() == "EditProfile" ? "active" : "")"><a href='@Url.Action("EditProfile", "User")' onclick="Preloading(this)">Profile</a></li>
+
+
+                            <li class="@(ViewContext.RouteData.Values["action"].ToString() == "OperatorResetPassword" ? "active" : "")"><a href='@Url.Action("OperatorResetPassword", "User")' onclick="Preloading(this)">Change Password</a></li>
+
+                        </ul>
+                    </li>
+                    @if (Access.isAccessInLayout("Calendar"))
+                    {
+                        <li>
+                            <a href="@Url.Action("MyCalendar6", "Admin")" onclick="Preloading(this)">Calendar</a>
+                        </li>
+                    }
+                    <li>
+
+                        <a href="@Url.Action("TimeLine", "Task")/@User.Identity.GetUserId()" onclick="Preloading(this)">
+                            Tasks
+
+                            @if (TaskCount > 0)
+                            {
+                                <span class="lable lable-info project-count-bold">@TaskCount</span>
+                            }
+                        </a>
+                    </li>
+
+                </ul>
+
+                @*<input type="text" id="searchfactorId" />*@
+                <ul class="nav navbar-nav nav-right">
+                    @*<li>
+                           <input type="text" id="searchfactorId" />
+                        </li>*@
+                    <li>
+                        <a href="/Home/PublicChat" onclick="Preloading(this)"><i class="fa fa-comments bold size-18"></i> <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div> </a>
+                    </li>
+                    @*@Html.Action("_notificationView", "Account")*@
+                   @*  <li>
+                        <a class="" href="javascript:;" onclick="NightMode();"><i class="fa fa-moon-o bold size-18"></i> <strong>@(Model != 0 ? Model : "")</strong> </a>
+                    </li> *@
+
+          @*                  @Html.Action("_userProfile", "Account") *@
+
+
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="user-pro-img" src="~/Content/Files/ProfileImages/default-image.jpg" style="width:35px;height:35px" />  @*@Html.Raw(User.FullName())*@<b class="caret"></b></a>
+                        <ul class="dropdown-menu user-profile">
+                            <li>
+                                <div class="u-img">
+                                    <img src="~/Content/Files/ProfileImages/default-image.jpg" />
+                                </div>
+                                <div class="u-text">
+                                    <h4>@(((ClaimsIdentity)User.Identity)?.FindFirst("FullName")?.Value ?? "")</h4>
+                                    @if (User.IsInRole("Administrator") | User.IsInRole("sysAdmin"))
+                                    {
+                                        <p class="text-muted">Glassma Admin</p>
+                                    }
+                                    else if (User.IsInRole("Estimator"))
+                                    {
+                                        <p class="text-muted">Glassma Estimator</p>
+                                    }
+                                    else if (User.IsInRole("Installer"))
+                                    {
+                                        <p class="text-muted">Glassma Installer</p>
+                                    }
+                                    else if (User.IsInRole("Management"))
+                                    {
+                                        <p class="text-muted">Glassma Manager</p>
+                                    }
+                                    else if (User.IsInRole("Sales"))
+                                    {
+                                        <p class="text-muted">Glassma Sales Manager</p>
+                                    }
+                                    <a href="@Url.Action("EditProfile","User")" class="btn btn-sm" onclick="Preloading(this)">
+                                        Edit Profile
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href='@Url.Action("OperatorResetPassword", "User")' onclick="Preloading(this)"><i class="fa fa-cog"></i> Reset password</a>
+                            </li>
+                            <li>
+                                <a href='javascript:;' onclick="LogOff()"><i class="fa fa-power-off"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <a href='javascript:;' onclick="LogOff()"><i class="fa fa-power-off"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    @Html.Partial("~/Views/Time/_timeCard.cshtml")
+</div>
+
+<div class="preloader"></div>
+<div class="preloader-full"></div>
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/lobibox/js/lobibox.js"></script>
+<script src="~/Content/DropdownSearch/ultimate/select2.js"></script>
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/waitMe/waitMe.js"></script>
+
+
+<script type="text/javascript">
+     //$(window).on('load', function () {
+
+
+     //   setTimeout(function () {
+
+     //            !function () { var i = "nU4LnG", a = window, d = document; function g() { var g = d.createElement("script"), s = "https://www.goftino.com/widget/" + i, l = localStorage.getItem("goftino_" + i); g.async = !0, g.src = l ? s + "?o=" + l : s; d.getElementsByTagName("head")[0].appendChild(g); } "complete" === d.readyState ? g() : a.attachEvent ? a.attachEvent("onload", g) : a.addEventListener("load", g, !1); }();
+
+     //   }, 2000);
+     //});
+
+    $(window).on('load', function () {
+
+
+        if ($('.preloader-full').length) {
+            $('.preloader-full').delay(200).fadeOut(500);
+        }
+        if ($('.preloader').length) {
+            $('.preloader').delay(250).fadeOut(500);
+        }
+        setTimeout(function () {
+
+            var action = '@ViewContext.RouteData.Values["action"].ToString()';
+            var pageid = '@(ViewContext.RouteData.Values["id"] ?? "")';
+
+            $.ajax({
+                url: "/Admin/AddPageView",
+                data: { pageName: action, pageId: pageid, type: 1 },
+                async : true,
+                type: "get",
+                //success: function (msg) {
+                //}
+            })
+        }, 8000);
+
+        //reload clock-in
+        setTimeout(function () {
+            if ('@(DetectionService.Device.Type == Device.Mobile)' == 'True' & ('@User.IsInRole("Installer")' == 'True' || '@User.IsInRole("Estimator")' == 'True')) {
+                $.ajax({
+                    url: "/Time/_clockIn",
+                    type: "Post",
+                    cache: false,
+                    success: function (msg) {
+                        if (msg != null && msg.success) {
+                            $("#clockin-box").html(msg.Html);
+                        }
+                        else if (msg != null && !msg.success) {
+                        }
+
+                    }
+                });
+            }
+        }, 2500);
+
+        setTimeout(function () {
+            if (jQuery(window).width() < 640) {
+                $(".desktop-newtab").removeAttr("target");
+            }
+        }, 3000);
+        setTimeout(function () {
+            if (jQuery(window).width() < 640) {
+                $(".desktop-newtab").removeAttr("target");
+            }
+        }, 8000);
+
+    });
+
+    $(document).ready(function () {
+
+    InitilizeLobibox();
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+    }
+    else {
+
+          var WebuiPopovers = $("#notificationBox").webuiPopover({
+        title: "Last Notification",
+        direction: 'ltr',
+        trigger: 'hover',
+        animation: 'pop',
+        placement: 'bottom-left',
+        type:'html',
+        cache: false,
+            content: function () {
+                var ponumber = 2010044;
+        $.ajax({
+            url: "/Admin/_notificationHover",
+            type: "post",
+
+            data: { id: ponumber },
+            success: function (result) {
+
+
+                $(".webui-popover-content").html(result.html);
+
+            },
+            error: function (result) {
+                $(".webui-popover-content").html(result.html);
+            }
+
+        })
+
+
+            return "";
+            },
+
+       });
+
+        }
+
+        setTimeout(function () {
+            $('.preloader-full').fadeOut(10);
+            $('.preloader').fadeOut(10);
+
+        }, 8000);
+});
+
+
+$(document).ready(function () {
+    //  $("#searchfactorId").css("width", $("#searchfactorId").width() + 100);
+
+             var pageSize = 20;
+             var search = $("#searchfactorId");
+             search.select2({
+                 theme: "classic",
+            placeholder: 'Search  Phone, Email, PO and Name',
+            dropdownCssClass: "high-zindex",
+            //Does the user have to enter any data before sending the ajax request
+            minimumInputLength: 0,
+            allowClear: true,
+            ajax: {
+                     //How long the user has to pause their typing before sending the next request
+                     quietMillis: 150,
+                //The url of the json service
+                url: "/Factor/_FactorAdvanceSearch",
+                dataType: 'json',
+                //Our search term and what page we are on
+                data: function(term, page) {
+
+                         return {
+                             pageSize: pageSize,
+                        pageNum: page,
+                        searchTerm: term
+                         };
+                     },
+                results: function(data, page) {
+                         //Used to determine whether or not there are more results available,
+                         //and if requests for more data should be sent in the infinite scrolling
+                         var more = (page * pageSize) < data.Total;
+                         return { results: data.Results, more: more };
+                     }
+                 },
+            formatResult: formatsearch,
+            formatSelection: formatsearch2,
+            escapeMarkup: function(m) { return m; }
+
+             });
+             search = search.data('select2');
+             search.onSelect = (function(fn) {
+                 return function(data, options) {
+                     var target;
+
+                     if (options != null) {
+                         target = $(options.target);
+                     }
+
+                     if (target && target.hasClass('user-history')) {
+
+                         return false;
+                     } else if (target && target.hasClass('job-update')) {
+
+
+                       //  window.location.href = '@Url.Action("Update","Factor")/' + data.id;
+                         if (jQuery(window).width() < 640) {
+
+                        window.location.href = '@Url.Action("Update","Factor",new {id = ""})/' + data.id;
+                         }
+                         else {
+                           
+                               window.open(
+                            '@Url.Action("Update","Factor",new {id = ""})/' + data.id,
+                             '_blank' // <- This is what makes it open in a new window.
+                         );
+                         }
+
+                         return false;
+                     }
+                     else {
+                         return fn.apply(this, arguments);
+                     }
+                 }
+             })(search.onSelect);
+
+          $("#searchfactorId").change(function() {
+                 window.location.href = "/Factor/Update/" + $(this).val();
+
+
+             })
+
+});
+
+function formatsearch(state) {
+
+     if ( state.id == 0) {
+
+            return    "<a href='/Factor/Add/?text=" + state.name + "'  class='btn btn-3d btn-sm btn-reveal   btn-success user-history '  style='display:block;margin-left:auto;margin-right:auto;width:150px;'  > <span  class='user-history'  style='font-weight:bold' >Create New Client</span> " +
+                "<i data-id='" + state.id + "' class='fa fa-plus '></i>" + "  </a>";
+
+    }
+   else {
+         return "<div style='border-bottom:1px solid #ddd;padding:10px 5px;'><div class='row' style=''><i class='fa fa-user job-update' style='padding-right:5px;color:#1e88e5'></i><small class='job-update'>" + state.name +
+             "&nbsp<i class='fa fa-circle job-update' style='padding-right:5px;color:#1e88e5'></i>" + state.po + "</small>" +
+             "<a href='/Factor/Add/" + state.cid + "'  class='btn btn-xs btn-success user-history' style='padding:0 4px;background:none;border:none;margin-top:1px;font-size:12px;color:#42ce42;float:right'> <i class='fa fa-plus ' style='padding-left:3px;'></i><span  class='user-history'>Add</span></a>" +
+             "<br /><i class='fa  fa-cubes job-update' style='color:#1e88e5'></i><small class='job-update'>" + state.projectName + "</small>" +
+
+             "<br /><i class='fa fa-map-marker job-update' style='padding-right:5px;color:#1e88e5'></i><small class='job-update'>" + state.address +  "</small>"+
+    "</div></div>";
+    }
+};
+function formatsearch2(state) {
+    return "<div style='border-bottom:1px solid #ddd;padding:10px 5px;'><div class='row' style='font-size:14px'><i class='fa fa-user' style='padding-right:5px;color:#1e88e5'></i><small>" + state.name + ",&nbsp" + state.po + "</small></div>"
+};
+function openproject() {
+    alert();
+}
+    function LogOff() {
+        Lobibox.confirm({
+            msg: "Do you want to exit ?",
+            callback: function ($this, type, ev) {
+                if (type == "yes") {
+                    window.location.href = '@Url.Action("LogOff", "Account")';
+                }
+            }
+        });
+    }
+
+    function NightMode() {
+
+           $.ajax({
+            url: "@Url.Action("ChangeNightMode","Account")",
+            type: "get",
+               success: function (msg) {
+                   $("#newstyle").attr('href', '/Content/themes/AccountingAdmin/assets/css/newstyle' + msg.responseText + '.css')
+                   $("#jqgridstyle").attr('href','/Content/themes/AccountingAdmin/assets/css/layout-jqgrid'+msg.responseText+'.css')
+            }
+           })
+
+
+    }
+
+    function Preloading() {
+        if ($('.preloader').length) {
+            $('.preloader').fadeIn(800);
+            $('.preloader').delay(500).fadeOut(500);
+        }
+    }
+
+    function NewInstallation() {
+        hideAddMenu();
+      myLoading('start');
+        $.ajax({
+            url: "/Admin/_newInstallation",
+            type: "get",
+            success: function (result) {
+                $("#modalBody").html(result);
+                myLoading('stop');
+                $("#myModal").modal("show");
+            },
+            error: function (result) {
+                myLoading('stop');
+                alert('Error... Please try again');
+            }
+        })
+    }
+    function NewTask() {
+        hideAddMenu();
+       myLoading('start');
+        $.ajax({
+            url: "/Admin/_newTask",
+            type: "get",
+            success: function (result) {
+                $("#modalBody").html(result);
+                myLoading('stop');
+                $("#myModal").modal("show");
+            },
+            error: function (result) {
+                myLoading('stop');
+                alert('Error... Please try again');
+            }
+        })
+    }
+    function NewEstimation() {
+        hideAddMenu();
+      myLoading('start');
+        $.ajax({
+            url: "/Admin/_newInstallation",
+            type: "get",
+                data: { type: 1 },
+            success: function (result) {
+                $("#modalBody").html(result);
+                myLoading('stop');
+                $("#myModal").modal("show");
+            },
+            error: function (result) {
+                myLoading('stop');
+                alert('Error... Please try again');
+            }
+        })
+    }
+
+    function NewClient() {
+        hideAddMenu();
+        showAddDialog('User', '_User');
+    }
+
+    function NewInstaller() {
+        hideAddMenu();
+        showAddDialogUrl('@Url.Action("_Operator", "Admin",new {usertype = 4 })');
+    };
+
+    function NewEstimator() {
+        hideAddMenu();
+        showAddDialogUrl('@Url.Action("_Operator", "Admin",new {usertype = 3 })');
+    };
+
+    function NewExpense() {
+        hideAddMenu();
+        showAddDialog('Accounting', '_Expense');
+    };
+    function UploadPic() {
+        hideAddMenu();
+        showAddDialog('Factor', '_upload');
+    };
+
+
+</script>
+
+
+
+
+@if (activeMobileMemu)
+{
+    <script type="text/javascript">
+
+        var navItems = document.querySelectorAll(".mobile-bottom-nav-item");
+        navItems.forEach(function (e, i) {
+            e.addEventListener("click", function (e) {
+                navItems.forEach(function (e2, i2) {
+                    e2.classList.remove("mobile-bottom-nav-item-active");
+                })
+                this.classList.add("mobile-bottom-nav-item-active");
+            });
+        });
+
+        const button = document.querySelector('.menu-button');
+        const menu = document.querySelector('.menu-body');
+        const close = document.querySelector('.menu-header button');
+        // const overlay = document.querySelector('.menu-overlay');
+
+        function showAddMenu() {
+            button.setAttribute('hidden', '');
+            menu.removeAttribute('hidden');
+            //  overlay.removeAttribute('hidden');
+        };
+
+        function hideAddMenu() {
+            menu.setAttribute('hidden', '');
+            //overlay.setAttribute('hidden', '');
+            button.removeAttribute('hidden');
+
+        };
+
+        button.addEventListener('click', showAddMenu);
+        close.addEventListener('click', hideAddMenu);
+        // overlay.addEventListener('click', hideAddMenu);
+
+    </script>
+    <script type="text/javascript">
+        const buttontools = document.querySelector('.menu-button-tools');
+        const menutools = document.querySelector('.menu-body-tools');
+        const closetools = document.querySelector('.menu-header-tools button');
+        // const overlaytools = document.querySelector('.menu-overlay-tools');
+
+        function showMenu() {
+            buttontools.setAttribute('hidden', '');
+            menutools.removeAttribute('hidden');
+            // overlaytools.removeAttribute('hidden');
+        };
+
+        function hideMenu() {
+            menutools.setAttribute('hidden', '');
+            // overlaytools.setAttribute('hidden', '');
+            buttontools.removeAttribute('hidden');
+            Preloading();
+        };
+
+        buttontools.addEventListener('click', showMenu);
+        closetools.addEventListener('click', hideMenu);
+                                       // overlaytools.addEventListener('click', hideMenu);
+
+    </script>
+}

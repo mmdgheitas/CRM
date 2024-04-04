@@ -1,0 +1,69 @@
+﻿@model Infrastructure.Entity.TimeCardBtn
+@{
+    Layout = null;
+}
+
+
+    @if (Model.ClockInBtn)
+    {
+        <div class="row slide-top-menu">
+            <p style="margin:0;">
+                <a class="clock-in-slide">
+                    <i class="fa fa-angle-right"></i>
+                    Slide To Clock-IN
+                    <span class="clock-in-cover"></span>
+                </a>
+            </p>
+        </div>
+    }
+
+<script type="text/javascript">
+    $(function () {
+        $('.clock-in-slide')
+            .bind('touchstart mousedown', function () {
+                if ($(this).attr('disabled')) return !1;
+
+                return $.data(this, 'sliding', 1), !1;
+
+            })
+
+            .bind('touchstart touchmove', function (e) {
+                var xPos = e.originalEvent.touches[0].pageX;
+
+                var sliding = $.data(this, 'sliding') ? !0 : !1,
+                    pos;
+
+                if (true) {
+
+                    pos = (xPos - $(this).offset().left) / $(this).outerWidth() * 100;
+                    // console.log(pos);
+                    $(this).find('> span.clock-in-cover').css('right', (100 - pos) + '%');
+              
+                    if (pos > 92 && pos <= 95) {
+                        console.log("clockin pos :"+pos);
+                        $('.clock-in-slide').css("display", "none");
+                        $('.clock-in-cover').css("display", "none");
+                        $.ajax({
+                            url: "/Time/clockin",
+                            type: "get",
+                            success: function (msg) {
+                                if (msg != null && msg.success) {
+
+                                     ReloadTimeCard();
+                                }
+                                else if (msg != null && !msg.success) {
+                                    showMessage(msg.responseText, "error");
+                                    $('.clock-in-slide').css("display", "normal");
+                                    $('.clock-in-cover').css("display", "normal");
+                              
+                                }
+                            }
+                        })
+
+                    }
+                }
+
+            });
+
+    });
+</script>

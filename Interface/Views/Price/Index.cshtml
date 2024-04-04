@@ -1,0 +1,383 @@
+﻿@model Interface.Models.Price.PriceViewModel
+@{
+    ViewBag.Title = "Calculating Glass Price";
+    Layout = "~/Views/Shared/Admin/_LayoutAdmin_Price.cshtml";
+}
+<link href="~/Content/themes/my/my-css.css" rel="stylesheet" />
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<link href="~/Content/themes/AccountingAdmin/assets/plugins/waitMe/waitMe.css" rel="stylesheet" />
+<link href="~/Content/themes/Plugins/bootstrap-select-1.13.18/css/bootstrap-select.min.css" rel="stylesheet" />
+
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/AdminScripts.js"></script>
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal" data-backdrop="static">
+    <div class="modal-dialog " id="modalBody">
+    </div>
+</div>
+
+
+<a href="javascript:;" class="btn btn-3d btn-default btn-green " onclick="showResult()" id="myBtn">Show Result <i class="fa fa-angle-double-down"></i></a>
+<a href="javascript:;" class="btn btn-3d btn-default btn-green " onclick="topFunction()" id="myBtntop" style="display:none;">Top Page <i class="fa fa-angle-double-up"></i></a>
+
+<header id="page-header">
+    <div class="row">
+        <div class="pull-left margin-right-20">
+            <h3 class="page-header-title">
+                Calculating Glass Price
+            </h3>
+
+            <ol class="breadcrumb breadcrumb-margin">
+                <li><a href="/">Tools</a></li>
+                <li class="active">
+                    Calculating Glass Price
+                </li>
+            </ol>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- /page title -->
+<div class="col-md-8 col-md-offset-2 margin-top-20" id="startPage">
+    <div class="panel ">
+        <header class="panel-heading text-center violet">
+            Calculating Glass Price
+
+        </header>
+        <div class="panel-body ">
+            @using (Html.BeginForm("Index", "Price", FormMethod.Post, new { @class = " sky-form boxed", role = "form", id = "priceForm" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                if (TempData["Message"] != null)
+                {
+                    @Html.Raw(Html.ShowAlert(TempData["Message"].ToString(), TempData["Type"].ToString()))
+                }
+                if (ViewBag.mode == "edit")
+                {
+
+                }
+
+                <fieldset>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Width, htmlAttributes: new { @class = "control-label " })
+                                <div class="input-group">
+                                    @Html.EditorFor(model => model.Width, new { htmlAttributes = new { @class = "form-control" } })
+                                    <div class="input-group-addon">Inch</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Height, htmlAttributes: new { @class = "control-label " })
+                                <div class="input-group">
+                                    @Html.EditorFor(model => model.Height, new { htmlAttributes = new { @class = "form-control" } })
+                                    <div class="input-group-addon">Inch</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Lineal, htmlAttributes: new { @class = "control-label " })
+                                <div class="input-group">
+                                    @Html.EditorFor(model => model.Lineal, new { htmlAttributes = new { @class = "form-control", @readonly = "@readonly" } })
+                                    <div class="input-group-addon">Inch</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Square, htmlAttributes: new { @class = "control-label " })
+                                <div class="input-group">
+                                    @Html.EditorFor(model => model.Square, new { htmlAttributes = new { @class = "form-control", @readonly = "@readonly" } })
+                                    <div class="input-group-addon">Foot</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>	&nbsp;</label>
+                    <h2 class="price-heading-blue ">
+                        Glass Price
+                    </h2>
+
+                    <hr />
+                    <div class="form-group">
+                        <div class="col-md-6">
+
+                            @Html.LabelFor(m => m.GlassTypeID, htmlAttributes: new { @class = "control-label " })
+                            @* @Html.DropDownListFor(m => m.GlassTypeID, new SelectList(Model.ListGlassType, "ID", "Title"), htmlAttributes: new { @class = "form-control selectpicker" }) *@
+                        </div>
+                    </div>
+                    <div id="GlassTypeBox">
+
+                    </div>
+
+                    <label>	&nbsp;</label>
+                    <h2 class="price-heading-blue " id="result-price">
+                        Calculating Price
+
+
+                    </h2>
+
+                    <h2 class="price-heading ">
+                        Glass Price
+                    </h2>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Unit Price</div>
+                                @Html.EditorFor(model => model.UnitPrice, new { htmlAttributes = new { @class = " form-control", @style = "", @readonly = "readonly", @placeholder = "0" } })
+
+                                <div class="input-group-addon">$</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Unit Fule Surcharge</div>
+                                @Html.EditorFor(model => model.UnitFuleSurcharge, new { htmlAttributes = new { @class = " form-control", @style = "", @readonly = "readonly", @placeholder = "0" } })
+
+                                <div class="input-group-addon">$</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Total Unit Cost</div>
+                                @Html.EditorFor(model => model.TotalUnitCost, new { htmlAttributes = new { @class = " form-control", @style = "", @readonly = "readonly", @placeholder = "0" } })
+
+                                <div class="input-group-addon">$</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="price-heading ">
+                        Sales Price
+
+                    </h2>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Benefits Percentage</div>
+                                @Html.EditorFor(model => model.BenefitsPercentage, new { htmlAttributes = new { @class = " form-control", @style = "", @readonly = "readonly", @placeholder = "0" } })
+
+                                <div class="input-group-addon">$</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Extra Price</div>
+                                @* @Html.DropDownListFor(m => m.GlassExtraPrice, new SelectList(ViewBag.ListExtra, "Price", "Title"), htmlAttributes: new { @class = "form-control selectpicker" }) *@
+
+                                <div class="input-group-addon"><i class="fa fa-money"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Credit Card Fee</div>
+                                @Html.EditorFor(model => model.CreditCardFee, new { htmlAttributes = new { @class = " form-control", @style = "", @readonly = "readonly", @placeholder = "0" } })
+
+                                <div class="input-group-addon">$</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="price-heading ">
+                        Final Price
+
+                    </h2>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Final Price</div>
+                                @Html.EditorFor(model => model.FinalPrice, new { htmlAttributes = new { @class = " form-control", @style = "", @readonly = "readonly", @placeholder = "0" } })
+
+                                <div class="input-group-addon">$</div>
+                            </div>
+                        </div>
+                    </div>
+                    @*<div class="form-group ">
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                                @Html.LabelFor(m => m.AutoConfirmAppt, htmlAttributes: new { @class = "control-label " })
+                                @Html.DropDownListFor(model => Model.AutoConfirmAppt, new List<SelectListItem>() { new SelectListItem() { Text="Yes",Value="True"},
+                                    new SelectListItem() { Text="No",Value="False"} }, htmlAttributes: new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                                @Html.LabelFor(m => m.PaymentText3, htmlAttributes: new { @class = "control-label " })
+                                @Html.EditorFor(model => model.PaymentText3, new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                                @Html.LabelFor(m => m.PaymentText4, htmlAttributes: new { @class = "control-label " })
+                                @Html.EditorFor(model => model.PaymentText4, new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                        </div>*@
+
+                    <div class="col-md-12  text-center  center-block inline-block">
+                        <button type="submit" style="white-space:normal;float:left" class="btn btn-sm  btn-info inline-block">
+                            Reset
+                        </button>
+                        <a href="javascript:;" style="white-space:normal;float:right" id="calculate" class="btn btn-sm  btn-info center-block inline-block">calculate</a>
+
+
+                    </div>
+
+                </fieldset>
+
+
+
+
+            }
+        </div>
+    </div>
+
+</div>
+<script src="~/Content/themes/Plugins/bootstrap-select-1.13.18/js/bootstrap-select.min.js"></script>
+<script src="~/Content/themes/Plugins/bootstrap-select-1.13.18/js/i18n/defaults-en_US.min.js"></script>
+
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/waitMe/waitMe.js"></script>
+<script type="text/javascript">
+    $(function () {
+        // CalculatingPrice();
+        var errorCount = 0;
+
+        $('select').selectpicker({
+            liveSearch: true,
+            mobile: false,
+
+            liveSearchPlaceholder: 'Search...',
+
+        });
+        $('html, body').animate({
+            scrollTop: $('#startPage').offset().top
+        }, 'slow');
+
+        $("#Width").focusout(function () {
+            LinealSquare();
+        });
+
+        $("#Height").focusout(function () {
+            LinealSquare();
+        });
+
+        changeGlassType();
+        $("#GlassTypeID").change(function () {
+            changeGlassType();
+        });
+
+    });
+
+    function LinealSquare() {
+        var Square = ((+$("#Width").val() + 1) * (+$("#Height").val() + 1)) / 144;
+        $("#Square").val(Square);
+
+        var lineal = ((+$("#Width").val()) + (+$("#Height").val())) * 2;
+
+        $("#Lineal").val(lineal);
+    }
+    function changeGlassType() {
+
+        $('#priceForm').waitMe({});
+        $.ajax({
+            url: "/Price/_glassTypeChange",
+            type: "post",
+            data: { id: $("#GlassTypeID").val(), Square: $("#Square").val() },
+            success: function (msg) {
+                if (msg != null && msg.Success) {
+
+
+                    setTimeout(function () {
+                        $("#GlassTypeBox").html(msg.Html);
+                        $("#priceForm").waitMe("hide");
+                    }, 1000);
+                         = 0;
+
+
+                }
+                else if (msg != null && !msg.Success) {
+                    showMessage(msg.responseText, "error");
+                    $("#payment-data").waitMe("hide");
+                    errorCount = errorCount + 1;
+
+                    if (errorCount > 2) {
+                        setTimeout(function () {
+                            location.reload();
+                        }, 1000);
+                    }
+                }
+            }
+        })
+    }
+
+
+</script>
+
+<script type="text/javascript">
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    var mybuttonTop = document.getElementById("myBtntop");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (window.getComputedStyle(mybuttonTop).getPropertyValue('display') == "none")
+                mybutton.style.display = "block";
+
+        } else {
+            mybutton.style.display = "none";
+
+
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction(elem) {
+        CalculatingPrice();
+        $('html, body').animate({
+            scrollTop: $("#page-header").offset().top
+        }, 'slow');
+
+        $("#myBtntop").css("display", "none");
+        $("#myBtn").css("display", "block");
+
+
+
+    }
+    function showResult(elem) {
+        CalculatingPrice();
+        $('html, body').animate({
+            scrollTop: $("#result-price").offset().top
+        }, 'slow');
+
+        $("#myBtn").css("display", "none");
+        $("#myBtntop").css("display", "block");
+
+    }
+</script>
+
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap.dialog/examples/assets/bootstrap/js/bootstrap.min.js"></script>
+
+

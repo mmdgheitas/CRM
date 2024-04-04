@@ -1,0 +1,175 @@
+﻿@using Microsoft.AspNet.Identity
+@using System.Security.Claims
+@inject Interface.Models.Access.IAccess Access
+
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title | Company CRM</title>
+    <meta des="description" content="Glassma CRM" />
+    <meta name="Author" content="Omid Dehghani" />
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <link rel="icon" href="~/Content/glassma.ico" />
+    <!-- WEB FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- CORE CSS -->
+    <link href="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/content/themes/accountingadmin/assets/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    <!-- THEME CSS -->
+    <link href="~/Content/themes/AccountingAdmin/assets/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/themes/AccountingAdmin/assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+    @*<link href="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap/RTL/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap/RTL/bootstrap-flipped.min.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="~/Content/themes/AccountingAdmin/assets/css/layout-RTL.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="~/Content/themes/AccountingAdmin/assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />*@
+    <link href="~/Content/themes/Plugins/webui-popover/dist/jquery.webui-popover.min.css" rel="stylesheet" />
+
+    <link href="~/Content/themes/Plugins/toastr/toastr.css" rel="stylesheet" />
+
+    <link href="~/content/themes/accountingadmin/assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/content/themes/accountingadmin/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.css" rel="stylesheet" />
+
+
+    <script type="text/javascript" src="~/Content/themes/AccountingAdmin/assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="~/Content/themes/Plugins/toastr/toastr.min.js"></script>
+
+    <link href="~/Content/themes/AccountingAdmin/assets/css/newstyle@(User.GetClaimValue("NightMode")).css" id="newstyle" rel="stylesheet" />
+    <link href="~/Content/themes/AccountingAdmin/assets/css/nightmode.css" rel="stylesheet" />
+    <link href="~/Content/themes/my/my-css.css" rel="stylesheet" />
+
+</head>
+<!--
+    .boxed = boxed version
+-->
+<body class="@(User.GetClaimValue("PageSize") != null ? User.GetClaimValue("PageSize") : "")">
+
+
+    <!-- WRAPPER -->
+    <div id="wrapper">
+
+        <div id="clockin-box"> </div>
+
+        <aside id="aside">
+            <nav id="sideNav">
+               
+                <!-- MAIN MENU -->
+                <ul class="nav nav-list">
+
+
+                    @if (Access.isAccessInLayout("Installer") | Access.isAccessInLayout("Estimator"))
+                    {
+
+                        <li class="@((ViewContext.RouteData.Values["controller"].ToString() == "Admin" & ViewContext.RouteData.Values["action"].ToString() == "OtherUsers" ) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("OtherUsers", "Admin")' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa fa-user-circle"></i> <span>Employees</span>
+                            </a>
+                        </li>
+                    }
+
+
+                </ul>
+
+                <!-- SECOND MAIN LIST -->
+                @*      <h3>MORE</h3>*@
+
+            </nav>
+
+            <span id="asidebg"><!-- aside fixed background --></span>
+        </aside>
+        <!-- /ASIDE -->
+        <!-- HEADER -->
+        <header id="header">
+
+            <!-- Mobile Button -->
+            <div class="col-md-2 col-sm-4 no-padding-right newNav col-xs-2">
+                <!-- Mobile Button -->
+                <button id="mobileMenuBtn"></button>
+
+                @Html.Partial("_websiteName", "Account")
+            </div>
+
+            @Html.Partial("_topMenu", "Account")
+
+
+
+
+        </header>
+        <!-- /HEADER -->
+        <!--
+        MIDDLE
+    -->
+        <section id="middle">
+
+            @RenderBody()
+        </section>
+        <!-- /MIDDLE -->
+
+    </div>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script type="text/javascript">
+        var plugin_path = "@Url.Content("~/Content/themes/AccountingAdmin/assets/plugins/")";</script>
+
+    <script type="text/javascript" src="~/Content/themes/AccountingAdmin/assets/js/app.js"></script>
+
+    <script src="~/Content/themes/AccountingAdmin//assets/plugins/jquery/jquery-ui.min.js"></script>
+    <script src="~/Content/themes/Plugins/webui-popover/dist/jquery.webui-popover.min.js"></script>
+
+    <script src="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.js"></script>
+
+
+    <script src="~/Content/themes/AccountingAdmin//assets/plugins/bootstrap.dialog/examples/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/AdminScripts.js"></script>
+    <script src="~/Content/themes/my/heartBeat.js"></script>
+    <script type="text/javascript">
+
+
+        ChangePageSize('@Url.Action("ChangePageSize", "Account")');
+
+        $(document).ready(function () {
+          //  loadScript("/Content/themes/AccountingAdmin//assets/plugins/bootstrap.dialog/examples/assets/bootstrap/js/bootstrap.min.js");
+               $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $(this).parent().siblings().removeClass('open');
+                    $(this).parent().toggleClass('open');
+                });
+
+
+        })
+        var waitingDialog = waitingDialog || (function ($) {
+
+            return {
+
+                show: function (message, options) {
+                    $('body').loading({
+                        theme: 'dark',
+                        message: 'Loading....'
+                    });
+                },
+                /**
+                 * Closes dialog
+                 */
+                hide: function () {
+                    $('body').loading('stop');
+                }
+            };
+
+        })(jQuery);
+    </script>
+
+
+</body>
+
+</html>

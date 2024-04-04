@@ -1,0 +1,400 @@
+﻿@model Infrastructure.Entity.TimeCardSearch
+@{
+    ViewBag.Title = "List Time Cards";
+    Layout = "~/Views/Shared/Admin/_LayoutAdmin_TimeCard.cshtml";
+}
+<link href="~/Content/themes/my/my-css.css" rel="stylesheet" />
+
+<link href="~/Content/themes/Plugins/datepicker/datepicker.css" rel="stylesheet" />
+<link href="~/Content/themes/Plugins/bootstrap-select-1.13.18/css/bootstrap-select.min.css" rel="stylesheet" />
+<!-- page title -->
+
+<header id="page-header">
+    <div class="row">
+        <div class="pull-left margin-right-20">
+            <h3 class="page-header-title">List Time Cards</h3>
+
+        </div>
+    </div>
+</header>
+
+<link href="~/Content/themes/AccountingAdmin/assets/plugins/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
+<link href="~/Content/themes/AccountingAdmin/assets/css/layout-jqgrid@(User.GetClaimValue("NightMode")).css" id="jqgridstyle" rel="stylesheet" />
+
+
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/jqgrid/js/jquery.jqGrid.js"></script>
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/jqgrid/js/i18n/grid.locale-en.js"></script>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal" data-backdrop="static">
+    <div class="modal-dialog " id="modalBody">
+    </div>
+</div>
+
+
+
+
+<div class="col-md-12  ">
+    <div class="panel ">
+        <header class="panel-heading text-center bg-light  panel-header-space">
+
+            @using (Html.BeginForm("_listSearchTimeCards", "Time", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal", role = "form", id = "SearchForm" }))
+            {
+
+                <fieldset>
+                    <div class="col-md-3 col-xs-6 col-sm-6">
+                        @Html.LabelFor(m => m.StartDate, htmlAttributes: new { @class = "control-label " })
+                        @Html.EditorFor(model => model.StartDate, new { htmlAttributes = new { @class = "form-control", @data_toggle = "datepicker" } })
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-sm-6">
+                        @Html.LabelFor(m => m.EndDate, htmlAttributes: new { @class = "control-label " })
+                        @*@Html.EditorFor(model => model.EndDate, new { htmlAttributes = new { @class = "form-control", @id = "EndDate", @placeholder = "تا تاریخ", @data_mddatetimepicker = "true", @data_placement = "bottom", @data_englishnumber = "true" } })*@
+                        @Html.EditorFor(model => model.EndDate, new { htmlAttributes = new { @class = "form-control", @data_toggle = "datepicker" } })
+                    </div>
+                    <div class="col-md-3 col-xs-12 col-sm-12">
+                        @Html.LabelFor(m => m.UserID, htmlAttributes: new { @class = "control-label " })
+                        @Html.DropDownListFor(m => m.UserID, new SelectList(Model.ListUser, "Id", "FullName"), htmlAttributes: new { @class = "form-control " })
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-sm-6 " style="padding-top:32px;">
+                        <a href="Javascript:;" id="btnSearch" class="btn  btn-success " style="width:100%">Search <i class="fa fa-search margin-right-10"></i></a>
+                    </div>
+                </fieldset>
+
+
+
+
+
+
+            }
+
+
+
+
+
+        </header>
+        <div class="panel-body padding-0">
+            <div style="width: 100%;
+                overflow: auto;
+                direction: rtl">
+                <table id="jqgrid"></table>
+                <div id="jqGridPager"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Content/themes/Plugins/datepicker/datepicker.js"></script>
+<script src="~/Content/themes/Plugins/bootstrap-select-1.13.18/js/bootstrap-select.min.js"></script>
+<script src="~/Content/themes/Plugins/bootstrap-select-1.13.18/js/i18n/defaults-en_US.min.js"></script>
+<script type="text/javascript">
+
+    $('#UserID').selectpicker({
+        liveSearch: true,
+
+        liveSearchPlaceholder: 'Search...'
+    });
+    $(document).ready(function () {
+        loadGrid();
+
+        $('[data-toggle="datepicker"]').datepicker({
+            autoHide: true,
+            zIndex: 2048,
+            format: 'yyyy/mm/dd'
+        });
+
+         $("#btnSearch").click(function () {
+             var data = $("form#SearchForm").serialize();
+
+            jQuery("#jqgrid").jqGrid('setGridParam', {
+                url: "@Url.Action("_listSearchTimeCards", "Time")?" + data
+                                         , datatype: 'json', page: 1
+        });
+             jQuery("#jqgrid").trigger("reloadGrid");
+
+         });
+          });
+
+    function loadGrid() {
+        $("#jqgrid").jqGrid({
+            url: '/Time/_listTimeCards/'+ '@((ViewContext.RouteData.Values["id"] ?? "").ToString())',
+            mtype: "GET",
+            width: "auto",
+            shrinkToFit: false,
+            styleUI: 'Bootstrap',
+            datatype: "json",
+            colModel: [
+              { label: 'ID', name: 'ID', key: true, editable: false, hidden: true, width: 50, resizable: true },
+              { label: 'User', name: 'FullName', editable: true, width: 130, editrules: { required: true }, resizable: true },
+              { label: 'Clock in', name: 'ClockInTimeFa', editable: true, width: 130, editrules: { required: true }, resizable: true },
+              { label: 'Clock out', name: 'ClockOutTimeFa', editable: true, width: 100, editrules: { required: true }, resizable: true },
+              { label: 'Work Time', name: 'ClockTime', editable: true, width: 100, editrules: { required: true }, resizable: true },
+              { label: 'Lunch Start', name: 'LunchStartFa', editable: true, width: 100, editrules: { required: true }, resizable: true },
+              { label: 'Lunch Time', name: 'LunchTime', search: false, width: 120 },
+              { label: 'Break Start', name: 'BreakStartFa', editable: true, width: 100, editrules: { required: true }, resizable: true },
+              { label: 'Break Time', name: 'BreakTime', search: false, width: 120 },
+              { label: 'Status', name: 'Status', editable: true, width: jqGridLastWidth(1000), editrules: { required: true }, resizable: true },
+              //   { label: 'Action', name: 'Shipping.Name', editable: true, width: 100, editrules: { required: true }, resizable: true },
+            //  { label: 'last modified', name: 'modifiedInfo', search: false, width: jqGridLastWidth(500) },
+            ],
+            viewrecords: true,
+            direction: "ltr",
+            loadonce: true,
+            sortable: true,
+            multiselect: true,
+            multiboxonly: true,
+            height: (parseInt($(window).height()) - 380),
+            rowNum: 100000000,
+            //    scrollOffset: 0,
+            rowList: [10, 25, 50, 100000000],
+            pager: "#jqGridPager",
+            closeAfterAdd: true,
+            closeAfterEdit: true,
+            ondblClickRow: EditDialog,
+            navOptions: { reloadGridOptions: { fromServer: true } },
+           loadComplete: function (data) {
+                    $("option[value=100000000]").text('View All');
+                   jqGridPagationServerSide($(this), data);
+                   this.updatepager(false, true);
+                   jqGridloadComplete($(this));
+              },
+               onPaging: function (which_button) {
+                $(this).setGridParam({ datatype: 'json' });
+              }
+         });
+
+        //jQuery("#jqgrid").jqGrid('filterToolbar', { stringResult: true, searchOnEnter: false, defaultSearch: "cn" });
+
+
+        $("#jqgrid").navGrid('#jqGridPager', { add: false, edit: false, del: true, refresh: false, view: false, viewtext: 'جزئیات' })
+          .navButtonAdd('#jqGridPager',
+        {
+            buttonicon: "glyphicon glyphicon-plus-text-warning",
+            title: "Edit",
+            caption: "Edit",
+            onClickButton: EditDialog
+              })
+            .navButtonAdd('#jqGridPager',
+                {
+                    buttonicon: "glyphicon glyphicon-plus-text-success",
+                    title: "Add",
+                    caption: "Add",
+                    onClickButton: AddDialog
+                })
+            .navButtonAdd('#jqGridPager',
+        {
+            buttonicon: "glyphicon glyphicon-plus-text-danger",
+            title: "Delete",
+            caption: "Delete",
+            onClickButton: DeleteRow
+                  }).navButtonAdd('#jqGridPager',
+        {
+                buttonicon: "glyphicon glyphicon-refresh",
+                title: "Refresh",
+                caption: "",
+                onClickButton: reloadGrid
+                      }).navButtonAdd('#jqGridPager',
+        {
+                 buttonicon: "glyphicon glyphicon-plus-text-success",
+                 title: "Excel",
+                 caption: "Excel",
+                 onClickButton: printData
+            });
+
+        styleJqGrid();
+          $("#jqGridPager_left").insertBefore("#jqGridPager_center");
+        $("#jqGridPager").width(900);
+    };
+
+     function EditDialog() {
+
+        showEditDialog('Time', '_editTimeCard');
+    };
+
+     function AddDialog() {
+         showAddDialog('Time', '_editTimeCard');
+    };
+
+     function DeleteRow() {
+        showDeleteRow('Time', 'deleteTimeCard');
+    };
+
+     function clockin() {
+          if (confirm('Do you want to clock in ?')) {
+            $.ajax({
+                url: "/Time/clockin",
+                type: "get",
+                success: function (msg) {
+                    if (msg != null && msg.success) {
+                        showMessage(msg.responseText, "success");
+                          location.reload();
+                    }
+                    else if (msg != null && !msg.success) {
+                        showMessage(msg.responseText, "error");
+                    }
+                }
+            })
+        }
+    }
+
+     function clockout() {
+          if (confirm('Do you want to clock out ?')) {
+            $.ajax({
+                url: "/Time/clockout",
+                type: "get",
+                success: function (msg) {
+                    if (msg != null && msg.success) {
+                        showMessage(msg.responseText, "success");
+                          location.reload();
+                    }
+                    else if (msg != null && !msg.success) {
+                        showMessage(msg.responseText, "error");
+                    }
+                }
+            })
+        }
+    }
+
+     function clockoutforce() {
+          if (confirm('Do you want to clock out ?')) {
+            $.ajax({
+                url: "/Time/clockoutForce",
+                type: "get",
+                success: function (msg) {
+                    if (msg != null && msg.success) {
+                        showMessage(msg.responseText, "success");
+                          location.reload();
+                    }
+                    else if (msg != null && !msg.success) {
+                        showMessage(msg.responseText, "error");
+                    }
+                }
+            })
+        }
+    }
+
+     function Break() {
+          if (confirm('Do you want to break ?')) {
+            $.ajax({
+                url: "/Time/BreakStart",
+                type: "get",
+                success: function (msg) {
+                    if (msg != null && msg.success) {
+                        showMessage(msg.responseText, "success");
+                          location.reload();
+                    }
+                    else if (msg != null && !msg.success) {
+                        showMessage(msg.responseText, "error");
+                    }
+                }
+            })
+        }
+    }
+
+     function BreakFinish() {
+          if (confirm('Do you want to finish break ?')) {
+            $.ajax({
+                url: "/Time/BreakFinish",
+                type: "get",
+                success: function (msg) {
+                    if (msg != null && msg.success) {
+                        showMessage(msg.responseText, "success");
+                          location.reload();
+                    }
+                    else if (msg != null && !msg.success) {
+                        showMessage(msg.responseText, "error");
+                    }
+                }
+            })
+        }
+    }
+
+     function LunchStart() {
+          if (confirm('Do you want to start lunch ?')) {
+            $.ajax({
+                url: "/Time/lunchstart",
+                type: "get",
+                success: function (msg) {
+                    if (msg != null && msg.success) {
+                        showMessage(msg.responseText, "success");
+                          location.reload();
+                    }
+                    else if (msg != null && !msg.success) {
+                        showMessage(msg.responseText, "error");
+                    }
+                }
+            })
+        }
+    }
+
+     function LunchFinish() {
+          if (confirm('Do you want to finish lunch ?')) {
+            $.ajax({
+                url: "/Time/lunchfinish",
+                type: "get",
+                success: function (msg) {
+                    if (msg != null && msg.success) {
+                        showMessage(msg.responseText, "success");
+                          location.reload();
+                    }
+                    else if (msg != null && !msg.success) {
+                        showMessage(msg.responseText, "error");
+                    }
+                }
+            })
+        }
+    }
+
+     function Deliver() {
+        var selRowId = $("#jqgrid").getGridParam("selrow");
+        if (selRowId == null) {
+            showMessage("Please select a record", "error");
+            return;
+        }
+        if (confirm('Do you want to deliver order ?')) {
+            $.ajax({
+                url: "/Factor/DeliverOrder",
+                type: "get",
+                data: { id: selRowId },
+                success: function (msg) {
+                    if (msg != null && msg.success) {
+                        showMessage(msg.responseText, "success");
+                        reloadGrid();
+                    }
+                    else if (msg != null && !msg.success) {
+                        showMessage(msg.responseText, "error");
+                    }
+                }
+            })
+        }
+    };
+
+
+    function printData() {
+        //----------------------------------------------------------
+        var dataToSend = new Array();
+        var dataToSend = $('#jqgrid').getGridParam('selarrrow').join().split(',');
+
+        if (dataToSend == "") {
+
+
+            dataToSend = JSON.stringify($('#jqgrid').jqGrid('getDataIDs')).slice(0, -2).substr(2).split('","');
+
+            if ($('.ui-pg-selbox').val() == 100000000) {
+                dataToSend = "0";
+                window.open('@Url.Action("reportTime", "Report")?' + $("form#SearchForm").serialize(), '_blank');
+            }
+            else {
+                 window.open('@Url.Action("reportTime", "Report")?List=' + dataToSend, '_blank');
+            }
+
+        }
+        else {
+            window.open('@Url.Action("reportTime", "Report")?List=' + dataToSend, '_blank');
+        }
+    }
+
+</script>
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap.dialog/examples/assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+<link href="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.css" rel="stylesheet" />
+<script src="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.js"></script>
+<script src="~/Scripts/AdminScripts.js"></script>

@@ -1,0 +1,214 @@
+﻿@model Infrastructure.Entity.TimeCardBtn
+@{
+    ViewBag.Title = "My Time Cards";
+    Layout = "~/Views/Shared/Admin/_LayoutAdmin_TimeCard.cshtml";
+}
+<link href="~/Content/themes/my/my-css.css" rel="stylesheet" />
+<!-- page title -->
+
+@* <header id="page-header ">
+    <div class="row ">
+        <div class="pull-left margin-right-20">
+            <h3 class="page-header-title">My Time Cards</h3>
+
+            <ol class="breadcrumb breadcrumb-margin">
+                <li><a href="/">Time Card</a></li>
+                <li class="active">My Time Cards</li>
+            </ol>
+
+        </div>
+    </div>
+</header> *@
+
+<link href="~/Content/themes/AccountingAdmin/assets/plugins/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
+<link href="~/Content/themes/AccountingAdmin/assets/css/layout-jqgrid@(User.GetClaimValue("NightMode")).css" id="jqgridstyle" rel="stylesheet" />
+
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/jqgrid/js/jquery.jqGrid.js"></script>
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/jqgrid/js/i18n/grid.locale-en.js"></script>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal" data-backdrop="static">
+    <div class="modal-dialog " id="modalBody">
+    </div>
+</div>
+
+
+<div class="col-md-12  ">
+    <div class="panel ">
+        <header class="panel-heading text-center bg-light  panel-header-space">
+            <fieldset class="margin-bottom-0  margin-top-10">
+
+                <div style="overflow:auto;">
+                    @if (Model.ClockInBtn)
+                    {
+                        <a href="javascript:;" onclick="clockin()" class="btn btn-3d btn-green"> <i class="fa fa-play"></i>  Clock in </a> <span class="margin-left-10  bold size-50" style="position:absolute; margin-top:-9px;">0:00:00</span>
+                    }
+                    @if (Model.ClockOutBtn)
+                    {
+                        <div class="col-md-4 ">
+                            <a href="javascript:;" onclick="clockout()" class="btn btn-3d btn-red "> <i class="fa fa-stop"></i>  Clock out </a> <span class="margin-left-10  bold size-50 " style="position:absolute; margin-top:-9px;" id="timecounter2">@((DateTime.Now.SystemTime() - Model.StartTime).TimeSpamToHoureMinite()) </span>
+                        </div>
+                    }
+                    @if (Model.ForceCheckOutBtn)
+                    {
+                        <div class="form-group col-md-3">
+                            <a href="javascript:;" onclick="clockoutforce()" class="btn btn-3d btn-red"> <i class="fa fa-stop"></i>  Clock out </a> <span class="margin-left-10  bold size-50" style="position:absolute; margin-top:-9px;">5:00:00</span>
+                        </div>
+                     }
+                    @if (Model.BreakStartBtn)
+                    {
+                        <div class="col-md-2">
+                            <a href="javascript:;" onclick="Break()" class="btn btn-3d btn-blue">
+                                <i class="fa fa-undo"></i>Start break @if (Model.BreakTime != 0)
+                                {@Html.Raw("(" + Model.BreakTime + " min)")}
+                            </a>
+
+                        </div>
+                     }
+                    @if (Model.BreakFinishBtn)
+                    {
+                        <div class="col-md-4">
+                            <a href="javascript:;" onclick="BreakFinish()" class="btn btn-3d btn-red"> <i class="fa fa-stop"></i>Finish Break  </a>  <span class="margin-left-10  bold size-50 " style="position:absolute; margin-top:-9px;" id="timecounter2">@((DateTime.Now.SystemTime() - Model.StartTime).TimeSpamToHoureMinite()) </span>
+                        </div>
+                     }
+                    @if (Model.LunchStartBtn)
+                    {
+                        <div class="col-md-2">
+                            <a href="javascript:;" onclick="LunchStart()" class="btn btn-3d btn-green "> <i class="fa fa-play"></i>Start lunch  </a>
+                        </div>
+                     }
+                    @if (Model.LunchFinishBtn)
+                    {
+                        <div class="col-md-4">
+                            <a href="javascript:;" onclick="LunchFinish()" class="btn btn-3d btn-red"> <i class="fa fa-stop"></i>Finish lunch & Clock out  </a>  <span class="margin-left-10  bold size-50 " style="position:absolute; margin-top:-9px;" id="timecounter2">@((DateTime.Now.SystemTime() - Model.StartTime).TimeSpamToHoureMinite()) </span>
+                        </div>
+                    }
+                </div>
+
+            </fieldset>
+
+
+
+        </header>
+        <div class="panel-body padding-0">
+            <div style="width: 100%;
+                overflow: auto;
+                direction: rtl">
+                <table id="jqgrid"></table>
+                <div id="jqGridPager"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        loadGrid();
+     
+
+        var countDownDate = new Date('@(Model.StartTime)').getTime();
+        var hours = '@((DateTime.Now.SystemTime() - Model.StartTime).Hours)';
+        var minutes = '@((DateTime.Now.SystemTime() - Model.StartTime).Minutes)';
+        var seconds = '@((DateTime.Now.SystemTime() - Model.StartTime).Seconds)';
+
+        if ('@Model.ClockOutBtn' == 'True' || '@Model.LunchFinishBtn' == 'True' || '@Model.BreakFinishBtn' == 'True' ) {
+            var x = setInterval(function () {
+
+                seconds = parseInt(seconds) + 1;
+
+                if (parseInt(seconds) == 60) {
+                    seconds = 0;
+                    minutes = parseInt(minutes) + 1;
+                }
+                // Output the result in an element with id="demo"
+                document.getElementById("timecounter2").innerHTML = hours + ":"
+                    + minutes + ":" + seconds + "";
+
+                // If the count down is over, write some text
+                if (parseInt(minutes) == 60) {
+                    location.reload();
+                }
+            }, 1000);
+        }
+        });
+
+    function loadGrid() {
+        $("#jqgrid").jqGrid({
+            url: '/Time/_myTimeCardsList',
+            mtype: "GET",
+            width: "auto",
+            shrinkToFit: false,
+            styleUI: 'Bootstrap',
+            datatype: "json",
+            colModel: [
+              { label: 'ID', name: 'ID', key: true, editable: false, hidden: true, width: 50, resizable: true },
+              { label: 'Clock in', name: 'ClockInTimeFa', editable: true, width: 100, editrules: { required: true }, resizable: true },
+              { label: 'Clock out', name: 'ClockOutTimeFa', editable: true, width: 100, editrules: { required: true }, resizable: true },
+                { label: 'Work Time', name: 'ClockTime', editable: true, width: jqGridLastWidth(200), editrules: { required: true }, resizable: true },
+
+              //  { label: 'Lunch Start', name: 'LunchStartFa', editable: true, width: 100, editrules: { required: true }, resizable: true },
+             // { label: 'Lunch Time', name: 'LunchTime', search: false, width: 120 },
+              //{ label: 'Break Start', name: 'BreakStartFa', editable: true, width: 100, editrules: { required: true }, resizable: true },
+             //   { label: 'Break Time', name: 'BreakTime', search: false, width: jqGridLastWidth(620) },
+            //  { label: 'Use Break', name: 'UseBreakFa', editable: true, width: jqGridLastWidth(720), editrules: { required: true }, resizable: true },
+              //   { label: 'Action', name: 'Shipping.Name', editable: true, width: 100, editrules: { required: true }, resizable: true },
+            //  { label: 'last modified', name: 'modifiedInfo', search: false, width: jqGridLastWidth(500) },
+            ],
+            viewrecords: true,
+            direction: "ltr",
+            loadonce: true,
+            sortable: true,
+          //  multiselect: true,
+            multiboxonly: true,
+             height: (parseInt($(window).height()) - 300),
+            rowNum: 10,
+            //    scrollOffset: 0,
+            rowList: [10, 25, 50, 100000000],
+            pager: "#jqGridPager",
+            closeAfterAdd: true,
+            closeAfterEdit: true,
+            navOptions: { reloadGridOptions: { fromServer: true } },
+           loadComplete: function (data) {
+                    $("option[value=100000000]").text('View All');
+                   jqGridPagationServerSide($(this), data);
+                   this.updatepager(false, true);
+                   jqGridloadComplete($(this));
+              },
+               onPaging: function (which_button) {
+                $(this).setGridParam({ datatype: 'json' });
+            }
+        });
+
+        //jQuery("#jqgrid").jqGrid('filterToolbar', { stringResult: true, searchOnEnter: false, defaultSearch: "cn" });
+
+
+
+        styleJqGrid();
+        $("#jqGridPager").width(900);
+    };
+
+
+
+     function EditDialog() {
+
+        showEditDialog('Item', '_Item');
+    };
+
+     function AddDialog() {
+        showAddDialog('Item', '_Item');
+    };
+
+     function DeleteRow() {
+        showDeleteUser('Item', 'deleteItem');
+    };
+
+
+
+</script>
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap.dialog/examples/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="~/content/mdbootstrappersiandatetimepicker/calendar.js"></script>
+<link href="~/content/mdbootstrappersiandatetimepicker/jquery.bootstrap-persiandatetimepicker.css" rel="stylesheet" />
+<script src="~/content/mdbootstrappersiandatetimepicker/jquery.bootstrap-persiandatetimepicker.js"></script>
+
+<link href="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.css" rel="stylesheet" />
+<script src="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.js"></script>
+<script src="~/Scripts/AdminScripts.js"></script>

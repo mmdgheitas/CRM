@@ -1,0 +1,259 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-Interface-30529bdf-efcc-4304-99f8-0406a219385a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Access\**" />
+    <Compile Remove="Models\BreadCrumbLink\**" />
+    <Compile Remove="Models\ContactUs\**" />
+    <Compile Remove="Models\Factor\**" />
+    <Compile Remove="Models\Google\**" />
+    <Compile Remove="Models\Input\**" />
+    <Compile Remove="Models\Message\**" />
+    <Compile Remove="Models\NewFolder1\**" />
+    <Compile Remove="Models\Notifications\**" />
+    <Compile Remove="Models\Payment\**" />
+    <Compile Remove="Models\Plaid\**" />
+    <Compile Remove="Models\Price\**" />
+    <Compile Remove="Models\RolePermision\**" />
+    <Compile Remove="Models\Role\**" />
+    <Compile Remove="Models\SMS\**" />
+    <Compile Remove="Models\Stripe\**" />
+    <Compile Remove="Models\WebApi\**" />
+    <Compile Remove="Utilities\DNTScheduler\**" />
+    <Compile Remove="Utilities\Helpers\**" />
+    <Compile Remove="Utilities\HtmlHelpers\**" />
+    <Compile Remove="wwwroot\Content\themes\AccountingAdmin\assets\plugins\x-editable-\**" />
+    <Content Remove="Models\Access\**" />
+    <Content Remove="Models\BreadCrumbLink\**" />
+    <Content Remove="Models\ContactUs\**" />
+    <Content Remove="Models\Factor\**" />
+    <Content Remove="Models\Google\**" />
+    <Content Remove="Models\Input\**" />
+    <Content Remove="Models\Message\**" />
+    <Content Remove="Models\NewFolder1\**" />
+    <Content Remove="Models\Notifications\**" />
+    <Content Remove="Models\Payment\**" />
+    <Content Remove="Models\Plaid\**" />
+    <Content Remove="Models\Price\**" />
+    <Content Remove="Models\RolePermision\**" />
+    <Content Remove="Models\Role\**" />
+    <Content Remove="Models\SMS\**" />
+    <Content Remove="Models\Stripe\**" />
+    <Content Remove="Models\WebApi\**" />
+    <Content Remove="Utilities\DNTScheduler\**" />
+    <Content Remove="Utilities\Helpers\**" />
+    <Content Remove="Utilities\HtmlHelpers\**" />
+    <Content Remove="wwwroot\Content\themes\AccountingAdmin\assets\plugins\x-editable-\**" />
+    <EmbeddedResource Remove="Models\Access\**" />
+    <EmbeddedResource Remove="Models\BreadCrumbLink\**" />
+    <EmbeddedResource Remove="Models\ContactUs\**" />
+    <EmbeddedResource Remove="Models\Factor\**" />
+    <EmbeddedResource Remove="Models\Google\**" />
+    <EmbeddedResource Remove="Models\Input\**" />
+    <EmbeddedResource Remove="Models\Message\**" />
+    <EmbeddedResource Remove="Models\NewFolder1\**" />
+    <EmbeddedResource Remove="Models\Notifications\**" />
+    <EmbeddedResource Remove="Models\Payment\**" />
+    <EmbeddedResource Remove="Models\Plaid\**" />
+    <EmbeddedResource Remove="Models\Price\**" />
+    <EmbeddedResource Remove="Models\RolePermision\**" />
+    <EmbeddedResource Remove="Models\Role\**" />
+    <EmbeddedResource Remove="Models\SMS\**" />
+    <EmbeddedResource Remove="Models\Stripe\**" />
+    <EmbeddedResource Remove="Models\WebApi\**" />
+    <EmbeddedResource Remove="Utilities\DNTScheduler\**" />
+    <EmbeddedResource Remove="Utilities\Helpers\**" />
+    <EmbeddedResource Remove="Utilities\HtmlHelpers\**" />
+    <EmbeddedResource Remove="wwwroot\Content\themes\AccountingAdmin\assets\plugins\x-editable-\**" />
+    <None Remove="Models\Access\**" />
+    <None Remove="Models\BreadCrumbLink\**" />
+    <None Remove="Models\ContactUs\**" />
+    <None Remove="Models\Factor\**" />
+    <None Remove="Models\Google\**" />
+    <None Remove="Models\Input\**" />
+    <None Remove="Models\Message\**" />
+    <None Remove="Models\NewFolder1\**" />
+    <None Remove="Models\Notifications\**" />
+    <None Remove="Models\Payment\**" />
+    <None Remove="Models\Plaid\**" />
+    <None Remove="Models\Price\**" />
+    <None Remove="Models\RolePermision\**" />
+    <None Remove="Models\Role\**" />
+    <None Remove="Models\SMS\**" />
+    <None Remove="Models\Stripe\**" />
+    <None Remove="Models\WebApi\**" />
+    <None Remove="Utilities\DNTScheduler\**" />
+    <None Remove="Utilities\Helpers\**" />
+    <None Remove="Utilities\HtmlHelpers\**" />
+    <None Remove="wwwroot\Content\themes\AccountingAdmin\assets\plugins\x-editable-\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\PlaidapiController.cs" />
+    <Compile Remove="Models\Dashbord.cs" />
+    <Compile Remove="Models\Document.cs" />
+    <Compile Remove="Models\Email\EmailMethod.cs" />
+    <Compile Remove="Models\IdentityModels.cs" />
+    <Compile Remove="Models\ManageViewModels.cs" />
+    <Compile Remove="Models\Notification.cs" />
+    <Compile Remove="Models\person.cs" />
+    <Compile Remove="Utilities\CatchingData.cs" />
+    <Compile Remove="Utilities\ClearPassword.cs" />
+    <Compile Remove="Utilities\CustomAuthorize--.cs" />
+    <Compile Remove="Utilities\CustomAuthorize-copy.cs" />
+    <Compile Remove="Utilities\Authorize.cs" />
+    <Compile Remove="Utilities\CustomAuthorize3.cs" />
+    <Compile Remove="Utilities\CustomAuthorizeAdminUser.cs" />
+    <Compile Remove="Utilities\CustomAuthorizeUser.cs" />
+    <Compile Remove="Utilities\EncryptString-Old.cs" />
+    <Compile Remove="Utilities\HttpDownloader.cs" />
+    <Compile Remove="Utilities\MessageBox.cs" />
+    <Compile Remove="Utilities\MultipleButtonAttribute.cs" />
+    <Compile Remove="Utilities\mysendemail.cs" />
+    <Compile Remove="Utilities\NinjectControllerFactory.cs" />
+    <Compile Remove="Utilities\OptionalAuthorizeAttribute.cs" />
+    <Compile Remove="Utilities\PersianTagvim.cs" />
+    <Compile Remove="Utilities\RenderViewNetCore - Copy.cs" />
+    <Compile Remove="Utilities\ServiceUtilities.cs" />
+    <Compile Remove="Utilities\Shamsii.cs" />
+    <Compile Remove="Utilities\StopSpamAttribute.cs" />
+    <Compile Remove="Utilities\ValidateAjaxAttribute.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\Admin\_LayoutAdmin2.cshtml" />
+    <Content Remove="Views\Shared\Admin\_LayoutAdmin_Commerical.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Models\Access\Access.cs" />
+    <Compile Include="Models\ContactUs\ContactUsViewModel.cs" />
+    <Compile Include="Models\Factor\FactorModel.cs" />
+    <Compile Include="Models\Factor\JqGridData.cs" />
+    <Compile Include="Models\Google\GmailMessage.cs" />
+    <Compile Include="Models\Google\Location.cs" />
+    <Compile Include="Models\Notifications\Dashboard.cs" />
+    <Compile Include="Models\Payment\PaymentModel.cs" />
+    <Compile Include="Models\Payment\PayOrderViewModel.cs" />
+    <Compile Include="Models\Plaid\ApiJsonResult.cs" />
+    <Compile Include="Models\Plaid\PlaidAccountViewModel.cs" />
+    <Compile Include="Models\Plaid\PlaidTransactionViewModel.cs" />
+    <Compile Include="Models\Plaid\TransactionReportViewModel.cs" />
+    <Compile Include="Models\Price\PriceViewModel.cs" />
+    <Compile Include="Models\RolePermision\RolePermision.cs" />
+    <Compile Include="Models\Role\RoleClass.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Price\ExtraPrice.cshtml" />
+    <None Include="Views\Price\Index.cshtml" />
+    <None Include="Views\Price\_editEdgePrice.cshtml" />
+    <None Include="Views\Price\_ExtraPrice.cshtml" />
+    <None Include="Views\Price\_glassTypeChange.cshtml" />
+    <None Include="Views\Time\ListTimeCards.cshtml" />
+    <None Include="Views\Time\MyTimeCards.cshtml" />
+    <None Include="Views\Time\_clockIn.cshtml" />
+    <None Include="Views\Time\_editTimeCard.cshtml" />
+    <None Include="Views\Time\_reloadTimeCard.cshtml" />
+    <None Include="Views\Time\_timeCard.cshtml" />
+    <None Include="wwwroot\Content\ckfinder\_source\CKFinder.Net.csproj" />
+    <None Include="wwwroot\Content\ckfinder\_source\CKFinder.Net.sln" />
+    <None Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\FileEditor\FileEditor.csproj" />
+    <None Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\FileEditor\FileEditor.sln" />
+    <None Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\ImageResize\ImageResize.csproj" />
+    <None Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\ImageResize\ImageResize.sln" />
+    <None Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\Watermark\Watermark.csproj" />
+    <None Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\Watermark\Watermark.sln" />
+    <None Include="wwwroot\Content\themes\Plugins\phone-number-validation\js\data.js" />
+    <None Include="wwwroot\Content\themes\Plugins\phone-number-validation\js\data.min.js" />
+    <None Include="wwwroot\Content\themes\Plugins\phone-number-validation\js\intlTelInput-jquery.js" />
+    <None Include="wwwroot\Content\themes\Plugins\phone-number-validation\js\intlTelInput-jquery.min.js" />
+    <None Include="wwwroot\Content\themes\Plugins\phone-number-validation\js\intlTelInput.js" />
+    <None Include="wwwroot\Content\themes\Plugins\phone-number-validation\js\intlTelInput.min.js" />
+    <None Include="wwwroot\Content\themes\Plugins\phone-number-validation\js\utils.js" />
+    <None Include="wwwroot\Content\themes\Plugins\webui-popover\node_modules\grunt-contrib-cssmin\node_modules\.bin\cleancss" />
+    <None Include="wwwroot\Content\themes\Plugins\webui-popover\node_modules\grunt\node_modules\.bin\cake" />
+    <None Include="wwwroot\Content\themes\Plugins\webui-popover\node_modules\grunt\node_modules\.bin\coffee" />
+    <None Include="wwwroot\Content\themes\Plugins\webui-popover\node_modules\grunt\node_modules\.bin\js-yaml" />
+    <None Include="wwwroot\Content\themes\Plugins\webui-popover\node_modules\grunt\node_modules\.bin\nopt" />
+    <None Include="wwwroot\Content\themes\Plugins\webui-popover\node_modules\grunt\node_modules\.bin\rimraf" />
+    <None Include="wwwroot\Content\themes\Plugins\webui-popover\node_modules\grunt\node_modules\.bin\which" />
+    <None Include="wwwroot\newAdded\fonts\Vazir-Bold.woff2" />
+    <None Include="wwwroot\newAdded\js\all.min.js" />
+    <None Include="wwwroot\newAdded\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\newAdded\js\bootstrap.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acklann.Plaid" Version="0.1.4" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.4" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.3.0" />
+    <PackageReference Include="Microsoft.AspNet.WebHelpers" Version="3.2.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10" />
+    <PackageReference Include="Microsoft.Net.Compilers.Toolset" Version="4.7.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.9" />
+    <PackageReference Include="OfficeOpenXml.Extends" Version="1.0.6" />
+    <PackageReference Include="PagedList.Mvc" Version="4.5.0" />
+    <PackageReference Include="Stimulsoft.Reports.Web.NetCore" Version="2019.2.1" />
+    <PackageReference Include="Stripe.net" Version="42.2.0" />
+    <PackageReference Include="Wangkanai.Detection" Version="7.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DAL\" />
+    <Folder Include="Utilities\Helpers\" />
+    <Folder Include="wwwroot\ckfinder\userfiles\images\" />
+    <Folder Include="wwwroot\Content\ckfinder\core\connector\files\" />
+    <Folder Include="wwwroot\Content\ckfinder\core\connector\images\" />
+    <Folder Include="wwwroot\Content\ckfinder\core\connector\video\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\bin\Debug\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\bin\Release\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\obj\Release\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\FileEditor\bin\Debug\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\FileEditor\bin\Release\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\ImageResize\bin\Debug\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\ImageResize\bin\Release\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\ImageResize\obj\Release\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\Watermark\bin\Debug\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\Watermark\bin\Release\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\Watermark\obj\Debug\" />
+    <Folder Include="wwwroot\Content\ckfinder\_source\Resources\Plugins\Watermark\obj\Release\" />
+    <Folder Include="wwwroot\Content\themes\AccountingAdmin\assets\plugins\jquery-file-upload-\server\node\public\files\thumbnail\" />
+    <Folder Include="wwwroot\Content\themes\AccountingAdmin\assets\plugins\jquery-file-upload-\server\node\tmp\" />
+    <Folder Include="wwwroot\Content\themes\AccountingAdmin\assets\plugins\jquery-file-upload-\server\php\files\thumbnail\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OfficeOpenXml.Extends">
+      <HintPath>..\..\..\CRM\CRM\Interface\bin\OfficeOpenXml.Extends.dll</HintPath>
+    </Reference>
+    <Reference Include="Persia">
+      <HintPath>..\..\..\CRM\CRM\Interface\bin\Persia.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

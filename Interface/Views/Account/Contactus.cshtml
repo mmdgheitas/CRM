@@ -1,0 +1,90 @@
+﻿@model Interface.Models.ContactUs.ContactUsViewModel
+@{
+    ViewBag.Title = "Contact us";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<link href="~/Content/themes/Plugins/datepicker/datepicker.css" rel="stylesheet" />
+
+<section class="signup">
+    <div class="container">
+        <div class="signup-content">
+            <div class="signup-form">
+                <h2 class="form-title">Contact us</h2>
+
+                @using (Html.BeginForm("Contactus", "Account", FormMethod.Post, new { enctype = "multipart/form-data", @class = " sky-form boxed", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    
+                    <div class="col-md-6">
+                        @if (TempData["Message"] != null)
+                        {
+                        @Html.Raw(Html.ShowAlertWithimage(TempData["Message"].ToString(), TempData["Type"].ToString()))
+                        <div style="height:20px;"></div>
+                        }
+                        <div class="row">
+                                <div class="col-md-12">
+                                <div class="form-group ">
+                                    <i class="zmdi zmdi-account material-icons-name"></i>
+                                    @Html.TextBoxFor(m => m.FullName, new { @placeholder = "Full Name" })
+                                    @Html.ValidationMessageFor(m => m.FullName, "", new { @class = "control-label error" })
+
+                                </div>
+                            </div>
+                           
+                                <div class="col-md-12">
+                                    <div class="form-group ">
+                                        <i class="zmdi zmdi-email"></i>
+                                        @Html.TextBoxFor(m => m.Email, new { @placeholder = "Your e-mail address" })
+                                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "control-label error" })
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <i class="zmdi zmdi-phone"></i>
+                                        @Html.TextBoxFor(model => model.Phone, new { @placeholder = "Phone " })
+                                        @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "control-label error" })
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <i class="zmdi zmdi-edit"></i>
+                                        @Html.TextAreaFor(model => model.Message, new { @placeholder = "You'r Message " })
+                                        @Html.ValidationMessageFor(m => m.Message, "", new { @class = "control-label error" })
+                                    </div>
+                                </div>
+            
+                        </div>
+
+                        <div class="form-group form-button col-md-8 ">
+                            <input type="submit" name="signup" id="signup" class="form-submit "  value="Send Message" />
+                            <a href="/Account/Login" class="login-link">Login to panel</a>
+                        </div>
+
+                     
+
+                    </div>
+                   
+                }
+            </div>
+          
+        </div>
+    </div>
+
+</section>
+
+
+<script type="text/javascript" src="~/Content/themes/AccountingAdmin/assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+
+<script>
+
+
+</script>
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+

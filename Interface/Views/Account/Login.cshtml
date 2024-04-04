@@ -1,0 +1,99 @@
+﻿@model Interface.Models.Login
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<link href="~/Content/themes/AccountingAdmin/assets/plugins/waitMe/waitMe.css" rel="stylesheet" />
+
+<meta http-equiv="refresh" content="30">
+<section class="sign-in">
+    <div class="container">
+        <div class="signin-content">
+            <div class="signin-image ">
+                <figure></figure>
+                <a href="/Account/SchedulAppointment" class="btn btn-featured btn-default">
+                    <span>Schedule Appointment</span>
+                    <i class="zmdi zmdi-calendar-check material-icons-name"></i>
+                </a>
+                <a href="/User/CustomerRequest" class="btn btn-featured btn-default">
+                    <span>Request A Quote</span>
+                    <i class="fa fa-clipboard"></i>
+                </a>
+                <a href="/Account/Contactus" class="btn btn-featured btn-default">
+                    <span>Contact Us</span>
+                    <i class="zmdi zmdi-email-open material-icons-name"></i>
+                </a>
+
+            </div>
+            <div class="signin-form">
+                <h2 class="form-title">Sign In</h2>
+
+              @*   @using (Html.BeginForm("Login", "Account",new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { enctype = "multipart/form-data", @class = " sky-form boxed", role = "form", @id = "login-form" }))
+                { *@
+
+                @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { enctype = "multipart/form-data", @class = " sky-form boxed", role = "form", @id = "login-form" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    if (TempData["Message"] != null)
+                    {
+                        @Html.Raw(Html.ShowAlertWithimage(TempData["Message"].ToString(), TempData["Type"].ToString()))
+                        <div style="height:20px;"></div>
+                    }
+                    <div class="form-group">
+                        <i class="zmdi zmdi-account material-icons-name"></i>
+                        @Html.TextBoxFor(m => m.UserName, new { @placeholder = "Email or Phone Number" })
+                        @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "control-label error" })
+                    </div>
+                    <div class="form-group">
+                        <i class="zmdi zmdi-lock"></i>
+                        @Html.PasswordFor(m => m.Password, new { @placeholder = "Password" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "control-label error" })
+
+                    </div>
+
+                   
+                        @Html.Hidden("Captcha", "0")
+                    
+                    <div class="form-group">
+                        @Html.CheckBoxFor(m => m.RememberMe, new { @class = "agree-term", @name = "checkbox-inline" })
+
+                        <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                    </div>
+                    <div class="form-group form-button">
+                        <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                    </div>
+                    <div class="form-group form-button">
+                        <a href="/Account/ForgotPassword">Forgot  Password</a>
+                    </div>
+                }
+                <!--<div class="social-login">
+                    <span class="social-label">Or login with</span>
+                    <ul class="socials">
+                        <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                        <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                        <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script type="text/javascript" src="~/Content/themes/AccountingAdmin/assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/waitMe/waitMe.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        @*if ('@ViewBag.Cookie' != "") {
+              $('#login-form').waitMe({});
+            location.reload();
+        }*@
+
+    });
+
+</script>

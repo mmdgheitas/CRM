@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang=fa>
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewBag.Title | Glassma </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="~/Content/themes/acc-wizard/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="~/Content/glassma.ico" />
+    <link href="~/Content/themes/acc-wizard/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="~/Content/themes/acc-wizard/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/themes/acc-wizard/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/Content/themes/acc-wizard/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/themes/AccountingAdmin/assets/plugins/lobibox/dist/css/lobibox.min.css" />
+
+    <link rel="stylesheet" href="~/Content/themes/acc-wizard/css/acc-wizard.css">
+    <link href="~/Content/themes/AccountingAdmin/assets/plugins/waitMe/waitMe.css" rel="stylesheet" />
+    <script src="~/Content/themes/acc-wizard/js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+    <div class="container billing-inner">
+        @RenderBody()
+    </div>
+
+
+    @*<script src="~/Content/themes/acc-wizard/js/owl.carousel.js"></script>*@
+    <script src="~/Scripts/AdminScripts.js"></script>
+    <script src="~/Content/themes/AccountingAdmin/assets/plugins/waitMe/waitMe.js"></script>
+
+    <script src="~/Content/themes/AccountingAdmin/assets/plugins/lobibox/js/lobibox.js"></script>
+
+    <script src="~/Content/themes/acc-wizard/js/owl.carousel.js"></script>
+    <script src="~/Content/themes/acc-wizard/js/bootstrap.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+
+
+            $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 0,
+                nav: true,
+                dots: false,
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    600: {
+                        items: 5
+                    },
+                    1000: {
+                        items: 7
+                    }
+                }
+            });
+
+            InitilizeLobibox();
+
+        });
+    </script>
+    <!-- Bootstrap -->
+    @*<script src="~/Content/themes/acc-wizard/js/acc-wizard.js"></script>*@
+
+
+    @*<script>
+            function onNext(parent, panel) {
+                hash = "#" + panel.id;
+                $(".acc-wizard-sidebar", $(parent))
+                    .children("li")
+                    .children("a[href='" + hash + "']")
+                    .parent("li")
+                    .removeClass("acc-wizard-todo")
+                    .addClass("acc-wizard-completed");
+            }
+            $(window).load(function () {
+                $(".acc-wizard").accwizard({ onNext: onNext });
+            })
+        </script>*@
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+﻿@using Microsoft.AspNet.Identity
+@using System.Security.Claims
+@inject Interface.Models.Access.IAccess Access
+
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title | Company CRM</title>
+    <meta des="description" content="Glassma CRM" />
+    <meta name="Author" content="Omid Dehghani" />
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <link rel="icon" href="~/Content/glassma.ico" />
+    <!-- WEB FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- CORE CSS -->
+    <link href="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/content/themes/accountingadmin/assets/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    <!-- THEME CSS -->
+    <link href="~/Content/themes/AccountingAdmin/assets/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/themes/AccountingAdmin/assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+    @*<link href="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap/RTL/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap/RTL/bootstrap-flipped.min.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="~/Content/themes/AccountingAdmin/assets/css/layout-RTL.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="~/Content/themes/AccountingAdmin/assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />*@
+    <link href="~/Content/themes/Plugins/webui-popover/dist/jquery.webui-popover.min.css" rel="stylesheet" />
+
+    <link href="~/Content/themes/Plugins/toastr/toastr.css" rel="stylesheet" />
+
+    <link href="~/content/themes/accountingadmin/assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/content/themes/accountingadmin/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.css" rel="stylesheet" />
+
+
+    <script type="text/javascript" src="~/Content/themes/AccountingAdmin/assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="~/Content/themes/Plugins/toastr/toastr.min.js"></script>
+
+    <link href="~/Content/themes/AccountingAdmin/assets/css/newstyle@(User.GetClaimValue("NightMode")).css" id="newstyle" rel="stylesheet" />
+
+    <link href="~/Content/themes/my/my-css.css" rel="stylesheet" />
+
+</head>
+<!--
+    .boxed = boxed version
+-->
+<body class="@(User.GetClaimValue("PageSize") != null ? User.GetClaimValue("PageSize") : "")">
+
+
+    <!-- WRAPPER -->
+    <div id="wrapper">
+        <div id="clockin-box"> </div>
+
+        <aside id="aside">
+            <nav id="sideNav">
+                @{
+     
+                    var ControllerName = ViewContext.RouteData.Values["controller"].ToString();
+                    var ActionName = ViewContext.RouteData.Values["action"].ToString();
+                    var IdName = (ViewContext.RouteData.Values["id"] ?? "").ToString().StringToInt();
+                }
+                <!-- MAIN MENU -->
+                <ul class="nav nav-list">
+
+                    @if (Access.isAccessInLayout("Factor"))
+                    {
+                        Microsoft.Extensions.Primitives.StringValues queryVal;
+                        Context.Request.Query.TryGetValue("com", out queryVal);
+                        <li class="@((ControllerName == "Factor" & ActionName == "Factors" & queryVal.FirstOrDefault() == "" & IdName  == 0 ) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Factors", "Factor",new { Id = ""})' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa fa-cubes"></i> <span>Projects <small>@ViewBag.Count0</small></span>
+                            </a>
+                        </li>
+
+                        <li class="@((ControllerName == "Factor" & ActionName == "Factors" & IdName  == 1) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Factors", "Factor",new {id = 1 })' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa fa-user-circle"></i> <span>My Projects <small>@ViewBag.Count1</small></span>
+                            </a>
+                        </li>
+
+                        <li class="@((ControllerName == "Factor" & ActionName == "Factors" & IdName  == 8) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Factors", "Factor",new {id = 8 })' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa fa-envelope"></i> <span>UnRead <small>@ViewBag.Count8</small> </span>
+                            </a>
+                        </li>
+                        <li class="@((ControllerName == "Factor" & ActionName == "Factors" & IdName  == 2) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Factors", "Factor",new {id = 2 })' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa fa-cubes " style="color: @(Infrastructure.Entity.FactorProgressStatus.Lead.ToColorCode())"></i> <span>Lead <small>@ViewBag.Count2</small> </span>
+                            </a>
+                        </li>
+
+
+                        <li class="@((ControllerName == "Factor" & ActionName == "Factors" & IdName  == 3) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Factors", "Factor",new {id = 3 })' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa fa-cubes" style="color: @(Infrastructure.Entity.FactorProgressStatus.Job.ToColorCode())"></i> <span>Job <small>@ViewBag.Count3</small></span>
+                            </a>
+                        </li>
+
+
+                        <li class="@((ControllerName == "Factor" & ActionName == "Factors" & IdName  == 4) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Factors", "Factor",new {id = 4 })' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa fa-cubes" style="color: @(IdName == 4 ? "" : Infrastructure.Entity.FactorProgressStatus.Invoice.ToColorCode())"></i> <span>Invoice <small>@ViewBag.Count4</small></span>
+                            </a>
+                        </li>
+
+                        <li class="@((ControllerName == "Factor" & ActionName == "Factors" & IdName  == 9) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Factors", "Factor",new {id = 9 })' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa fa-credit-card-alt" style="color:@(IdName == 9 ? "" : "#0cc497")"></i> <span>Due Left <small>@ViewBag.Count9</small></span>
+                            </a>
+                        </li>
+                        <li class="@((ControllerName == "Factor" & ActionName == "Factors" & IdName  == 10) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Factors", "Factor",new {id = 10 })' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa fa-credit-card-alt" style="color:#fc4b6c"></i> <span>Due Past <small>@ViewBag.Count10</small></span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="@((ControllerName == "Factor" & ActionName == "Factors" & IdName  == 5) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Factors", "Factor",new {id = 5 })' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa  fa-battery-0" style="color: #f1416c "></i> <span>UnPaid <small>@ViewBag.Count5</small></span>
+                            </a>
+                        </li>
+                        <li class="@((ControllerName == "Factor" & ActionName == "Factors" & IdName  == 6) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Factors", "Factor",new {id = 6 })' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa  fa-battery-1" style="color: #68F068 "></i> <span>Some Paid <small>@ViewBag.Count6</small></span>
+                            </a>
+                        </li>
+                        <li class="@((ControllerName == "Factor" & ActionName == "Factors" & IdName  == 7) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Factors", "Factor",new {id = 7 })' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa  fa-battery-4" style="color: #078807"></i> <span>Full Paid <small>@ViewBag.Count7</small></span>
+                            </a>
+                        </li>
+
+                    }
+                    @if (Access.isAccessInLayout("Clients"))
+                    {
+                        <li class="@((ControllerName == "User" & ActionName == "Users" ) ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("Users", "User")' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa fa-users" style="color:@(ActionName == "Users" ? "" : " #04c8c8")"></i> <span>Clients</span>
+                            </a>
+                        </li>
+                    }
+
+                    @if (Access.isAccessInLayout("Reports"))
+                    {
+                        <li class="@((ControllerName == "Report" & ActionName == "ReportExcel") ? "active" : "")">
+                            <!-- dashboard -->
+                            <a class="dashboard" href='@Url.Action("ReportExcel", "Report",new {table = "Projects" })' onclick="Preloading(this)">
+                                <!-- warning - url used by default by ajax (if eneabled) -->
+                                <i class="main-icon fa fa-print" style="color:@(ActionName == "ReportExcel" ? "" : " #04c8c8")"></i> <span>Report Projects</span>
+                            </a>
+                        </li>
+                    }
+
+
+
+                </ul>
+
+                <!-- SECOND MAIN LIST -->
+                @*      <h3>MORE</h3>*@
+
+            </nav>
+
+            <span id="asidebg"><!-- aside fixed background --></span>
+        </aside>
+        <!-- /ASIDE -->
+        <!-- HEADER -->
+        <header id="header">
+
+            <!-- Mobile Button -->
+            <div class="col-md-2 col-sm-4 no-padding-right newNav col-xs-2">
+                <!-- Mobile Button -->
+                <button id="mobileMenuBtn"></button>
+
+                @* @Html.Action("_websiteName", "Account") *@
+                @Html.Partial("_websiteName")
+            </div>
+
+            @Html.Partial("_topMenu")
+
+
+
+
+        </header>
+        <!-- /HEADER -->
+        <!--
+            MIDDLE
+        -->
+        <section id="middle">
+
+            @RenderBody()
+        </section>
+        <!-- /MIDDLE -->
+
+    </div>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script type="text/javascript">
+        var plugin_path = "@Url.Content("~/Content/themes/AccountingAdmin/assets/plugins/")";</script>
+
+    <script type="text/javascript" src="~/Content/themes/AccountingAdmin/assets/js/app.js"></script>
+
+    <script src="~/Content/themes/AccountingAdmin/assets/plugins/jquery/jquery-ui.min.js"></script>
+    <script src="~/Content/themes/Plugins/webui-popover/dist/jquery.webui-popover.min.js"></script>
+
+    <script src="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.js"></script>
+
+
+    <script src="~/Content/themes/AccountingAdmin//assets/plugins/bootstrap.dialog/examples/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/AdminScripts.js"></script>
+    <script src="~/Content/themes/my/heartBeat.js"></script>
+    <script type="text/javascript">
+
+        ChangePageSize('@Url.Action("ChangePageSize", "Account")');
+
+        $(document).ready(function () {
+          //  loadScript("/Content/themes/AccountingAdmin//assets/plugins/bootstrap.dialog/examples/assets/bootstrap/js/bootstrap.min.js");
+
+           $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $(this).parent().siblings().removeClass('open');
+                    $(this).parent().toggleClass('open');
+                });
+
+        })
+        var waitingDialog = waitingDialog || (function ($) {
+
+            return {
+
+                show: function (message, options) {
+                    $('body').loading({
+                        theme: 'dark',
+                        message: 'Loading....'
+                    });
+                },
+                /**
+                 * Closes dialog
+                 */
+                hide: function () {
+                    $('body').loading('stop');
+                }
+            };
+
+        })(jQuery);
+    </script>
+
+
+</body>
+
+</html>

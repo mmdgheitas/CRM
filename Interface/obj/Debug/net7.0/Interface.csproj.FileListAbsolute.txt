@@ -1,0 +1,1310 @@
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\appsettings.Development.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\appsettings.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Interface.staticwebassets.runtime.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Interface.exe
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Interface.deps.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Interface.runtimeconfig.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Interface.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Interface.pdb
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\AutoMapper.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Azure.Core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Azure.Identity.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Humanizer.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.AspNet.Identity.Core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.CodeDom.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Memory.Data.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Infrastructure.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Infrastructure.pdb
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.csproj.AssemblyReference.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.GeneratedMSBuildEditorConfig.editorconfig
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.AssemblyInfoInputs.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.AssemblyInfo.cs
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.csproj.CoreCompileInputs.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.MvcApplicationPartsAssemblyInfo.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.RazorAssemblyInfo.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.RazorAssemblyInfo.cs
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\staticwebassets\msbuild.Interface.Microsoft.AspNetCore.StaticWebAssets.props
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\staticwebassets\msbuild.build.Interface.props
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Interface.props
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Interface.props
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\staticwebassets.pack.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\staticwebassets.build.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\staticwebassets.development.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\scopedcss\bundle\Interface.styles.css
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\scopedcss\projectbundle\Interface.bundle.scp.css
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.csproj.CopyComplete
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\refint\Interface.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.pdb
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.genruntimeconfig.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\ref\Interface.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Stimulsoft.Base.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Stimulsoft.Data.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Stimulsoft.Map.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Stimulsoft.Report.Check.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Stimulsoft.Report.Helper.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Stimulsoft.Report.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Stimulsoft.System.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Stimulsoft.Report.Mvc.NetCore.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Stimulsoft.Report.Web.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Stimulsoft.Report.WebDesign.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Build.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\NuGet.Common.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\af\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ar\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\az\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\bg\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\cs\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\da\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\de\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\el\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\es\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\fa\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\fr\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\he\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\hr\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\hu\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\hy\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\id\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\is\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\it\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ja\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ku\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\lv\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\mt\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\nb\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\nl\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pl\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pt\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ro\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ru\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\sk\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\sl\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\sr\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\sv\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\tr\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\uk\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\vi\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\SQLitePCLRaw.core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\linux-arm\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\linux-arm64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\linux-armel\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\linux-mips64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win-arm\native\e_sqlite3.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Persia.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\JetBrains.Annotations.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Wangkanai.Detection.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Wangkanai.Hosting.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Wangkanai.System.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Stripe.net.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\OfficeOpenXml.Extends.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\EPPlus.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\obj\Debug\net7.0\Interface.MvcApplicationPartsAssemblyInfo.cs
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Acklann.Plaid.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Web.Razor.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Web.Helpers.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Web.Helpers.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Web.WebPages.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\WebMatrix.Data.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\WebMatrix.WebData.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\PagedList.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\PagedList.Mvc.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Web.Http.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity\Interface\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\appsettings.Development.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\appsettings.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Interface.staticwebassets.runtime.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Interface.exe
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Interface.deps.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Interface.runtimeconfig.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Interface.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Interface.pdb
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Acklann.Plaid.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\AutoMapper.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Azure.Core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Azure.Identity.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\EPPlus.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Humanizer.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\JetBrains.Annotations.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.AspNet.Identity.Core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Web.Razor.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Web.Http.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Web.Helpers.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Web.Helpers.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Web.WebPages.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\WebMatrix.Data.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\WebMatrix.WebData.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Build.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\NuGet.Common.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\OfficeOpenXml.Extends.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\PagedList.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\PagedList.Mvc.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\SQLitePCLRaw.core.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Stimulsoft.Base.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Stimulsoft.Data.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Stimulsoft.Map.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Stimulsoft.Report.Check.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Stimulsoft.Report.Helper.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Stimulsoft.Report.Mvc.NetCore.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Stimulsoft.Report.Web.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Stimulsoft.Report.WebDesign.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Stimulsoft.Report.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Stimulsoft.System.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Stripe.net.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.CodeDom.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Memory.Data.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Wangkanai.Detection.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Wangkanai.Hosting.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Wangkanai.System.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\af\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ar\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\az\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\bg\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\cs\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\da\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\de\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\el\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\es\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\fa\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\fr\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\he\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\hr\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\hu\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\hy\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\id\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\is\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\it\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ja\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ku\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\lv\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\mt\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\nb\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\nl\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pl\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pt\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ro\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ru\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\sk\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\sl\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\sr\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\sv\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\tr\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\uk\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\vi\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\linux-arm\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\linux-arm64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\linux-armel\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\linux-mips64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win-arm\native\e_sqlite3.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Infrastructure.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Persia.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\bin\Debug\net7.0\Infrastructure.pdb
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.csproj.AssemblyReference.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.GeneratedMSBuildEditorConfig.editorconfig
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.AssemblyInfoInputs.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.AssemblyInfo.cs
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.csproj.CoreCompileInputs.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.MvcApplicationPartsAssemblyInfo.cs
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.MvcApplicationPartsAssemblyInfo.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.RazorAssemblyInfo.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.RazorAssemblyInfo.cs
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\staticwebassets\msbuild.Interface.Microsoft.AspNetCore.StaticWebAssets.props
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\staticwebassets\msbuild.build.Interface.props
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Interface.props
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Interface.props
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\staticwebassets.pack.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\staticwebassets.build.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\staticwebassets.development.json
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\scopedcss\bundle\Interface.styles.css
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\scopedcss\projectbundle\Interface.bundle.scp.css
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.csproj.CopyComplete
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\refint\Interface.dll
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.pdb
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\Interface.genruntimeconfig.cache
+E:\MyProject\CRM\CRMCore7Identity\CRMCore7Identity - Copy\Interface\obj\Debug\net7.0\ref\Interface.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.csproj.AssemblyReference.cache
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.GeneratedMSBuildEditorConfig.editorconfig
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.AssemblyInfoInputs.cache
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.AssemblyInfo.cs
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.csproj.CoreCompileInputs.cache
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.MvcApplicationPartsAssemblyInfo.cs
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.MvcApplicationPartsAssemblyInfo.cache
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.RazorAssemblyInfo.cache
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.RazorAssemblyInfo.cs
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\refint\Interface.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.pdb
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\appsettings.Development.json
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\appsettings.json
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Interface.staticwebassets.runtime.json
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Interface.exe
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Interface.deps.json
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Interface.runtimeconfig.json
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Interface.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Interface.pdb
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Acklann.Plaid.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\AutoMapper.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Azure.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Azure.Identity.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\EPPlus.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Humanizer.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\JetBrains.Annotations.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.AspNet.Identity.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Web.Razor.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Web.Http.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Web.Helpers.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Web.Helpers.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Web.WebPages.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\WebMatrix.Data.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\WebMatrix.WebData.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Build.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\NuGet.Common.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\OfficeOpenXml.Extends.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\PagedList.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\PagedList.Mvc.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\SQLitePCLRaw.core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Stimulsoft.Base.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Stimulsoft.Data.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Stimulsoft.Map.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Stimulsoft.Report.Check.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Stimulsoft.Report.Helper.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Stimulsoft.Report.Mvc.NetCore.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Stimulsoft.Report.Web.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Stimulsoft.Report.WebDesign.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Stimulsoft.Report.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Stimulsoft.System.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Stripe.net.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.CodeDom.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Memory.Data.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Wangkanai.Detection.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Wangkanai.Hosting.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Wangkanai.System.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\af\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ar\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\az\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\bg\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\cs\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\da\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\de\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\el\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\es\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\fa\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\fr\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\he\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\hr\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\hu\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\hy\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\id\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\is\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\it\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ja\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ku\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\lv\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\mt\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\nb\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\nl\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pl\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pt\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ro\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ru\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\sk\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\sl\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\sr\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\sv\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\tr\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\uk\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\vi\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\linux-arm\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\linux-arm64\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\linux-armel\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\linux-mips64\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win-arm\native\e_sqlite3.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Infrastructure.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Infrastructure.pdb
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\staticwebassets\msbuild.Interface.Microsoft.AspNetCore.StaticWebAssets.props
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\staticwebassets\msbuild.build.Interface.props
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Interface.props
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Interface.props
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\staticwebassets.pack.json
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\staticwebassets.build.json
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\staticwebassets.development.json
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\scopedcss\bundle\Interface.styles.css
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\scopedcss\projectbundle\Interface.bundle.scp.css
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.csproj.CopyComplete
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\Interface.genruntimeconfig.cache
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\obj\Debug\net7.0\ref\Interface.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Antiforgery.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Authentication.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Authentication.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Authorization.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Components.Authorization.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Components.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Components.Forms.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Components.Server.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Components.Web.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.CookiePolicy.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Cors.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.DataProtection.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Diagnostics.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.HostFiltering.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Hosting.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Http.Connections.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Http.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Http.Extensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Http.Features.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Http.Results.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.HttpLogging.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.HttpOverrides.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Identity.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Localization.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Localization.Routing.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Metadata.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.OutputCaching.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.RateLimiting.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Razor.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.RequestDecompression.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.ResponseCaching.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.ResponseCompression.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Rewrite.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Routing.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Server.IIS.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.Session.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.SignalR.Common.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.SignalR.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.SignalR.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.StaticFiles.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.WebSockets.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.AspNetCore.WebUtilities.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.CSharp.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Caching.Memory.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Configuration.Binder.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Configuration.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Configuration.Ini.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Configuration.Json.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Configuration.Xml.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.DependencyInjection.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Features.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.FileProviders.Composite.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.FileProviders.Physical.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Hosting.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Http.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Identity.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Identity.Stores.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Localization.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Logging.Configuration.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Logging.Console.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Logging.Debug.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Logging.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Logging.EventLog.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Logging.EventSource.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Logging.TraceSource.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.ObjectPool.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Options.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.Primitives.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Extensions.WebEncoders.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.JSInterop.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Net.Http.Headers.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.VisualBasic.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.VisualBasic.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Win32.Primitives.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\Microsoft.Win32.Registry.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\mscorlib.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\netstandard.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.AppContext.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Buffers.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Collections.Concurrent.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Collections.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Collections.Immutable.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Collections.NonGeneric.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Collections.Specialized.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.ComponentModel.Annotations.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.ComponentModel.DataAnnotations.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.ComponentModel.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.ComponentModel.EventBasedAsync.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.ComponentModel.Primitives.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.ComponentModel.TypeConverter.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Configuration.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Console.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Core.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Data.Common.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Data.DataSetExtensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Data.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Diagnostics.Contracts.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Diagnostics.Debug.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Diagnostics.DiagnosticSource.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Diagnostics.EventLog.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Diagnostics.FileVersionInfo.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Diagnostics.Process.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Diagnostics.StackTrace.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Diagnostics.TextWriterTraceListener.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Diagnostics.Tools.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Diagnostics.TraceSource.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Diagnostics.Tracing.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Drawing.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Drawing.Primitives.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Dynamic.Runtime.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Formats.Asn1.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Formats.Tar.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Globalization.Calendars.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Globalization.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Globalization.Extensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.Compression.Brotli.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.Compression.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.Compression.FileSystem.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.Compression.ZipFile.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.FileSystem.AccessControl.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.FileSystem.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.FileSystem.DriveInfo.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.FileSystem.Primitives.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.FileSystem.Watcher.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.IsolatedStorage.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.MemoryMappedFiles.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.Pipelines.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.Pipes.AccessControl.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.Pipes.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.IO.UnmanagedMemoryStream.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Linq.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Linq.Expressions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Linq.Parallel.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Linq.Queryable.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Memory.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.Http.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.Http.Json.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.HttpListener.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.Mail.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.NameResolution.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.NetworkInformation.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.Ping.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.Primitives.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.Quic.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.Requests.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.Security.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.ServicePoint.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.Sockets.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.WebClient.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.WebHeaderCollection.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.WebProxy.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.WebSockets.Client.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Net.WebSockets.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Numerics.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Numerics.Vectors.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.ObjectModel.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Reflection.DispatchProxy.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Reflection.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Reflection.Emit.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Reflection.Emit.ILGeneration.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Reflection.Emit.Lightweight.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Reflection.Extensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Reflection.Metadata.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Reflection.Primitives.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Reflection.TypeExtensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Resources.Reader.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Resources.ResourceManager.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Resources.Writer.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.CompilerServices.Unsafe.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.CompilerServices.VisualC.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.Extensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.Handles.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.InteropServices.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.InteropServices.JavaScript.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.Intrinsics.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.Loader.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.Numerics.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.Serialization.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.Serialization.Formatters.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.Serialization.Json.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.Serialization.Primitives.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Runtime.Serialization.Xml.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.AccessControl.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Claims.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Cryptography.Algorithms.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Cryptography.Cng.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Cryptography.Csp.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Cryptography.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Cryptography.Encoding.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Cryptography.OpenSsl.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Cryptography.Primitives.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Cryptography.X509Certificates.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Cryptography.Xml.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Principal.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.Principal.Windows.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Security.SecureString.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.ServiceModel.Web.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.ServiceProcess.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Text.Encoding.CodePages.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Text.Encoding.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Text.Encoding.Extensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Text.Encodings.Web.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Text.Json.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Text.RegularExpressions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Threading.Channels.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Threading.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Threading.Overlapped.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Threading.RateLimiting.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Threading.Tasks.Dataflow.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Threading.Tasks.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Threading.Tasks.Extensions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Threading.Tasks.Parallel.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Threading.Thread.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Threading.ThreadPool.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Threading.Timer.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Transactions.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Transactions.Local.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.ValueTuple.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Web.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Web.HttpUtility.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Windows.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Xml.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Xml.Linq.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Xml.ReaderWriter.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Xml.Serialization.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Xml.XDocument.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Xml.XmlDocument.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Xml.XmlSerializer.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Xml.XPath.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\System.Xml.XPath.XDocument.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\refs\WindowsBase.dll
+E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll

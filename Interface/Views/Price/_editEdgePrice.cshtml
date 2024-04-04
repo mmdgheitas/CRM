@@ -1,0 +1,119 @@
+﻿@model Infrastructure.Entity.FabricationPriceModel
+@{
+    Layout = null;
+}
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<link href="~/Content/themes/my/my-css.css" rel="stylesheet" />
+
+<div class="modal-content">
+    <div class="modal-header violet">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+            @Html.Raw("Edit Price")
+        </h4>
+    </div>
+
+    <div class="modal-body">
+        @using (Html.BeginForm("_editEdgePrice", "Price", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal", role = "form", id = "PriceForm" }))
+        {
+
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+
+
+            @Html.HiddenFor(model => model.ID)
+            @Html.HiddenFor(model => model.htmlID)
+            @Html.HiddenFor(model => model.GlassThicknesID)
+            @Html.HiddenFor(model => model.FabricationID)
+            @Html.HiddenFor(model => model.GlassStrengthID)
+            @Html.HiddenFor(model => model.GlassTypeID)
+            <fieldset>
+
+                <div class="form-group">
+                    @if (Model.GlassTypeID == 2)
+                    {
+                        <div class="col-md-6 col-md-offset-3">
+                            @Html.LabelFor(m => m.Sqf25, htmlAttributes: new { @class = "control-label " })
+                            @Html.DropDownListFor(model => Model.Sqf25, new List<SelectListItem>() { new SelectListItem() { Text="Up To 25 SQ. FT.",Value="1"},
+                            new SelectListItem() { Text="Over 25 SQ. FT.",Value="2"} }, htmlAttributes: new { @class = "form-control" })
+                        </div>
+                    }
+                    else
+                    {
+                        @Html.HiddenFor(model => model.Sqf25)
+                    }
+                    <div class="col-md-6 col-md-offset-3">
+
+                        <label class="control-label">Price</label>
+                        @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+
+
+                </div>
+
+
+            </fieldset>
+
+            <div class="modal-footer">
+                <input type="submit" value="Save Price" class="btn btn-success" id="saveBtn" data-loading-text="Saving ..." />
+                <input type="button" value="Cancel" class="btn btn-default pull-left " data-dismiss="modal" />
+            </div>
+        }
+    </div>
+
+</div>
+
+
+<script type="text/javascript">
+
+    $(function () {
+     
+        AddEditFormFactor('PriceForm', 'Price', '_editEdgePrice', '@ViewBag.mode');
+
+         function AddEditFormFactor(form, controller, action, mode) {
+
+        modalBody = $("#modalBody").html();
+        $("form#" + form + "").submit(function (e) {
+
+            e.preventDefault(); 
+            if ($("form#" + form + "").valid()) {
+                var btn = $("#saveBtn");
+                btn.button('loading');
+                var data = $("form#" + form + "").serialize();
+                $.ajax(
+                    {
+                        url: "/" + controller + "/" + action + "?mode=" + mode,
+                        type: "post",
+                        data: data,
+                        success: function (msg) {
+
+                            btn.button('reset');
+                            if (msg != null && msg.success) {
+                                $("#" + '@Model.htmlID').text($("#Price").val());
+
+                                if ('@Model.htmlID' == "EdgeworkPerUnit") {
+                                      $("#EdgeworkTotal").text($("#Price").val() * $("#Lineal").val());
+                                }
+                                 $("#myModal").modal("hide");
+                            }
+                            else if (msg != null && !msg.success) {
+                                showMessage(msg.responseText, "error");
+                                   $("#" + '@Model.htmlID').val($("#Price").val());
+                            }
+                        }
+                    });
+            }
+        });
+    }
+
+
+         $("#GlassThicknesID").change(function () {
+             ReloadGlassType();
+         });
+
+
+    });
+
+     
+</script>

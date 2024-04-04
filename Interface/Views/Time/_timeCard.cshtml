@@ -1,0 +1,241 @@
+﻿@* @model Infrastructure.Entity.TimeCardBtn *@
+@{
+    Layout = null;
+}
+
+
+@* <div id="time-card-box">
+@Html.Partial("_reloadTimeCard",Model)
+</div> *@
+<script type="text/javascript">
+
+
+
+    function removeDropdownBackdrop() {
+        setTimeout(function () {
+            $(".dropdown-backdrop").remove();
+        }, 200);
+     
+    }
+    function clockin() {
+       
+            Lobibox.confirm({
+                msg: "Do you want to clock in ?",
+                callback: function ($this, type, ev) {
+                    if (type == "yes") {
+
+                        $.ajax({
+                            url: "/Time/clockin",
+                            type: "get",
+                            success: function (msg) {
+                                if (msg != null && msg.success) {
+                                    showMessage(msg.responseText, "success");
+                                    ReloadTimeCard();
+                                }
+                                else if (msg != null && !msg.success) {
+                                    showMessage(msg.responseText, "error");
+                                }
+                            }
+                        })
+                    }
+                }
+            });
+        
+       
+    }
+ 
+
+    function clockout() {
+        Lobibox.confirm({
+            msg: "Do you want to clock out ?",
+            callback: function ($this, type, ev) {
+                if (type == "yes") {
+                    $.ajax({
+                        url: "/Time/clockout",
+                        type: "get",
+                        success: function (msg) {
+                            if (msg != null && msg.success) {
+                                showMessage(msg.responseText, "success");
+                            
+                                location.reload();
+                            }
+                            else if (msg != null && !msg.success) {
+                                showMessage(msg.responseText, "error");
+                            }
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+    function clockoutforce() {
+        Lobibox.confirm({
+            msg: "Do you want to clock out ?",
+            callback: function ($this, type, ev) {
+                if (type == "yes") {
+                    $.ajax({
+                        url: "/Time/clockoutForce",
+                        type: "get",
+                        success: function (msg) {
+                            if (msg != null && msg.success) {
+                                showMessage(msg.responseText, "success");
+                                ReloadTimeCard();
+                            }
+                            else if (msg != null && !msg.success) {
+                                showMessage(msg.responseText, "error");
+                            }
+                        }
+                    })
+                }
+            }
+        });
+    }
+
+    function Break() {
+        Lobibox.confirm({
+            msg: "Do you want to break ?",
+            callback: function ($this, type, ev) {
+                if (type == "yes") {
+
+                    $.ajax({
+                        url: "/Time/BreakStart",
+                        type: "get",
+                        success: function (msg) {
+                            if (msg != null && msg.success) {
+                                showMessage(msg.responseText, "success");
+                                ReloadTimeCard();
+                            }
+                            else if (msg != null && !msg.success) {
+                                showMessage(msg.responseText, "error");
+                            }
+                        }
+                    })
+                }
+            }
+        });
+    }
+
+    function BreakFinish() {
+        Lobibox.confirm({
+            msg: "Do you want to finish break ?",
+            callback: function ($this, type, ev) {
+                if (type == "yes") {
+                    $.ajax({
+                        url: "/Time/BreakFinish",
+                        type: "get",
+                        success: function (msg) {
+                            if (msg != null && msg.success) {
+                                showMessage(msg.responseText, "success");
+                                ReloadTimeCard();
+                            }
+                            else if (msg != null && !msg.success) {
+                                showMessage(msg.responseText, "error");
+                            }
+                        }
+                    })
+                }
+            }
+        });
+    }
+
+    function LunchStart() {
+        Lobibox.confirm({
+            msg: "Do you want to start lunch ?",
+            callback: function ($this, type, ev) {
+                if (type == "yes") {
+                    $.ajax({
+                        url: "/Time/lunchstart",
+                        type: "get",
+                        success: function (msg) {
+                            if (msg != null && msg.success) {
+                                showMessage(msg.responseText, "success");
+                                ReloadTimeCard();
+                            }
+                            else if (msg != null && !msg.success) {
+                                showMessage(msg.responseText, "error");
+                            }
+                        }
+                    })
+                }
+            }
+        });
+    }
+
+    function LunchFinish() {
+        Lobibox.confirm({
+            msg: "Do you want to finish lunch ?'",
+            callback: function ($this, type, ev) {
+                if (type == "yes") {
+                    $.ajax({
+                        url: "/Time/lunchfinish",
+                        type: "get",
+                        success: function (msg) {
+                            if (msg != null && msg.success) {
+                                showMessage(msg.responseText, "success");
+                                ReloadTimeCard();
+                            }
+                            else if (msg != null && !msg.success) {
+                                showMessage(msg.responseText, "error");
+                            }
+                        }
+                    })
+                }
+            }
+        });
+    }
+
+    function Deliver() {
+        var selRowId = $("#jqgrid").getGridParam("selrow");
+        if (selRowId == null) {
+            showMessage("Please select a record", "error");
+            return;
+        }
+        Lobibox.confirm({
+            msg: "Do you want to deliver order ?'",
+            callback: function ($this, type, ev) {
+                if (type == "yes") {
+                    $.ajax({
+                        url: "/Factor/DeliverOrder",
+                        type: "get",
+                        data: { id: selRowId },
+                        success: function (msg) {
+                            if (msg != null && msg.success) {
+                                showMessage(msg.responseText, "success");
+                                ReloadTimeCard();
+                            }
+                            else if (msg != null && !msg.success) {
+                                showMessage(msg.responseText, "error");
+                            }
+                        }
+                    })
+                }
+            }
+        });
+    };
+
+
+    function ReloadTimeCard() {
+
+        var action = '@ViewContext.RouteData.Values["action"].ToString()';
+        if (action == 'MyTimeCards') {
+
+            location.reload();
+            return;
+        }
+        $.ajax({
+
+            url: "/Time/_reloadTimeCard",
+            type: "get",
+            cache: false,
+            success: function (msg) {
+                if (msg != null && msg.success) {
+                    $("#time-card-box").html(msg.Html);
+                }
+                else if (msg != null && !msg.success) {
+                }
+
+            }
+        });
+    }
+</script>

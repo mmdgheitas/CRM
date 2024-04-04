@@ -1,0 +1,493 @@
+﻿@model Interface.Models.Price.PriceViewModel
+@{
+    Layout = null;
+}
+
+    <div class="form-group">
+
+        <div class="col-md-6">
+
+            @Html.LabelFor(m => m.GlassThicknesID, htmlAttributes: new { @class = "control-label " })
+
+            @Html.DropDownListFor(m => m.GlassThicknesID, new SelectList(ViewBag.ListGlassThicknes, "ID", "Title"), htmlAttributes: new { @class = "form-control " })
+
+        </div>
+
+        <div class="col-md-6">
+
+            @Html.LabelFor(m => m.GlassStrengthID, htmlAttributes: new { @class = "control-label " })
+
+            @Html.DropDownListFor(m => m.GlassStrengthID, new SelectList(ViewBag.ListGlassStrength, "ID", "Title"), htmlAttributes: new { @class = "form-control " })
+
+
+        </div>
+
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.GlassOptionID, htmlAttributes: new { @class = "control-label " })
+
+            @Html.DropDownListFor(m => m.GlassOptionID, new SelectList(ViewBag.ListGlassOption, "ID", "Title"), htmlAttributes: new { @class = "form-control " })
+
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon">Glass Price Per unit</div>
+                    @Html.EditorFor(model => model.GlassPricePerunit, new { htmlAttributes = new { @class = " form-control", @style = "", @readonly = "readonly", @placeholder = "0" } })
+
+                    <div class="input-group-addon">$</div>
+
+                    <div class="input-group-addon" style="background-color:#ffb22b;cursor:pointer" onclick="EditPrice(this)" id="editglassPrice">Edit</div>
+                    <div class="input-group-addon" style="background-color:#16bf16;cursor:pointer;display:none;" onclick="SavePrice(this)" id="saveglassPrice">Save</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon">Total Glass Price</div>
+                    @Html.EditorFor(model => model.TotalGlassPrice, new { htmlAttributes = new { @class = " form-control", @style = "", @readonly = "readonly", @placeholder = "0" } })
+
+                    <div class="input-group-addon">$</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <label>	&nbsp;</label>
+    <h2 class="price-heading-blue ">
+        Fabrication Price
+    </h2>
+    <hr />
+    <h2 class="price-heading ">
+        Edgework
+    </h2>
+
+
+    <div class="col-sm-12" data-head-id="edgework" style="display: block;">
+        <div class="form-group">
+            <div class="input-group fabrication-edgework-responsive">
+
+                <div class="input-group-addon">
+                    <input type="checkbox" data-toggle-input="" id="checkEdgework">
+                </div>
+                @Html.DropDownListFor(m => m.Edgework, new SelectList(Model.ListEdgeWork, "ID", "Title"), htmlAttributes: new { @class = "form-control ", @style = "", @disabled = "disabled" })
+
+
+
+                <div class="input-group-addon input-group-addon-responsive-left  ">
+                    <div class="price_wrapper">
+                        <span id="EdgeworkPerUnit"> @(Model.ListEdgeWork.FirstOrDefault()?.PerUnit ?? 0)</span>
+
+                        <small>Per unit</small>
+
+                    </div>
+                </div>
+                <div class="input-group-addon input-group-addon-responsive-right">
+                    <div class="price_wrapper">
+                        <span id="EdgeworkTotal"> @(Model.ListEdgeWork.FirstOrDefault()?.PerUnit ?? 0)</span>
+                        <small>Total</small>
+                    </div>
+                </div>
+
+                <div class="input-group-addon" style="background-color:#ffb22b;cursor:pointer" onclick="EditEdgePrice(this)" id="editedgePrice">Edit</div>
+            </div>
+        </div>
+    </div>
+
+
+    @for (int i = 0; i < Model.FabricationList.Count; i++)
+    {
+        if (i > 0)
+        {
+            if (Model.FabricationList[i].FabricationCategoryID != Model.FabricationList[i - 1].FabricationCategoryID)
+            {
+
+                <h2 class="price-heading ">
+                    @Html.Raw(Model.FabricationList[i].FabricationCategory.Title)
+
+                </h2>
+
+
+            }
+        }
+        else
+        {
+            <h2 class="price-heading ">
+                @Html.Raw(Model.FabricationList[i].FabricationCategory.Title)
+
+            </h2>
+
+
+        }
+        <div class="col-sm-12" style="display: block;">
+            <div class="form-group">
+                <label class="control-label">@Model.FabricationList[i].Title</label>
+                <div class="input-group fabrication-edgework-responsive">
+                    <div class="input-group-addon">
+                        <input type="checkbox" data-toggle-input="" id="check-@Model.FabricationList[i].ID">
+                    </div>
+
+                    <input type="text" class="form-control" disabled="disabled" id="text-@Model.FabricationList[i].ID" />
+                    <div class="input-group-addon input-group-addon-responsive-left">
+                        <div class="price_wrapper">
+                            <span id="PerUnit-@Model.FabricationList[i].ID"> @Model.FabricationList[i].PerUnit</span>
+                            <small>Per unit</small>
+
+                        </div>
+                    </div>
+                    <div class="input-group-addon input-group-addon-responsive-right">
+                        <div class="price_wrapper">
+                            <span id="Total-@Model.FabricationList[i].ID"> 0</span>
+                            <small>Total</small>
+                        </div>
+                    </div>
+                    <div class="input-group-addon " style="background-color:#ffb22b;cursor:pointer" onclick="EditFabPrice(this)" data-fid="@Model.FabricationList[i].ID" data-htmlid="PerUnit-@Model.FabricationList[i].ID">Edit</div>
+
+                </div>
+
+            </div>
+        </div>
+    }
+
+
+<script type="text/javascript">
+
+   
+
+
+
+
+    
+    $(function () {
+               CalculatingPrice();
+
+
+        $('select').selectpicker({
+            liveSearch: true,
+            mobile: false,
+
+            liveSearchPlaceholder: 'Search...',
+
+        });
+
+
+    $("#checkEdgework").change(function () {
+
+        if (this.checked) {
+            $("#EdgeworkNumber").removeAttr("disabled");
+            $("#Edgework").removeAttr("disabled");
+
+               $.ajax({
+            url: "/Price/_loadedgeprice",
+                   type: "get",
+                   data: { fid: $("#Edgework").val(), ThicknesID: $("#GlassThicknesID").val(), StrengthID: $("#GlassStrengthID").val(), GlassTypeID: $("#GlassTypeID").val(), Square: $("#Square").val() },
+                        success: function (result) {
+                            $("#EdgeworkPerUnit").text(result.price);
+                              $("#EdgeworkTotal").text(result.price * $("#Lineal").val());
+            },
+            error: function (result) {
+                myLoading('stop');
+                alert('Error... Please try again');
+            }
+        })
+        }
+        else {
+            $("#EdgeworkNumber").attr("disabled", "disabled");
+            $("#Edgework").attr("disabled", "disabled");
+        }
+    });
+
+        var arrayOfArrays = JSON.parse('@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.ListItemArray))');
+
+    $.each(arrayOfArrays, function (index, value) {
+          $("#check-"+value).change(function () {
+
+                if (this.checked) {
+                    $("#text-" + value).removeAttr("disabled");
+                }
+                else {
+                    $("#text-" + value).attr("disabled", "disabled");
+                }
+          });
+
+        $("#text-" + value).focusout(function () {
+            var total = ($("#PerUnit-" + value).text() * $(this).val());
+            $("#Total-" + value).text(total);
+
+    });
+    });
+
+
+
+
+    $("#Edgework").change(function () {
+
+
+                  $.ajax({
+            url: "/Price/_loadedgeprice",
+            type: "get",
+             data: { fid: $("#Edgework").val(), ThicknesID : $("#GlassThicknesID").val()},
+                        success: function (result) {
+
+                            $("#EdgeworkPerUnit").text(result.price);
+                              $("#EdgeworkTotal").text(result.price * $("#Lineal").val());
+            },
+            error: function (result) {
+                myLoading('stop');
+                alert('Error... Please try again');
+            }
+        })
+
+    })
+
+    $("#calculate").click(function () {
+        CalculatingPrice();
+    });
+
+    $("#priceForm :input , input[type='text'] , input:checkbox , input:radio").each(function(){
+        var input = $(this).focusout(function () {
+            CalculatingPrice();
+        });
+     });
+
+
+         $("#GlassThicknesID").change(function () {
+
+             ReloadGlassType();
+    });
+
+    $("#GlassStrengthID").change(function () {
+        LoadGlassPrice();
+    })
+
+
+     $("#GlassOptionID").change(function () {
+         LoadGlassPrice();
+        
+     })
+    });
+
+  
+
+    function ReloadGlassType() {
+        $('#priceForm').waitMe({});
+        $.ajax({
+            url: "/Price/_glassTypeChange",
+            type: "post",
+            data: { id: $("#GlassTypeID").val(), ThicknesID: $("#GlassThicknesID").val(), StrengthID: $("#GlassStrengthID").val(), Square: $("#Square").val() },
+            success: function (msg) {
+                if (msg != null && msg.Success) {
+
+
+                    setTimeout(function () {
+                        $("#GlassTypeBox").html(msg.Html);
+                        $("#priceForm").waitMe("hide");
+                    }, 1000);
+                    errorCount = 0;
+
+
+                }
+                else if (msg != null && !msg.Success) {
+                    showMessage(msg.responseText, "error");
+                    $("#payment-data").waitMe("hide");
+                    errorCount = errorCount + 1;
+
+                    if (errorCount > 2) {
+                        setTimeout(function () {
+                            location.reload();
+                        }, 1000);
+                    }
+                }
+            }
+        })
+
+    }
+     function CalculatingPrice() {
+        var sum = 0;
+        var arrayOfArrays = JSON.parse('@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.ListItemArray))');
+
+        $.each(arrayOfArrays, function (index, value) {
+        if($("#check-"+value).is(":checked"))
+            sum = +$("#Total-" + value).text() + sum;
+
+
+        });
+        if($("#checkEdgework").is(":checked"))
+            sum = +$("#EdgeworkTotal").text() + sum;
+
+        $("#TotalFabricationPrice").val(sum);
+
+         var TotalGlassPrice = $("#GlassPricePerunit").val() * $("#Square").val();
+        $("#TotalGlassPrice").val(TotalGlassPrice);
+        sum = sum + TotalGlassPrice;
+
+        $("#UnitPrice").val(sum);
+        var Fuel = ((sum * '@Model.UnitFuleSurcharge') / 100);
+        $("#UnitFuleSurcharge").val(Fuel);
+
+        var totalUnitCost = Fuel + sum;
+        $("#TotalUnitCost").val(totalUnitCost);
+
+        var BenefitsPercentage =((totalUnitCost * '@Model.BenefitsPercentage') / 100);
+        $("#BenefitsPercentage").val(BenefitsPercentage);
+        var GlassExtraPrice = $("#GlassExtraPrice").val();
+        var final = (+$("#GlassExtraPrice").val()) + BenefitsPercentage + totalUnitCost  ;
+
+
+
+          var fee =((final * '@Model.CreditCardFee') / 100);
+        $("#CreditCardFee").val(fee);
+        final = final + fee;
+         $("#FinalPrice").val(final);
+    }
+    function LoadGlassPrice() {
+              $.ajax({
+            url: "/Price/_getGlassPrice",
+                  type: "get",
+                  data: {
+                      StrengthID: $("#GlassStrengthID").val(),
+                      ThicknesID: $("#GlassThicknesID").val(),
+                      OptionID: $("#GlassOptionID").val(),
+                      TypeID :  $("#GlassTypeID").val(),
+                  },
+            success: function (result) {
+                var price = result.price;
+
+                if (price == -2)
+                    alert('Error to load data. please try again');
+                if (price == -1) {
+
+                    $("#editglassPrice").css("display", "none");
+
+                        $("#saveglassPrice").css("display", "table-cell");
+
+
+
+                     $("#GlassPricePerunit").val("0");
+                    $("#GlassPricePerunit").removeAttr("readonly");
+
+                    //
+                }
+                if (price > 0) {
+                    $("#GlassPricePerunit").val(price);
+                    $("#GlassPricePerunit").attr("readonly","readonly");
+                     $("#saveglassPrice").css("display", "none");
+                    $("#editglassPrice").css("display", "table-cell");
+                }
+
+
+
+            },
+            error: function (result) {
+                alert('Error to load data. please try again');
+            }
+        })
+    }
+
+    function LoadFabPrice() {
+        var arrayOfArrays = JSON.parse('@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.ListItemArray))');
+
+        $.each(arrayOfArrays, function (index, value) {
+
+            sum = +$("#PerUnit-" + value).text() + sum;
+
+          $.ajax({
+            url: "/Price/_loadedgeprice",
+            type: "get",
+             data: { fid: value, ThicknesID : $("#GlassThicknesID").val()},
+              success: function (result) {
+                  alert(result.price);
+                $("#PerUnit-" + value).text(result.price);
+            },
+            error: function (result) {
+                myLoading('stop');
+                alert('Error... Please try again');
+            }
+        })
+
+        });
+    }
+    function EditPrice(elem) {
+        $("#GlassPricePerunit").removeAttr("readonly");
+        $(elem).css("display", "none");
+        $("#saveglassPrice").toggle("slow");
+    }
+    function SavePrice(elem) {
+        $(elem).attr("disabled", "disabled");
+             $.ajax({
+            url: "/Price/_savGlassPrice",
+                  type: "get",
+                  data: {
+                      StrengthID: $("#GlassStrengthID").val(),
+                      ThicknesID: $("#GlassThicknesID").val(),
+                       TypeID: $("#GlassTypeID").val(),
+                      OptionID: $("#GlassOptionID").val(),
+                      Price :  $("#GlassPricePerunit").val(),
+                  },
+            success: function (result) {
+
+                if (result != null && result.success) {
+                    $("#GlassPricePerunit").attr("readonly", "readonly");
+                    $(elem).toggle("slow");
+                }
+                else {
+                    $(elem).removeAttr("disabled");
+                }
+
+            },
+            error: function (result) {
+                alert('Error to save data. please try again');
+                    $(elem).removeAttr("disabled");
+            }
+             })
+
+
+
+
+     //   $("#saveglassPrice").toggle("slow");
+    }
+
+    function EditEdgePrice(elem) {
+
+      
+             myLoading('start');
+            $.ajax({
+                url: "/Price/_editEdgePrice",
+                type: "get",
+                data: { fid: $("#Edgework").val(), ThicknesID : $("#GlassThicknesID").val(), StrengthID : $("#GlassStrengthID").val() , GlassTypeID : $("#GlassTypeID").val(),Square : $("#Square").val(), id : "EdgeworkPerUnit" },
+                success: function (result) {
+                    $("#modalBody").html(result);
+                    myLoading('stop');
+                    $("#myModal").modal("show");
+                },
+                error: function (result) {
+                    myLoading('stop');
+                    alert('Error... Please try again');
+                }
+            })
+        }
+
+     function EditFabPrice(elem) {
+             myLoading('start');
+            $.ajax({
+                url: "/Price/_editEdgePrice",
+                type: "get",
+                data: { fid: $(elem).attr("data-fid"), ThicknesID: $("#GlassThicknesID").val(), StrengthID : $("#GlassStrengthID").val(), GlassTypeID : $("#GlassTypeID").val(),Square : $("#Square").val(), id: $(elem).attr("data-htmlid"),},
+                success: function (result) {
+                    $("#modalBody").html(result);
+                    myLoading('stop');
+                    $("#myModal").modal("show");
+                },
+                error: function (result) {
+                    myLoading('stop');
+                    alert('Error... Please try again');
+                }
+            })
+        }
+
+</script>

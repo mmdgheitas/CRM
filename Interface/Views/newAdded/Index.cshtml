@@ -1,0 +1,108 @@
+﻿@{
+    Layout = "_LayoutNewAdded";
+    ViewData["Title"] = "CRM_Core";
+}
+@model Interface.Models.Price.PriceViewModel
+
+
+    <section class="container">
+        <div class="border border-shadow text-center pt-4 mb-2">
+            <p class="fs-2">$ @Model.FinalPrice</p>
+        </div>
+        <p class="text-danger">The calculated price only includes the price of the glass and the installation cost</p>
+        <form asp-action="Index">
+            <div class="row">
+                <div class="mb-3 w-50 col-md-6">
+                    <label class="form-label">Width</label>
+                    <input id="width" type="number" class="form-control" aria-describedby="emailHelp" placeholder="centimeter" name="width">
+                </div>
+                <div class="mb-3 w-50 col-md-6">
+                    <label class="form-label">Height</label>
+                    <input id="height" type="number" class="form-control" aria-describedby="emailHelp"
+                           placeholder="centimeter" name="height">
+                </div>
+            </div>
+            @if (ViewBag.squareFoot != null){
+                <p class="mb-1">@ViewBag.squareFoot ft2</p>
+                <p>minimum glass thickness @ViewBag.minimumThicknes</p>
+            }
+            else{
+            <p class="mb-1">minimum size is 5 ft2</p>
+            <p>minimum glass thickness 1/8</p>
+            }
+            
+            <div class="mb-3">
+                <div class="form-label">Select glass type</div>
+                <select class="form-select" aria-label="Default select example" name="glassType">
+                    <option selected>Glass type</option>
+                @foreach (var i in Model.ListnewGlassType)
+                {
+                    <option value="@i.Title">@i.Title</option>
+                }
+            </select>
+            </div>
+            <div class="row">
+            @if (ViewBag.glssLib != null)
+            {
+                //bugs here
+                <div class="col-4">
+                    <p class="text-muted">@ViewBag.glssLib lib</p>
+                </div>
+                <div class="col-4">
+                    <p class="text-muted">$@ViewBag.glassPerUnit/st</p>
+                </div>
+                <div class="col-4">
+                    <p class="text-muted">$@ViewBag.glassPrise</p>
+                </div>
+            }
+            else
+            {
+                <div class="col-4">
+                    <p class="text-muted">0 lib</p>
+                </div>
+                <div class="col-4">
+                    <p class="text-muted">$0.00/st</p>
+                </div>
+                <div class="col-4">
+                    <p class="text-muted">$0.00</p>
+                </div>
+            }
+            </div>
+            <div class="mb-3">
+                <div class="form-label mb-2">Select frame type</div>
+            <select class="form-select" aria-label="Default select example" name="frameType">
+                <option selected>Frame type</option>
+                @foreach (var i in Model.ListnewFrameType)
+                {
+                    <option value="@i.Title">@i.Title</option>
+                }
+                    
+                </select>
+            @if(ViewBag.hours != null)
+            {
+                <p class="mt-2 text-muted">@ViewBag.hours Hours</p>
+            }
+            else
+            {
+                <p class="mt-2 text-muted">0 Hours</p>
+            }
+            </div>
+            <div class="mb-5">
+                <label class="form-label">Glass elevation</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp"
+                   placeholder="centimeter" name="elevation">
+            
+            @if (ViewBag.installers != null)
+            {
+                <p class="mt-2 text-muted">installers: @ViewBag.installers</p>
+            }
+            else
+            {
+                <p class="mt-2 text-muted">installers: 0</p>
+            }
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary w-50">Submit</button>
+            </div>
+        </form>
+    </section>

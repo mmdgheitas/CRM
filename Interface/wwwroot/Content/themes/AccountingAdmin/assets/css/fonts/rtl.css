@@ -1,0 +1,10 @@
+@font-face {
+    font-family: ''B Yekan'';
+    src: url('../fonts/'B Yekan'-modified.eot');
+    src: url('../fonts/'B Yekan'-modified.eot#iefix') format('embedded-opentype'),
+         url('../fonts/'B Yekan'-modified.woff') format('woff'),
+         url('../fonts/'B Yekan'-modified.ttf') format('truetype'),
+         url('../fonts/'B Yekan'-modified.svg#CartoGothicStdBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

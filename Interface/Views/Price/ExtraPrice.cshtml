@@ -1,0 +1,169 @@
+﻿@{
+    ViewBag.Title = "Extra Price";
+    Layout = "~/Views/Shared/Admin/_LayoutAdmin_Price.cshtml";
+}
+<link href="~/Content/themes/my/my-css.css" rel="stylesheet" />
+<link href="~/Content/themes/Plugins/bootstrap-select-1.13.18/css/bootstrap-select.min.css" rel="stylesheet" />
+<!-- page title -->
+<header id="page-header">
+    <div class="row">
+        <div class="pull-left margin-right-20">
+            <h3 class="page-header-title">Extra Price</h3>
+            <ol class="breadcrumb breadcrumb-margin">
+                <li><a href="/">Setting</a></li>
+                <li class="active">Extra Price</li>
+            </ol>
+        </div>
+    </div>
+</header>
+
+<div class="col-md-12  ">
+    <div class="panel ">
+        <header class="panel-heading text-center bg-light  panel-header-space">
+            <fieldset class="margin-bottom-0  margin-top-10">
+
+                <div class="col-md-9 col-sm-6 col-xs-6">
+                    <a href="javascript:;" class="btn btn-success  white padding-5-10" onclick="AddDialog()"><i class="fa fa-plus"></i> <span class="mobile-hidden">Add</span> </a>
+                    <a href="javascript:;" class="btn btn-warning  white padding-5-10" onclick="EditDialog()"><i class="fa fa-edit"></i> <span class="mobile-hidden">Edit</span></a>
+                    <a href="javascript:;" class="btn btn-danger  white padding-5-10" onclick="DeleteRow()"><i class="fa fa-trash"></i> <span class="mobile-hidden">Delete</span></a>
+                </div>
+                <div class="col-md-3 col-xs-6 col-sm-6 no-padding-right pull-right">
+                    <div class="fancy-file-upload fancy-file-info">
+                        <input id="Search" class="form-control padding-left-5" placeholder="Search" />
+                        <span class="button" style="cursor:pointer;z-index:0" id="btnSearch"><i class="fa fa-search "></i></span>
+                    </div>
+
+                </div>
+
+
+
+            </fieldset>
+
+
+
+        </header>
+        <div class="panel-body padding-0">
+            <div style="width: 100%;
+                overflow: auto;
+                direction: rtl">
+                <table id="jqgrid"></table>
+                <div id="jqGridPager"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Content/themes/Plugins/bootstrap-select-1.13.18/js/bootstrap-select.min.js"></script>
+<script src="~/Content/themes/Plugins/bootstrap-select-1.13.18/js/i18n/defaults-en_US.min.js"></script>
+
+<link href="~/Content/themes/AccountingAdmin/assets/plugins/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
+<link href="~/Content/themes/AccountingAdmin/assets/css/layout-jqgrid@(User.GetClaimValue("NightMode")).css" id="jqgridstyle" rel="stylesheet" />
+
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/jqgrid/js/jquery.jqGrid.js"></script>
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/jqgrid/js/i18n/grid.locale-en.js"></script>
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/jquery-contextmenu/dist/jquery.ui.position.min.js"></script>
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/jquery-contextmenu/dist/jquery.contextmenu.min.js"></script>
+<link href="~/Content/themes/AccountingAdmin/assets/plugins/jQuery-contextMenu/dist/jquery.contextMenu.css" rel="stylesheet" />
+
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal" data-backdrop="static">
+    <div class="modal-dialog " id="modalBody">
+    </div>
+</div>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        loadGrid();
+        SearchFunction("Price", "_ExtraPriceList");
+    });
+
+    function loadGrid() {
+        $("#jqgrid").jqGrid({
+            url: '/Price/_ExtraPriceList',
+            mtype: "GET",
+            width: "auto",
+            shrinkToFit: false,
+            styleUI: 'Bootstrap',
+            datatype: "json",
+            colModel: [
+                { label: 'ID', name: 'ID', key: true, editable: false, hidden: true, width: 50, resizable: true },
+                { label: 'Title', name: 'Title', editable: true, width: 150, editrules: { required: true }, resizable: true },
+                { label: 'Price', name: 'Price', editable: true, width: 100, editrules: { required: true }, resizable: true },
+                { label: 'Modified Info', name: 'modifiedInfo', search: false, width: jqGridLastWidth(250) },
+
+            ],
+            viewrecords: true,
+            direction: "ltr",
+            loadonce: true,
+            sortable: true,
+            //  multiselect: true,
+            multiboxonly: true,
+            height: (parseInt($(window).height()) - 360),
+            rowNum: 10,
+            //    scrollOffset: 0,
+            rowList: [10, 25, 50, 100000000],
+            pager: "#jqGridPager",
+            closeAfterAdd: true,
+            closeAfterEdit: true,
+            ondblClickRow: EditDialog,
+            navOptions: { reloadGridOptions: { fromServer: true } },
+            loadComplete: function () {
+                $("option[value=100000000]").text('View All');
+                jqGridloadComplete($(this));
+
+            },
+        });
+
+        //jQuery("#jqgrid").jqGrid('filterToolbar', { stringResult: true, searchOnEnter: false, defaultSearch: "cn" });
+
+
+
+        styleJqGrid();
+        $("#jqGridPager").width(900);
+    };
+    function ContextMenu(e, EmailConfirmed, Active) {
+        e.preventDefault();
+        $.contextMenu({
+            selector: '.pointer',
+            trigger: 'left',
+            zIndex: 10000,
+            items: {
+                "Add": { name: "Add", icon: "add", className: 'icon-color-success', callback: function (key, options) { AddDialog(); } },
+                "Edit": { name: "Edit", icon: "edit", className: 'icon-color-warning', callback: function (key, options) { EditDialog(); } },
+                "Delete": { name: "Delete", icon: "delete", className: 'icon-color-danger', callback: function (key, options) { DeleteRow(); } },
+                "Refresh": { name: "Refresh", icon: "fa-refresh", className: 'icon-color-primary', callback: function (key, options) { reloadGrid(); } },
+                "sep1": "---------",
+                //btn btn-sm btn-blue
+            },
+            events: {
+                hide: function (opt) {
+                    $(".pointer").contextMenu('destroy');
+                }
+            },
+
+        });
+    }
+
+    function EditDialog() {
+
+        showEditDialog('Price', '_ExtraPrice');
+    };
+
+    function AddDialog() {
+        showAddDialog('Price', '_ExtraPrice');
+    };
+
+    function DeleteRow() {
+        showDeleteRow('Price', 'deleteExtraPrice');
+    };
+
+</script>
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap.dialog/examples/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="~/content/mdbootstrappersiandatetimepicker/calendar.js"></script>
+<link href="~/content/mdbootstrappersiandatetimepicker/jquery.bootstrap-persiandatetimepicker.css" rel="stylesheet" />
+<script src="~/content/mdbootstrappersiandatetimepicker/jquery.bootstrap-persiandatetimepicker.js"></script>
+
+<link href="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.css" rel="stylesheet" />
+<script src="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.js"></script>
+<script src="~/Scripts/AdminScripts.js"></script>

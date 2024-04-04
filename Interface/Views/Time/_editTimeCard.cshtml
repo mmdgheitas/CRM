@@ -1,0 +1,178 @@
+﻿@model Infrastructure.Entity.TimeCardModel
+@{
+    Layout = null;
+}
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<link href="~/Content/themes/my/my-css.css" rel="stylesheet" />
+
+
+<link href="~/Content/themes/Plugins/datepicker/datepicker.css" rel="stylesheet" />
+<script src="~/Scripts/AdminScripts.js"></script>
+<div class="modal-content">
+    <div class="modal-header violet">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">
+            @Html.Raw("Edit Time Card")
+        </h4>
+    </div>
+
+    @using (Html.BeginForm("_editTimeCard", "Time", FormMethod.Post, new { id = "TimeForm" }))
+    {
+<div class="modal-body">
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+
+
+    <div class="alert alert-info">
+        <small>
+            @Html.LabelFor(model => model.modifiedInfo, htmlAttributes: new { @class = "control-label" })
+            @Html.DisplayFor(model => model.modifiedInfo)
+
+        </small>
+    </div>
+    @Html.HiddenFor(model => model.ID)
+   
+    @Html.HiddenFor(model => model.ClockInLocation)
+    @Html.HiddenFor(model => model.ClockOutLocation)
+    <fieldset>
+
+        <div class="row">
+            @if (Model.ID == 0)
+            {
+                <div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12">
+                    @Html.LabelFor(m => m.UserID, htmlAttributes: new { @class = "control-label " })
+                    <span class="star-red">*</span>
+                    @Html.DropDownListFor(m => m.UserID, new SelectList(ViewBag.ListUser, "Id", "FirstName"), htmlAttributes: new { @class = "form-control " })
+                    @Html.ValidationMessageFor(m => m.UserID, "", new { @class = "control-label text-danger" })
+                </div>
+            }
+            else
+            {
+                @Html.HiddenFor(model => model.UserID)
+            }
+
+            <div class="col-md-3 ">
+                @Html.LabelFor(m => m.ClockInTimeFa, htmlAttributes: new { @class = "control-label " })
+
+                @Html.EditorFor(model => model.ClockInTimeFa, new { htmlAttributes = new { @class = "form-control", @data_toggle = "datepicker" } })
+            </div>
+
+            <div class="clockpicker col-md-3" data-placement="bottom" data-align="bottom" data-autoclose="true">
+                <lable class="control-label">Time</lable>
+                @Html.EditorFor(model => model.ClockInTimeStr, new { htmlAttributes = new { @class = "form-control smallInput " } })
+
+            </div>
+
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.ClockOutTimeFa, htmlAttributes: new { @class = "control-label " })
+
+                @Html.EditorFor(model => model.ClockOutTimeFa, new { htmlAttributes = new { @class = "form-control", @data_toggle = "datepicker" } })
+            </div>
+
+            <div class="clockpicker col-md-3" data-placement="bottom" data-align="bottom" data-autoclose="true">
+                <lable class="control-label">Time</lable>
+                @Html.EditorFor(model => model.ClockOutTimeStr, new { htmlAttributes = new { @class = "form-control smallInput " } })
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.LunchStartFa, htmlAttributes: new { @class = "control-label " })
+
+                @Html.EditorFor(model => model.LunchStartFa, new { htmlAttributes = new { @class = "form-control", @data_toggle = "datepicker" } })
+            </div>
+
+            <div class="clockpicker col-md-3" data-placement="top" data-align="top" data-autoclose="true">
+                <lable class="control-label">Time</lable>
+                @Html.EditorFor(model => model.LunchStartTime, new { htmlAttributes = new { @class = "form-control smallInput " } })
+
+            </div>
+
+
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.LunchFinishFa, htmlAttributes: new { @class = "control-label " })
+
+                @Html.EditorFor(model => model.LunchFinishFa, new { htmlAttributes = new { @class = "form-control", @data_toggle = "datepicker" } })
+            </div>
+
+            <div class="clockpicker col-md-3" data-placement="top" data-align="top" data-autoclose="true">
+                <lable class="control-label">Time</lable>
+                @Html.EditorFor(model => model.LunchFinishTime, new { htmlAttributes = new { @class = "form-control smallInput " } })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.BreakStartFa, htmlAttributes: new { @class = "control-label " })
+                @Html.EditorFor(model => model.BreakStartFa, new { htmlAttributes = new { @class = "form-control", @data_toggle = "datepicker" } })
+            </div>
+
+            <div class="clockpicker col-md-3" data-placement="top" data-align="top" data-autoclose="true">
+                <lable class="control-label">Time</lable>
+                @Html.EditorFor(model => model.BreakStartTime, new { htmlAttributes = new { @class = "form-control smallInput " } })
+
+            </div>
+
+
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.BreakFinishFa, htmlAttributes: new { @class = "control-label " })
+
+                @Html.EditorFor(model => model.BreakFinishFa, new { htmlAttributes = new { @class = "form-control", @data_toggle = "datepicker" } })
+            </div>
+
+            <div class="clockpicker col-md-3" data-placement="top" data-align="top" data-autoclose="true">
+                <lable class="control-label">Time</lable>
+                @Html.EditorFor(model => model.BreakFinishTime, new { htmlAttributes = new { @class = "form-control smallInput " } })
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </fieldset>
+</div>
+        <div class="modal-footer">
+            <input style="float:left;" type="checkbox" id="closeModal" checked hidden />
+            <input type="submit" value="Save" class="btn btn-success" id="saveBtn" data-loading-text="Saving ..." />
+            <input type="button" value="Cancel" class="btn btn-default pull-left" data-dismiss="modal" />
+        </div>
+    }
+</div>
+<script src="~/Content/themes/Plugins/datepicker/datepicker.js"></script>
+
+@*------ClockPicker----*@
+<link href="~/Content/clockpicker-gh-pages/dist/bootstrap-clockpicker.css" rel="stylesheet" />
+@*<link href="~/Content/clockpicker-gh-pages/assets/css/github.min.css" rel="stylesheet" />*@
+<script src="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap.dialog/examples/assets/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="~/Content/clockpicker-gh-pages/dist/bootstrap-clockpicker.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Help => https://github.com/fengyuanchen/datepicker
+        $('[data-toggle="datepicker"]').datepicker({
+            autoHide: true,
+            zIndex: 2048,
+            format: 'yyyy/mm/dd'
+        });
+     
+         $('.clockpicker').clockpicker();
+    });
+
+    $(function () {
+
+        AddEditForm('TimeForm', 'Time', '_editTimeCard', '@ViewBag.mode');
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+</script>

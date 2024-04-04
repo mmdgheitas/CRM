@@ -1,0 +1,47 @@
+﻿@model string
+
+
+<li class="dropdown">
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="user-pro-img" src="~/Content/Files/ProfileImages/@(Model ?? "default-image.jpg")" style="width:35px;height:35px"  />  @*@Html.Raw(User.FullName())*@<b class="caret"></b></a>
+    <ul class="dropdown-menu user-profile">
+        <li>
+            <div class="u-img">
+                <img src="~/Content/Files/ProfileImages/@(Model ?? "default-image.jpg")" />
+            </div>
+            <div class="u-text">
+                <h4>@User.FullName()</h4>
+                @if (User.IsInRole("Administrator") | User.IsInRole("sysAdmin"))
+                {
+                    <p class="text-muted">Glassma Admin</p>
+                }
+                else if (User.IsInRole("Estimator"))
+                {
+                    <p class="text-muted">Glassma Estimator</p>
+                }
+                else if (User.IsInRole("Installer"))
+                {
+                    <p class="text-muted">Glassma Installer</p>
+                }
+                else if (User.IsInRole("Management"))
+                {
+                    <p class="text-muted">Glassma Manager</p>
+                }
+                else if (User.IsInRole("Sales"))
+                {
+              <p class="text-muted">Glassma Sales Manager</p>
+                }
+                <a href="@Url.Action("EditProfile","User")" class="btn btn-sm" onclick="Preloading(this)" >
+                    Edit Profile
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <a href='@Url.Action("OperatorResetPassword", "User")' onclick="Preloading(this)" ><i class="fa fa-cog"></i> Reset password</a>
+        </li>
+        <li>
+            <a href='javascript:;' onclick="LogOff()"><i class="fa fa-power-off"></i> Logout</a>
+        </li>
+    </ul>
+</li>

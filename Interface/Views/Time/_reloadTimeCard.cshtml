@@ -1,0 +1,88 @@
+﻿@model Infrastructure.Entity.TimeCardBtn
+@{
+    Layout = null;
+}
+
+
+    <ul class="user-dropdown">
+        <li class="dropdown">
+            <a class="dropdown-toggle" href="javascript:;" onclick="removeDropdownBackdrop()" data-toggle="dropdown"><i class="fa fa-user-o user-nav"></i></a>
+            <ul class="dropdown-menu icon-dropdown">
+                @if (Model.ClockInBtn)
+                {
+                    <li><a href='javascript:;' onclick="clockin()" class="btn-sm btn-clockin"><i class="fa fa-play "></i> Clock In </a> </li>
+                }
+                @if (Model.ClockOutBtn)
+                {
+                    <li><a href='javascript:;' onclick="clockout()" class="btn-sm btn-clockout"><i class="fa fa-stop "></i> Clock Out</a><span class="time" id="timecounter">@((DateTime.Now.SystemTime() - Model.StartTime).TimeSpamToHoureMinite())</span></li>
+
+                }
+                @if (Model.BreakStartBtn)
+                {
+                    <li>
+                        <a href='javascript:;' onclick="Break()" class="btn-sm btn-break">
+                            <i class="fa fa-undo"></i>
+                            Start break
+                        </a>
+                        <span>
+                            @if (Model.BreakTime != 0)
+                            {@Html.Raw("(" + Model.BreakTime + " min)")}
+                        </span>
+                    </li>
+
+                }
+
+                @if (Model.BreakFinishBtn)
+                {
+                    <li>
+                        <a href='javascript:;' onclick="BreakFinish()" class="btn-sm btn-break">
+                            <i class="fa fa-stop"></i>
+                            Finish Break
+                        </a>
+                        <span class="time" id="timecounter">@((DateTime.Now.SystemTime() - Model.StartTime).TimeSpamToHoureMinite())</span>
+
+                    </li>
+
+                }
+
+
+                <li><a href="/User/EditProfile" class="btn-sm btn-edit-profile" onclick="Preloading(this)"><i class="fa fa-edit"></i> Edit Profile </a>  </li>
+
+                <li><a href='javascript:;' onclick="LogOff()" class="btn-sm btn-clockout" style="width:40%"><i class="fa fa-power-off"></i> Exit </a>  </li>
+
+            </ul>
+        </li>
+    </ul>
+
+
+    <script type="text/javascript">
+
+
+     $(document).ready(function () {
+        var countDownDate = new Date('@(Model.StartTime)').getTime();
+        var hours = '@((DateTime.Now.SystemTime() - Model.StartTime).Hours)';
+        var minutes = '@((DateTime.Now.SystemTime() - Model.StartTime).Minutes)';
+        var seconds = '@((DateTime.Now.SystemTime() - Model.StartTime).Seconds)';
+       
+        if ('@Model.ClockOutBtn' == 'True' || '@Model.LunchFinishBtn' == 'True' || '@Model.BreakFinishBtn' == 'True' ) {
+            var x = setInterval(function () {
+
+                seconds = parseInt(seconds) + 1;
+
+                if (parseInt(seconds) == 60) {
+                    seconds = 0;
+                    minutes = parseInt(minutes) + 1;
+                }
+               
+                $("#timecounter").text(hours + ":" + minutes + ":" + seconds + "")  ;
+
+                // If the count down is over, write some text
+                if (parseInt(minutes)  == 60) {
+                    clearInterval(x);
+
+                    ReloadTimeCard();
+                }
+            }, 1000);
+        }
+     });
+    </script>

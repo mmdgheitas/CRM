@@ -1,0 +1,60 @@
+﻿@model bool
+@{
+    ViewBag.Title = "Email Confirmation";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="container" style="min-height:550px;">
+    <div class="row">
+        <div class="col-md-12 m-x-auto pull-xs-none vamiddle" style="margin-top: 29.1583px;">
+            <div class="card">
+                <div class="card-block p-a-2">
+
+
+                    <div class="text-center">
+                        <div class="text-center">
+                            <h1>Confirmation Email</h1>
+                        </div>
+
+
+
+
+
+
+                        @if (Model)
+                        {
+                            <div>
+                                <h4>
+                                    You'r email was confirmed successfully.<br />
+                                      <a  href='@Url.Action("Login","Account",new {returnUrl ="logoff" })'>Login </a> to system.
+</h4>
+                            </div>
+                        }
+                        else
+                        {
+                            <div>
+                                <span>
+                                    Your email has not been verified<br />
+                                    The confirmation link may have expired. Please send the link again.
+                                </span>
+</div>
+                        }
+
+               
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+

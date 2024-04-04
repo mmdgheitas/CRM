@@ -1,0 +1,662 @@
+﻿@using Microsoft.AspNet.Identity
+@using System.Security.Claims
+
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title | Company CRM</title>
+    <meta des="description" content="Glassma CRM" />
+    <meta name="Author" content="Omid Dehghani" />
+
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <link rel="icon" href="~/Content/glassma.ico" />
+    <!-- WEB FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" />
+
+    <!-- CORE CSS -->
+    <link href="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap/css/bootstsrap.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/content/themes/accountingadmin/assets/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    <!-- THEME CSS -->
+    <link href="~/Content/themes/AccountingAdmin/assets/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/themes/AccountingAdmin/assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+    @*<link href="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap/RTL/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="~/Content/themes/AccountingAdmin/assets/plugins/bootstrap/RTL/bootstrap-flipped.min.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="~/Content/themes/AccountingAdmin/assets/css/layout-RTL.css" rel="stylesheet" type="text/css" />*@
+    <link href="~/Content/themes/AccountingAdmin/assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+    <link href="~/Content/themes/Plugins/webui-popover/dist/jquery.webui-popover.min.css" rel="stylesheet" />
+
+    <link href="~/Content/themes/Plugins/toastr/toastr.css" rel="stylesheet" />
+
+    <link href="~/content/themes/accountingadmin/assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/content/themes/accountingadmin/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.css" rel="stylesheet" />
+
+
+    <script type="text/javascript" src="~/Content/themes/AccountingAdmin/assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="~/Content/themes/Plugins/toastr/toastr.min.js"></script>
+
+
+    <link href="~/content/themes/accountingadmin/assets/css/customeStyle.css" rel="stylesheet" />
+    <link href="~/Content/themes/my/my-css.css" rel="stylesheet" />
+
+</head>
+<!--
+    .boxed = boxed version
+-->
+<body class="@(User.GetClaimValue("PageSize") != null ? User.GetClaimValue("PageSize") : "")">
+
+
+    <!-- WRAPPER -->
+    <div id="wrapper">
+
+        @Html.Action("_clockIn", "Time")
+
+        <aside id="aside">
+            <nav id="sideNav">
+                @{var Access = new Interface.Models.Access.Access(true, User.Identity.GetUserId()); }
+                <!-- MAIN MENU -->
+                <ul class="nav nav-list">
+                    <li class="@((ViewContext.RouteData.Values["controller"].ToString() == "Admin" & ViewContext.RouteData.Values["action"].ToString() == "Index") ? "active" : "")">
+                        <!-- dashboard -->
+                        <a class="dashboard" href='@Url.Action("Index", "Admin")'>
+                            <!-- warning - url used by default by ajax (if eneabled) -->
+                            <i class="main-icon fa fa-dashboard"></i> <span>Dashboard</span>
+                        </a>
+                    </li>
+
+
+
+                    @if (Access.isAccessInLayout("Customer") | Access.isAccessInLayout("Factor") | Access.isAccessInLayout("Startjob"))
+                    {
+                        <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "User" &&
+                (ViewContext.RouteData.Values["action"].ToString() == "Users"
+                ) ||
+                (ViewContext.RouteData.Values["controller"].ToString() == "Factor") &
+                (ViewContext.RouteData.Values["action"].ToString() == "Factors" & ((Request.QueryString["com"]?.ToString() ?? "") == "")
+                ) ||
+                (ViewContext.RouteData.Values["controller"].ToString() == "Factor") &
+                (ViewContext.RouteData.Values["action"].ToString() == "Add"
+                ) ||
+                (ViewBag.Update == "Job") ||
+
+                (ViewContext.RouteData.Values["controller"].ToString() == "User") &
+                (ViewContext.RouteData.Values["action"].ToString() == "Users"
+                ) ? "active" : "")">
+                            <a href="javascript:;">
+                                <i class="fa fa-angle-down pull-right"></i>
+                                <i class="main-icon fa  fa-user-circle"></i> <span>Customers</span>
+                            </a>
+                            <ul>
+                                @if (Access.isAccessInLayout("Customer"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Users" ? "active" : "")"><a href='@Url.Action("Users", "User")'>Customers</a></li>
+                                }
+
+                                @if (Access.isAccessInLayout("Factor"))
+                                {
+                                    <li class="@(((ViewContext.RouteData.Values["action"].ToString() == "Factors") & ((Request.QueryString["com"]?.ToString() ?? "") == "")) ? "active" : "")"><a href='@Url.Action("Factors", "Factor", new { id = "" })'>Jobs </a></li>
+                                }
+                                @if (Access.isAccessInLayout("Startjob"))
+                                {
+                                    <li class="@((ViewContext.RouteData.Values["action"].ToString() == "Add" |   ViewBag.Update == "Job") ? "active" : "")"><a href='@Url.Action("Add", "Factor")'>Start New job</a></li>
+                                }
+
+                            </ul>
+                        </li>
+
+                    }
+
+
+
+
+
+
+
+
+                    @if (Access.isAccessInLayout("Client") | Access.isAccessInLayout("Provider") | Access.isAccessInLayout("Factor") | Access.isAccessInLayout("StartCommericaljob"))
+                    {
+                        <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Commerical"  ||
+                        (ViewContext.RouteData.Values["controller"].ToString() == "Factor") &
+                        (ViewContext.RouteData.Values["action"].ToString() == "Factors" & ((Request.QueryString["com"]?.ToString() ?? "") == "1")
+                        ) ||
+
+                        (ViewBag.Update == "Project") ||
+
+                        (ViewContext.RouteData.Values["controller"].ToString() == "Factor") &
+                        (ViewContext.RouteData.Values["action"].ToString() == "StartCommericaljob"
+                        )? "active" : "")">
+                            <a href="javascript:;">
+                                <i class="fa fa-angle-down pull-right"></i>
+                                <i class="main-icon fa fa-building"></i> <span>Commerical </span>
+                            </a>
+                            <ul>
+                                @if (Access.isAccessInLayout("Client"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Clients" ? "active" : "")"><a href='@Url.Action("Clients", "Commerical")'>Client</a></li>
+                                }
+
+                                @if (Access.isAccessInLayout("Provider"))
+                                {
+                                    <li class="@((ViewContext.RouteData.Values["action"]?.ToString() ?? "") == "Providers" ? "active" : "")"><a href='@Url.Action("Providers", "Commerical", new { id = "" })'>Provider </a></li>
+                                }
+                                @if (Access.isAccessInLayout("Factor"))
+                                {
+
+                                    <li class="@((Request.QueryString["com"]?.ToString() ?? "") == "1" ? "active" : "")"><a href='@Url.Action("Factors", "Factor", new { com = 1 })'> Projects </a></li>
+                                }
+                                @if (Access.isAccessInLayout("StartCommericaljob"))
+                                {
+                                    <li class="@((ViewContext.RouteData.Values["action"].ToString() == "StartCommericaljob" |  ViewBag.Update == "Project") ? "active" : "")"><a href='@Url.Action("StartCommericaljob", "Factor")'>Start New Project</a></li>
+                                }
+
+                            </ul>
+                        </li>
+
+                    }
+
+
+
+
+
+
+
+
+
+
+                    @if (Access.isAccessInLayout("Estimator") | Access.isAccessInLayout("Installer"))
+                    {
+                        <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Admin" &&
+(ViewContext.RouteData.Values["action"].ToString() == "Estimators"
+) ||
+(ViewContext.RouteData.Values["controller"].ToString() == "Admin") &
+(ViewContext.RouteData.Values["action"].ToString() == "Installers"
+) ? "active" : "")">
+                            <a href="javascript:;">
+                                <i class="fa fa-angle-down pull-right"></i>
+                                <i class="main-icon fa  fa-users"></i> <span>Teams</span>
+                            </a>
+                            <ul>
+                                @if (Access.isAccessInLayout("Estimator"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Estimators" ? "active" : "")"><a href='@Url.Action("Estimators", "Admin")'>Estimator</a></li>
+                                }
+
+                                @if (Access.isAccessInLayout("Installer"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Installers" ? "active" : "")"><a href='@Url.Action("Installers", "Admin")'>Installer </a></li>
+                                }
+                            </ul>
+                        </li>
+
+                    }
+
+
+
+
+                    @if (Access.isAccessInLayout("Calendar"))
+                    {
+                        <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Admin" &&
+                    (ViewContext.RouteData.Values["action"].ToString() == "MyCalendar"
+                    ) ||
+
+                    (ViewContext.RouteData.Values["controller"].ToString() == "Admin") &
+                    (ViewContext.RouteData.Values["action"].ToString() == "WorkScheduling"
+                    ) ? "active" : "")">
+                            <a href="javascript:;">
+                                <i class="fa fa-angle-down pull-right"></i>
+                                <i class="main-icon fa fa-calendar"></i> <span>Calendar</span>
+                            </a>
+                            <ul>
+
+
+                                @if (Access.isAccessInLayout("Calendar"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "MyCalendar" ? "active" : "")"><a href='@Url.Action("MyCalendar", "Admin")'>My Calendar </a></li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "WorkScheduling" ? "active" : "")"><a href='@Url.Action("WorkScheduling", "Admin")'>Work Scheduling</a></li>
+                                }
+
+                            </ul>
+                        </li>
+
+                    }
+
+
+
+
+                    @if (Access.isAccessInLayout("TimeCard") | Access.isAccessInLayout("ListTimeCard"))
+                    {
+                        <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Time" &&
+                     (ViewContext.RouteData.Values["action"].ToString() == "MyTimeCards"
+                     ) ||
+
+                     (ViewContext.RouteData.Values["controller"].ToString() == "Time") &
+                     (ViewContext.RouteData.Values["action"].ToString() == "ListTimeCards"
+                     ) ? "active" : "")">
+                            <a href="javascript:;">
+                                <i class="fa fa-angle-down pull-right"></i>
+                                <i class="main-icon fa fa-clock-o"></i> <span>Time Card</span>
+                            </a>
+                            <ul>
+
+
+                                @if (Access.isAccessInLayout("TimeCard"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "MyTimeCards" ? "active" : "")"><a href='@Url.Action("MyTimeCards", "Time")'>My Time Cards </a></li>
+                                }
+                                @if (Access.isAccessInLayout("ListTimeCard"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "ListTimeCards" ? "active" : "")"><a href='@Url.Action("ListTimeCards", "Time")'>List Time Cards</a></li>
+                                }
+
+                            </ul>
+                        </li>
+
+                    }
+
+                    @if (Access.isAccessInLayout("Payment") | Access.isAccessInLayout("EmployePayment"))
+                    {
+                        <li class="@((ViewContext.RouteData.Values["controller"].ToString() == "Factor") &
+                     (ViewContext.RouteData.Values["action"].ToString() == "Payments" | ViewContext.RouteData.Values["action"].ToString() == "MyPayments")
+                       ? "active" : "")">
+                            <a href="javascript:;">
+                                <i class="fa fa-angle-down pull-right"></i>
+                                <i class="main-icon fa  fa-money"></i> <span>Payment</span>
+                            </a>
+                            <ul>
+
+                                @if (Access.isAccessInLayout("Payment"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Payments" ? "active" : "")"><a href='@Url.Action("Payments", "Factor")'>Payments</a></li>
+                                }
+                                @if (Access.isAccessInLayout("EmployePayment"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "MyPayments" ? "active" : "")"><a href='@Url.Action("MyPayments", "Factor")'>My Payments</a></li>
+                                }
+
+
+                            </ul>
+                        </li>
+
+                    }
+
+                    @if (Access.isAccessInLayout("Order") | Access.isAccessInLayout("ToolsManager") | Access.isAccessInLayout("MyTools"))
+                    {
+                        <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Factor" &&
+                     (ViewContext.RouteData.Values["action"].ToString() == "Orders"
+                     ) ||
+
+                     (ViewContext.RouteData.Values["controller"].ToString() == "Factor") &
+                     (ViewContext.RouteData.Values["action"].ToString() == "Tools" | ViewContext.RouteData.Values["action"].ToString() == "MyTools" | ViewContext.RouteData.Values["action"].ToString() == "RecivedTools"
+                     ) ? "active" : "")">
+                            <a href="javascript:;">
+                                <i class="fa fa-angle-down pull-right"></i>
+                                <i class="main-icon fa  fa-shopping-cart"></i> <span>Orders</span>
+                            </a>
+                            <ul>
+                                @if (Access.isAccessInLayout("Order"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Orders" ? "active" : "")"><a href='@Url.Action("Orders", "Factor")'>Order list</a></li>
+                                }
+
+                                @if (Access.isAccessInLayout("MyTools"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "MyTools" ? "active" : "")"><a href='@Url.Action("MyTools", "Factor")'>My Tools</a></li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "RecivedTools" ? "active" : "")"><a href='@Url.Action("RecivedTools", "Factor")'>Recived Tools</a></li>
+                                }
+                                @if (Access.isAccessInLayout("ToolsManager"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Tools" ? "active" : "")"><a href='@Url.Action("Tools", "Factor")'>Tools</a></li>
+                                }
+                            </ul>
+                        </li>
+
+                    }
+
+
+
+
+                    @if (Access.isAccessInLayout("Accounting"))
+                    {
+                        <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Accounting"  ? "active" : "")">
+
+                            <a href="javascript:;">
+                                <i class="fa fa-angle-down pull-right"></i>
+                                <i class="main-icon fa  fa fa-bank"></i> <span>Accounting</span>
+                            </a>
+
+                            <ul>
+                                @if (Access.isAccessInLayout("Accounting"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Expense" ? "active" : "")"><a href='@Url.Action("Expense", "Accounting")'>Expenses</a></li>
+                                }
+                                @if (Access.isAccessInLayout("Accounting"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Category" ? "active" : "")"><a href='@Url.Action("Category", "Accounting")'>Category</a></li>
+                                }
+                                @if (Access.isAccessInLayout("Accounting"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "PaymentType" ? "active" : "")"><a href='@Url.Action("PaymentType", "Accounting")'>Payment Type</a></li>
+                                }
+                                @if (Access.isAccessInLayout("Accounting"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "ExpenseType" ? "active" : "")"><a href='@Url.Action("ExpenseType", "Accounting")'>Expense Type</a></li>
+                                }
+                                @if (Access.isAccessInLayout("Accounting"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "PayAccount" ? "active" : "")"><a href='@Url.Action("PayAccount", "Accounting")'>Pay Account</a></li>
+                                }
+
+                            </ul>
+                        </li>
+
+                    }
+
+
+
+
+
+
+
+
+
+
+                    @if (Access.isAccessInLayout("Admin") || Access.isAccessInLayout("UserManager") || Access.isAccessInLayout("Role"))
+                    {
+                        <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Admin" &&
+                        (ViewContext.RouteData.Values["action"].ToString() == "Operator"
+                        ) ||
+                        (ViewContext.RouteData.Values["controller"].ToString() == "Library") &
+                        (ViewContext.RouteData.Values["action"].ToString() == "MemberService"
+                        ) ||
+
+                        (ViewContext.RouteData.Values["controller"].ToString() == "Service") &
+                        (ViewContext.RouteData.Values["action"].ToString() == "Role"
+                        ) ? "active" : "")">
+                            <a href="#">
+                                <i class="fa fa-angle-down pull-right"></i>
+                                <i class="main-icon fa fa-user-plus"></i> <span>Users</span>
+                            </a>
+                            <ul>
+                                <!-- submenus -->
+                                @*<li  class="@(ViewContext.RouteData.Values["action"].ToString() == "AddDocument" ? "active" : "")"><a href='@Url.Action("AddDocument","Document")'>ثبت سند جدید</a></li>*@
+                                @if (Access.isAccessInLayout("Admin"))
+                                {
+                                    <li class="@((ViewContext.RouteData.Values["action"].ToString() == "Operator" & ViewContext.RouteData.Values["controller"].ToString() == "Admin") ? "active" : "")"><a href='@Url.Action("Operator", "Admin")'>Admin Users</a></li>
+                                }
+
+                                @if (Access.isAccessInLayout("Role"))
+                                {
+                                    <li class="@((ViewContext.RouteData.Values["action"].ToString() == "Role" & ViewContext.RouteData.Values["controller"].ToString() == "Service") ? "active" : "")"><a href='@Url.Action("Role", "Service")'>User Roles</a></li>
+                                }
+                            </ul>
+                        </li>
+
+                    }
+
+
+
+                    @if (Access.isAccessInLayout("Item"))
+                    {
+                        <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Item" ? "active" : "")">
+                            <a href="javascript:;">
+                                <i class="fa fa-angle-down pull-right"></i>
+                                <i class="main-icon fa  fa-reorder"></i> <span>Items</span>
+                            </a>
+                            <ul>
+                                @if (Access.isAccessInLayout("Item"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Items" ? "active" : "")"><a href='@Url.Action("Items", "Item")'>Item list</a></li>
+                                }
+
+                                @if (Access.isAccessInLayout("Item"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "ItemModifires" ? "active" : "")"><a href='@Url.Action("ItemModifires", "Item")'>Item Modifires </a></li>
+                                }
+
+                                @if (Access.isAccessInLayout("Item"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "ItemCategories" ? "active" : "")"><a href='@Url.Action("ItemCategories", "Item")'>Item Category </a></li>
+                                }
+
+                            </ul>
+                        </li>
+                    }
+
+                    @if (Access.isAccessInLayout("Reports"))
+                    {
+                        <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Reports" &&
+                     (ViewContext.RouteData.Values["action"].ToString() == "Report"
+                     ) ? "active" : "")">
+                            <a href="javascript:;">
+                                <i class="fa fa-angle-down pull-right"></i>
+                                <i class="main-icon fa  fa-print"></i> <span>Report</span>
+                            </a>
+                            <ul>
+                                @if (Access.isAccessInLayout("Reports"))
+                                {
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Reports" ? "active" : "")"><a href='@Url.Action("Reports", "Report")'>Reports</a></li>
+                                }
+
+
+                            </ul>
+                        </li>
+
+                    }
+
+
+
+
+
+                    <li class="@((ViewContext.RouteData.Values["controller"].ToString() == "Base" & ViewContext.RouteData.Values["action"].ToString() != "Notification" )  ||
+
+                   (  (ViewContext.RouteData.Values["controller"].ToString() == "User") &
+                     (ViewContext.RouteData.Values["action"].ToString() == "EditProfile") |
+                     (ViewContext.RouteData.Values["action"].ToString() == "OperatorResetPassword")
+                     )
+                     ? "active" : "")">
+                        <a href="#">
+                            <i class="fa fa-angle-down pull-right"></i>
+                            <i class="main-icon fa fa-cogs"></i> <span>Setting</span>
+                        </a>
+                        <ul>
+                            @if (Access.isAccessInLayout("Default"))
+                            {
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Default" ? "active" : "") "><a href='@Url.Action("Default", "Base")'>System Configure</a></li>
+                            }
+                            @if (Access.isAccessInLayout("EmailSetting"))
+                            {
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "EmailSetting" ? "active" : "") "><a href='@Url.Action("EmailSetting", "Base")'>Email Service</a></li>
+                            }
+                            @if (Access.isAccessInLayout("City"))
+                            {
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "State" ? "active" : "") "><a href='@Url.Action("State", "Base")'>States</a></li>
+                            }
+                            @if (Access.isAccessInLayout("City"))
+                            {
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Cities" ? "active" : "") "><a href='@Url.Action("Cities", "Base")'>Citie's tax</a></li>
+                            }
+                            @if (Access.isAccessInLayout("Vandor"))
+                            {
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Vandors" ? "active" : "") "><a href='@Url.Action("Vandors", "Base")'>Vandors</a></li>
+                            }
+
+                            @if (Access.isAccessInLayout("Shipping"))
+                            {
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Shipping" ? "active" : "") "><a href='@Url.Action("Shipping", "Base")'>Shipping</a></li>
+                            }
+                            @if (Access.isAccessInLayout("Status"))
+                            {
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Status" ? "active" : "") "><a href='@Url.Action("Status", "Base")'>Status</a></li>
+                            }
+
+
+                            @if (Access.isAccessInLayout("JobType"))
+                            {
+                                <li class="@(ViewContext.RouteData.Values["action"].ToString() == "JobTypes" ? "active" : "") "><a href='@Url.Action("JobTypes", "Base")'>Job Types</a></li>
+                            }
+                            <li class="@(ViewContext.RouteData.Values["action"].ToString() == "EditProfile" ? "active" : "")"><a href='@Url.Action("EditProfile","User")'>Edit Profile</a></li>
+                            <li class="@(ViewContext.RouteData.Values["action"].ToString() == "OperatorResetPassword" ? "active" : "")"><a href='@Url.Action("OperatorResetPassword", "User")'> Change Password </a></li>
+                        </ul>
+
+                    </li>
+
+
+
+
+
+
+
+                </ul>
+
+                <!-- SECOND MAIN LIST -->
+                @*      <h3>MORE</h3>*@
+
+            </nav>
+
+            <span id="asidebg"><!-- aside fixed background --></span>
+        </aside>
+        <!-- /ASIDE -->
+        <!-- HEADER -->
+        <header id="header">
+
+            <!-- Mobile Button -->
+            <button id="mobileMenuBtn"></button>
+
+            @Html.Action("_websiteName", "Account")
+
+
+            <nav>
+                <!-- OPTIONS LIST -->
+
+
+                <ul class="nav pull-right">
+
+
+
+
+
+
+
+
+                    <!-- USER OPTIONS -->
+                    <li class="dropdown pull-left">
+                        <a href="javascript:;" class="dropdown">
+                            @*<img class="user-avatar" alt="" src="..\Files\ProfileImages\1395-6-1--3-37-By-Operator User10.png" height="34" />*@
+                            @Html.Action("_ShowUserPicture", "Account", new { height = 34 })
+                            <span class="user-name">
+                                <span class="hidden-xs">
+                                    @Html.Raw(User.FullName()) <i class="fa fa-angle-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <!-- my calendar -->
+                                <a href='@Url.Action("EditProfile","User")'><i class="fa fa-user"></i>Edit Profile</a>
+                            </li>
+                            @*<li>
+                                <!-- my inbox -->
+                                <a href="javascript:;">
+                                    <i class="fa fa-envelope"></i> پیام های دریافتی
+                                    <span class="pull-right label label-default">0</span>
+                                </a>
+                            </li>*@
+                            <li>
+                                <!-- settings -->
+                                <a href='@Url.Action("OperatorResetPassword", "User")'><i class="fa fa-key"></i> Reset password</a>
+                            </li>
+                            <li class="divider"></li>
+
+                            <li>
+                                <!-- logout -->
+                                <a href='@Url.Action("LogOff", "Account")'><i class="fa fa-power-off"></i> Exit</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown pull-left">
+                        <a href="@Url.Action("LogOff", "Account")">
+                            <i class="fa fa-power-off" style="color:#ed0202;padding-top:15px;font-size:25px;"></i>
+                            @*<img class="user-avatar" alt="" src="~/Content/themes/AccountingAdmin/assets/images/exit.png" height="30" width="30" style="border:none" />*@
+                        </a>
+                    </li>
+
+                    <!-- /USER OPTIONS -->
+
+                </ul>
+
+                <!-- /OPTIONS LIST -->
+
+            </nav>
+
+        </header>
+        <!-- /HEADER -->
+        <!--
+        MIDDLE
+    -->
+        <section id="middle">
+
+            @RenderBody()
+        </section>
+        <!-- /MIDDLE -->
+
+    </div>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script type="text/javascript">
+        var plugin_path = "@Url.Content("~/Content/themes/AccountingAdmin/assets/plugins/")";</script>
+
+    <script type="text/javascript" src="~/Content/themes/AccountingAdmin/assets/js/app.js"></script>
+
+    <script src="~/Content/themes/AccountingAdmin//assets/plugins/jquery/jquery-ui.min.js"></script>
+    <script src="~/Content/themes/Plugins/webui-popover/dist/jquery.webui-popover.min.js"></script>
+
+    <script src="~/Content/themes/Plugins/jquery-loading-master/dist/jquery.loading.min.js"></script>
+
+
+    <script src="~/Content/themes/AccountingAdmin//assets/plugins/bootstrap.dialog/examples/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/AdminScripts.js"></script>
+    <script src="~/Content/themes/my/heartBeat.js"></script>
+    <script type="text/javascript">
+
+
+        ChangePageSize('@Url.Action("ChangePageSize", "Account")');
+
+        $(document).ready(function () {
+          //  loadScript("/Content/themes/AccountingAdmin//assets/plugins/bootstrap.dialog/examples/assets/bootstrap/js/bootstrap.min.js");
+
+
+
+        })
+        var waitingDialog = waitingDialog || (function ($) {
+
+            return {
+
+                show: function (message, options) {
+                    $('body').loading({
+                        theme: 'dark',
+                        message: 'Loading....'
+                    });
+                },
+                /**
+                 * Closes dialog
+                 */
+                hide: function () {
+                    $('body').loading('stop');
+                }
+            };
+
+        })(jQuery);
+    </script>
+
+
+</body>
+
+</html>

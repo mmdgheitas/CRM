@@ -1,0 +1,47 @@
+﻿
+@{
+    var Controller = ViewContext.RouteData.Values["controller"].ToString();
+    var Action = ViewContext.RouteData.Values["action"].ToString();
+
+    var activeMobileMemu = Controller.MobileMenuActive(Action);
+}
+<nav>
+    <!-- OPTIONS LIST -->
+    <ul class="nav pull-left  glassma-name">
+
+        <!-- USER OPTIONS -->
+        <li class="">
+            @if (activeMobileMemu)
+            {
+                <a href="/" onclick="Preloading(this)" >
+                    <img src="~/Content/themes/AccountingAdmin/assets/images/newLogo.png" />
+                    <span class="g-lassma" style="">CRM</span>
+
+                </a>
+            }
+           
+            else
+            {
+                <a href="javascript:void(0);" onclick="Goback(this)"  >
+
+                    <i class="fa fa-arrow-circle-left img-back"></i>
+                    <img src="~/Content/themes/AccountingAdmin/assets/images/newLogo.png" class="img-logo" />
+                    <span class="g-lassma" style="">CRM</span>
+
+                </a>
+
+            }
+        </li>
+        <!-- /USER OPTIONS -->
+    </ul>
+</nav>
+<script type="text/javascript">
+    function Goback() {
+        if (history.length <= 2) {
+            window.location.href = '/';
+        }
+        else {
+            history.go(-1);
+        }
+    }
+</script>

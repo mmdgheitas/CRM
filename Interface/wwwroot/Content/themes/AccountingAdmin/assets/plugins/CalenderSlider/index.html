@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang=fa>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-12  seprate-calender margin-top-30">
+            <div class="row margin-btm-30">
+                <div class="seprate-calender">
+                    <div class="date-text">
+                        <span>Monday,13 may 2020</span>
+                    </div>
+                    <div class="hours">
+                        <div class="owl-carousel owl-theme" id="owl-demo">
+                            <a class="item link"><span>1 AM</span></a>
+                            <a class="item link"><span>2 PM</span></a>
+                            <a class="item link"><span>3 PM</span></a>
+                            <a class="item link"><span>4 AM</span></a>
+                            <a class="item link"><span>5 PM</span></a>
+                            <a class="item link"><span>6 PM</span></a>
+                            <a class="item link"><span>7 AM</span></a>
+                            <a class="item link"><span>8 AM</span></a>
+                            <a class="item link"><span>9 AM</span></a>
+                            <a class="item link"><span>10 AM</span></a>
+                            <a class="item link"><span>11 PM</span></a>
+                            <a class="item link"><span>12 AM</span></a>
+                            <a class="item link"><span>13 PM</span></a>
+                            <a class="item link"><span>14 AM</span></a>
+                            <a class="item link"><span>15 AM</span></a>
+                            <a class="item link"><span>16 AM</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="date-selection">
+                    <div class="col-sm-9"><p class="reserve-time">Monday,13 May 2020, 1 PM to 3 PM</p></div>
+                    <div class="col-sm-3 no-padding"><button class="btn" type="button">select</button></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: false,
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    600: {
+                        items: 5
+                    },
+                    1000: {
+                        items: 10
+                    }
+                }
+            });
+
+            $('.link').on('click', function (event) {
+                var $this = $(this);
+                if ($this.hasClass('clicked')) {
+                    $this.removeAttr('style').removeClass('clicked');
+                } else {
+                    $this.css({ background: "#21c1d6", color: "#fff" }).addClass('clicked');
+                }
+            });
+
+
+
+            //$('.link').on('click', function (event) {
+            //    var $this = $(this);
+            //    if ($this.hasClass('clicked')) {
+            //        $this.removeAttr('style').removeClass('clicked');
+            //    } else {
+            //        $this.css('background', '#7fc242').addClass('clicked');
+            //    }
+            //});
+        });
+    </script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+</html>

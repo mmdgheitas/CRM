@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form </title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <div class="alert alert-danger margin-bottom-30">
+                            <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden="true">×</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            <span> this is an alert for testing. this is an alert for testing </span>
+                        </div>
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <i class="zmdi zmdi-account material-icons-name"></i>
+                                        <input type="text" name="name" id="name" placeholder="Full Name" />
+                                        <p class="error">please enter the currect name</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="zmdi zmdi-email"></i>
+                                        <input type="email" name="email" id="email" placeholder="Your e-mail address" />
+                                        <p class="error">please enter the currect name</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="zmdi zmdi-pin-drop"></i>
+                                        <!--<span class="state-title">Your State</span>-->
+                                        <select class="state-select">
+                                            <option class="color9">Your State</option>
+                                            <option>europ</option>
+                                            <option>german</option>
+                                            <option>english</option>
+                                        </select>
+                                        <!--<input type="email" name="email" id="email" placeholder="Your e-mail address" />-->
+                                        <p class="error">please enter the currect name</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="zmdi zmdi-home"></i>
+                                        <input type="number" name="zip" id="zip" placeholder="Your zipcode" />
+                                        <p class="error">please enter the currect zipcode</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <i class="zmdi zmdi-city material-icons-name"></i>
+                                        <input type="text" name="" id="" placeholder="Company Name" />
+                                        <p class="error">please enter the currect name</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="zmdi zmdi-phone"></i>
+                                        <input type="tel" name="phone" id="phone" placeholder="Your Phone number" />
+                                        <p class="error">please enter the currect name</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="zmdi zmdi-pin-drop"></i>
+                                        <!--<span class="state-title">Your State</span>-->
+                                        <select class="state-select">
+                                            <option class="color9">Your City</option>
+                                            <option>europ</option>
+                                            <option>german</option>
+                                            <option>english</option>
+                                        </select>
+                                        <!--<input type="email" name="email" id="email" placeholder="Your e-mail address" />-->
+                                        <p class="error">please enter the currect name</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="zmdi zmdi-my-location"></i>
+                                        <input type="text" name="address" id="address" placeholder="Your Address" />
+                                        <p class="error">please enter the currect address</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="form-group">
+                                <i class="zmdi zmdi-lock"></i>
+                                <input type="password" name="pass" id="pass" placeholder="Password" />
+                                <p class="error">please enter the currect name</p>
+                            </div>
+                            <div class="form-group">
+                                <i class="zmdi zmdi-lock-outline"></i>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />
+                                <p class="error">please enter the currect name</p>
+                            </div>-->
+                            <div class="row">
+                                <div class="" style="margin-top:50px;">
+                                    <table class="table table-bordered ">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:120px;"><input type="checkbox"><span>select all</span></th>
+                                                <th>jobtype</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>jobtype1</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>jobtype2</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>jobtype3</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>jobtype4</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>jobtype5</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                                </div>
+                                <div class="form-group form-button col-md-3">
+                                    <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+                                </div>
+                                <div class="form-group  col-md-4">
+                                    <!--<input type="submit" name="signup" id="signup" class="form-submit" value="login" />-->
+                                    <a href="singin.html" class="login-link">login with your account</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--<div class="signup-image">
+                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="singin.html" class="signup-image-link">I am already member</a>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- JS -->
+    <!--<script src="vendor/jquery/jquery.min.js"></script>-->
+    <!--<script src="js/main.js"></script>-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.tableCheckbox.js"></script>
+    <script>
+        $('table').tableCheckbox({ /* options */ });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

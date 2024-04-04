@@ -1,0 +1,494 @@
+﻿@model Interface.Models.Factor.RequestEstimateAppointmentModel
+@{
+    ViewBag.Title = "Schedul appointment";
+    Layout = "~/Views/Shared/_LayoutBooking.cshtml";
+
+
+    var HomePage = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host;
+    var SiteUrl = HomePage.Contains("localhost") ? "" : HomePage;
+ 
+
+}
+
+<link href="@SiteUrl/Content/themes/AccountingAdmin/assets/plugins/waitMe/waitMe.css" rel="stylesheet" />
+<link href="@SiteUrl/Content/themes/AccountingAdmin/assets/plugins/CalenderSlider/css/style.css" rel="stylesheet" />
+
+<link href="@SiteUrl/Content/themes/my/my-css.css" rel="stylesheet" />
+<div class="container-fluid booking-container">
+    <div class="container booking-inner">
+        <div class="row glassma-booking-logo">
+            <a href="@SiteUrl">  <img class="img-responsive center-block" src="@Model.EmailSetting.logo" /></a>
+        </div>
+
+        @using (Html.BeginForm("SchedulAppointment", "Account", FormMethod.Post, new { enctype = "multipart/form-data", @class = " sky-form boxed", role = "form", id = "estimateForm" }))
+        {
+            @Html.AntiForgeryToken()
+
+            if (TempData["Message"] != null)
+            {
+                @Html.Raw(Html.ShowAlertWithimage(TempData["Message"].ToString(), TempData["Type"].ToString()))
+                <div style="height:20px;"></div>
+            }
+            <div class="tabbable">
+                <ul class="nav nav-tabs"></ul>
+                <div class="tab-content margin-top-20">
+                    <div class="tab-pane active" style="height:50px;" id="tab1">
+
+
+
+
+
+                    </div>
+
+
+                    <div class="tab-pane" id="tab2">
+
+                        <div class="row page-title-part">
+                            <div class="line-title col-md-12"></div>
+                            <span class="webpage-title">Contact Information</span>
+                            <span class="webpage-icon">
+                                <img src="@SiteUrl/Content/themes/Factor/content/img/9.png" />
+                            </span>
+                        </div>
+                        <!-- Sign up form -->
+                        <section class="signup">
+
+                            <div class="signup-content">
+                                <div class="signup-form">
+                                    <!--<h2 class="form-title">Sign up</h2>-->
+                                    <!--<div class="alert alert-danger margin-bottom-30">
+                                        <button type="button" class="close" data-dismiss="alert">
+                                            <span aria-hidden="true">×</span>
+                                            <span class="sr-only">Close</span>
+                                        </button>
+                                        <span> this is an alert for testing. this is an alert for testing </span>
+                                    </div>-->
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <i class="zmdi zmdi-account material-icons-name"></i>
+                                                @Html.TextBoxFor(m => m.FullName, new { @placeholder = "Full Name" })
+                                                @Html.ValidationMessageFor(m => m.FullName, "", new { @class = "control-label error" })
+                                            </div>
+                                            <div class="form-group">
+                                                <i class="zmdi zmdi-email"></i>
+                                                @Html.TextBoxFor(m => m.Email, new { @placeholder = "Your e-mail address" })
+                                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "control-label error" })
+                                            </div>
+                                            <div class="form-group">
+                                                <i class="zmdi zmdi-phone"></i>
+                                                @Html.TextBoxFor(m => m.PhoneNumber, new { @placeholder = "Phone Number" })
+                                                @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "control-label error" })
+                                            </div>
+                                            <div class="form-group">
+                                                <i class="zmdi zmdi-city material-icons-name"></i>
+                                                @Html.TextBoxFor(m => m.CompanyName, new { @placeholder = "Company Name" })
+                                                @Html.ValidationMessageFor(m => m.CompanyName, "", new { @class = "control-label error" })
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <i class="zmdi zmdi-my-location"></i>
+                                                @Html.TextBoxFor(model => model.Address, new { @placeholder = "Address" })
+                                                @Html.ValidationMessageFor(m => m.Address, "", new { @class = "control-label error" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <i class="zmdi zmdi-pin-drop"></i>
+                                                <!--<span class="state-title">  State</span>-->
+                                                @Html.DropDownListFor(m => m.StateID, new SelectList(ViewBag.ListState, "ID", "StateName"), new { @class = "state-select" })
+                                                @Html.ValidationMessageFor(m => m.StateID, "", new { @class = "control-label error" })
+
+                                            </div>
+                                            <div class="form-group" id="listCityBoxOrder">
+                                                <i class="zmdi zmdi-pin-drop"></i>
+                                                <!--<span class="state-title">  State</span>-->
+                                                @Html.DropDownListFor(m => m.CityID, new SelectList(ViewBag.ListCity, "ID", "CityName"), new { @class = "state-select" })
+                                                @Html.ValidationMessageFor(m => m.CityID, "", new { @class = "control-label error" })
+                                                <!--<input type="email" name="email" id="email" placeholder="  e-mail address" />-->
+                                                <!--<p class="error">please enter the currect name</p>-->
+                                            </div>
+                                            <div class="form-group">
+                                                <i class="zmdi zmdi-home"></i>
+                                                @Html.TextBoxFor(m => m.ZipCode, new { @placeholder = "Zip Code" })
+                                                @Html.ValidationMessageFor(m => m.ZipCode, "", new { @class = "control-label error" })
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!--<div class="form-group">
+                                        <i class="zmdi zmdi-lock"></i>
+                                        <input type="password" name="pass" id="pass" placeholder="Password" />
+                                        <p class="error">please enter the currect name</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="zmdi zmdi-lock-outline"></i>
+                                        <input type="password" name="re_pass" id="re_pass" placeholder="Repeat   password" />
+                                        <p class="error">please enter the currect name</p>
+                                    </div>-->
+                                    <div class="row">
+                                        <div class="" style="margin-top:50px;">
+                                            <table class="table table-bordered ">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width:120px;"><input type="checkbox"><span>select all</span></th>
+                                                        <th>jobtype</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    @{ if (Model.ListJobType.Count > 0)
+                                                        {
+                                                            for (int i = 0; i < Model.ListJobType.Count; i++)
+                                                            {
+
+                                                                <tr>
+                                                                    <td>@Html.CheckBoxFor(model => Model.ListJobType[i].Select, new { @class = "checkbox" })</td>
+                                                                    <td>@Html.Raw(Model.ListJobType[i].Title)</td>
+                                                                </tr>
+
+
+                                                                @Html.HiddenFor(model => Model.ListJobType[i].ID)
+                                                                @Html.HiddenFor(model => Model.ListJobType[i].Title)
+
+                                                            }
+                                                        }
+                                                    }
+
+
+
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--<div class="signup-image">
+                                    <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                                    <a href="singin.html" class="signup-image-link">I am already member</a>
+                                </div>-->
+                            </div>
+
+                        </section>
+
+                        <div class="form-group form-button col-md-12 available-appoinment">
+                            <a class="btn  btn-danger prev" href="#tab1" data-toggle="tab"> @Html.Raw("<< Prev") </a>
+                            <a class="btn  btn-info prev pull-right" href="#tab3" data-toggle="tab" id="nextId"> Next >> </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="tab-pane" id="tab3">
+
+                        <div class="row page-title-part">
+                            <div class="line-title col-md-12"></div>
+                            <span class="webpage-title">Confirm Information</span>
+                            <span class="webpage-icon">
+                                <img src="@SiteUrl/Content/themes/Factor/content/img/9.png" />
+                            </span>
+                        </div>
+                        <!-- Sign up form -->
+                        <section class="signup" id="estimateForm2">
+
+                            <div class="table-responsive " style="font-size:13px; overflow-y:scroll;overflow-x:auto;height:300px;">
+                                <table class="table   table-bordered">
+
+                                    <tbody>
+
+
+                                        <tr class="text-left-project-info">
+                                            <td class="color-blue">
+
+                                                <i class="fa fa-user-circle "></i>  <span> Full Name : </span>
+                                                <br />
+                                                <span class="color-black-light" id="FullName2"> </span>
+                                            </td>
+                                            <td class="color-blue">
+
+                                                <i class="fa fa-map-marker"></i> <span>Address  : </span>
+                                                <br />
+                                                <span class="color-black-light" id="Address2"> </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="text-left-project-info">
+                                            <td class="color-blue">
+
+                                                <i class="fa fa-envelope"></i> <span>Email Address  : </span>
+                                                <br />
+                                                <span class="color-black-light" id="Email2"> </span>
+                                            </td>
+                                            <td class="color-blue">
+
+                                                <i class="fa fa-building "></i>  <span> State : </span>
+                                                <br />
+                                                <span class="color-black-light" id="StateID2"> </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="text-left-project-info">
+                                            <td class="color-blue">
+
+                                                <i class="fa fa-phone "></i>  <span> Phone Number : </span>
+                                                <br />
+                                                <span class="color-black-light" id="PhoneNumber2"> </span>
+                                            </td>
+
+
+                                            <td class="color-blue">
+
+                                                <i class="fa fa-building"></i> <span>City  : </span>
+                                                <br />
+                                                <span class="color-black-light" id="CityID2"> </span>
+                                            </td>
+
+                                        </tr>
+                                        <tr class="text-left-project-info">
+
+
+                                            <td class="color-blue">
+
+                                                <i class="fa fa-bank"></i> <span>Company Name  : </span>
+                                                <br />
+                                                <span class="color-black-light" id="CompanyName2"> </span>
+                                            </td>
+                                            <td class="color-blue">
+
+
+                                                <i class="fa fa-envelope-o "></i>  <span> Zip Code : </span>
+                                                <br />
+                                                <span class="color-black-light" id="ZipCode2"> </span>
+                                            </td>
+
+                                        </tr>
+                                        <tr class="text-left-project-info">
+                                            <td class="color-blue">
+
+                                                <i class="fa fa-calendar "></i>  <span> Time : </span>
+                                                <br />
+                                                <span class="color-black-light" id="Time2"> </span>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </section>
+
+                        <div class="form-group form-button col-md-12 available-appoinment">
+                            <a class="btn  btn-danger prev" href="#tab2" data-toggle="tab"> @Html.Raw("<< Prev") </a>
+                            <input type="submit" name="signup" id="saveBtn" class="btn btn-primary pull-right request" value="Send Request >>" data-loading-text="Sending..." />
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        }
+
+
+
+    </div>
+</div>
+
+<script src="@SiteUrl/Content/themes/Factor/content/js/jquery-2.1.4.min.js"></script>
+<script src="@SiteUrl/Content/themes/AccountingAdmin/assets/plugins/CalenderSlider/js/owl.carousel.js"></script>
+
+<script src="@SiteUrl/Content/themes/Factor/content/js/bootstrap.min.js"></script>
+<script src="@SiteUrl/Content/themes/Factor/content/js/datepicker.js"></script>
+<script src="@SiteUrl/Content/themes/Plugins/toastr/toastr.min.js"></script>
+
+<script src="@SiteUrl/Scripts/jquery.validate.min.js"></script>
+<script src="@SiteUrl/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="@SiteUrl/scripts/AdminScripts.js"></script>
+<script src="@SiteUrl/Content/themes/AccountingAdmin/assets/plugins/waitMe/waitMe.js"></script>
+<script src="@SiteUrl/Content/themes/Factor/content/js/jquery.tableCheckbox.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+          LoadFreeTime("#tab1");
+        AddEditFormEstimate('estimateForm', 'Account', 'SchedulAppointment', '@ViewBag.mode');
+
+
+    });
+
+    $('table').tableCheckbox({ /* options */ });
+
+    $('[data-toggle="datepicker"]').datepicker({
+        //   autoHide: false,
+        autoShow: false,
+        container: "#dateshow",
+        inline: true,
+        zIndex: 2048,
+        startDate: '@Model.StartDate',
+        endDate: '@Model.EndDate',
+        format: 'yyyy/mm/dd'
+    });
+     function BookInstall(elem) {
+        var time = $(elem).attr("data-time");
+         var time12 = $(elem).attr("data-time12");
+         var userid = $(elem).attr("data-uid");
+         $("#Time").val(time);
+         $("#InstallerID").val(userid);
+        $("#Time12H").val(time12);
+        $("#DateStr").val($(elem).attr("data-date"));
+        $('[id^=select]').css("display", "none");
+
+        var i = $(elem).attr("data-i");
+        $("#text-" + i).text($(elem).attr("data-selecttext") +" - " +$(elem).attr("data-time12"));
+         $("#select-" + i).toggle("fast");
+
+              $('html,body').animate({
+                    scrollTop:$(window).scrollTop() + 50
+                }, 1000);
+        return false;
+    }
+    $("#nextId").click(function () {
+        if (!$("form#estimateForm").valid()) {
+                showMessage("Please fill out contact information", "error");
+            return false;
+        }
+        $("#FullName2").text($("#FullName").val());
+        $("#PhoneNumber2").text($("#PhoneNumber").val());
+        $("#Email2").text($("#Email").val());
+        $("#CompanyName2").text($("#CompanyName").val());
+       if ($("#CompanyName").val() == "")
+             $("#CompanyName2").text("--");
+
+
+        $("#Address2").text($("#Address").val());
+
+     $("#ZipCode2").text($("#ZipCode").val());
+        $("#CityID2").text($("#CityID option:selected" ).text());
+        $("#StateID2").text($("#StateID option:selected" ).text());
+        $("#Time2").text($("#DateStr").val() + " - " + $("#Time12H").val());
+
+
+    });
+
+    $("#DateStr").change(function () {
+          $('#listTimeBox').waitMe({});
+
+        $.ajax({
+            url: "@SiteUrl/User/_timeList",
+            data: { date: $("#DateStr").val(), view: "_timeList3", fid: $("#FactorID").val() },
+            type: "Post",
+            cache: false,
+            success: function (result) {
+                $("#listTimeBox").html(result.Html);
+                  $("#listTimeBox").waitMe("hide");
+                $('html, body').animate({
+                    scrollTop: $("#listTimeBox").offset().top + 30
+                }, 1500);
+            }
+        });
+
+
+    });
+
+
+    function LoadMoreTime(elem) {
+        $(elem).parent().waitMe({});
+          $.ajax({
+            url: "@SiteUrl/User/_newtimeList",
+            data: { id: '0' },
+            type: "get",
+            cache: false,
+              success: function (result) {
+                  $(elem).parent().waitMe("hide");
+                $(elem).css("display","none");
+                $("#moreTime").html(result.Html);
+                $('html,body').animate({
+                    scrollTop:$(window).scrollTop() + 400
+                }, 1000);
+
+            }
+        });
+
+    }
+
+        function LoadFreeTime(elem) {
+            $(elem).parent().waitMe({});
+          $.ajax({
+            url: "@SiteUrl/Account/_loadtimeList",
+
+               type: "Post",
+
+              success: function (result) {
+
+                  $(elem).parent().waitMe("hide");
+
+                  $(elem).html(result.Html);
+
+
+              },
+                error: function (result) {
+
+            alert('Error... Please try again');
+        }
+        });
+
+    }
+    $("#StateID").change(function () {
+        $("#CityID").attr("disabled", "disabled");
+        $.ajax({
+            url: "@SiteUrl/Base/_cityListOrderTo",
+            data: { id: $("#StateID").val(), view: "_cityListAppointment" },
+            type: "Post",
+            cache: false,
+            success: function (result) {
+                $("#CityID").attr("disabled", "disabled");
+                $("#listCityBoxOrder").html(result.Html);
+            }
+        });
+
+
+    });
+
+    function AddEditFormEstimate(form, controller, action, mode)
+    {
+        $("form#" + form + "").submit(function (e) {
+
+            e.preventDefault();
+            if ($("form#" + form + "").valid()) {
+                var btn = $("#saveBtn");
+                btn.button('loading');
+                var data = $("form#" + form + "").serialize();
+                 $("#estimateForm2").waitMe({});
+                $.ajax(
+                    {
+                        url: "@SiteUrl/" + controller + "/" + action + "?mode=" + mode,
+                        type: "post",
+                        data: data,
+                        success: function (msg) {
+
+                            btn.button('reset');
+                            if (msg != null && msg.success) {
+                                showMessage(msg.responseText, "success");
+                                   $("#estimateForm2").waitMe("hide");
+                                setTimeout(function () {
+                                    window.location.href = '@SiteUrl/User/ViewEstimateAppointment/'+msg.linkId+'?email=' +msg.email;
+                                }, 3000);
+
+
+                            }
+                            else if (msg != null && !msg.success) {
+                                   $("#estimateForm2").waitMe("hide");
+                                showMessage(msg.responseText, "error");
+
+                            }
+                        }
+                    });
+            }
+        });
+    }
+</script>
+

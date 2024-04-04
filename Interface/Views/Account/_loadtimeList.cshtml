@@ -1,0 +1,122 @@
+﻿@model Interface.Models.Factor.RequestEstimateAppointmentModel
+@{
+
+
+    var HomePage = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host;
+    var SiteUrl = HomePage.Contains("localhost") ? "" : HomePage;
+}
+<link href="@SiteUrl/Content/themes/AccountingAdmin/assets/plugins/CalenderSlider/css/style.css" rel="stylesheet" />
+<link href="@SiteUrl/Content/themes/AccountingAdmin/assets/plugins/CalenderSlider/css/owl.theme.default.min.css" rel="stylesheet" />
+<link href="@SiteUrl/Content/themes/AccountingAdmin/assets/plugins/CalenderSlider/css/owl.carousel.min.css" rel="stylesheet" />
+
+
+
+<div class="row booking-title-part">
+    <div class="line-title col-md-12"></div>
+    <span class="webpage-title"> Estimate Appointment </span>
+    <span class="appoinment-icon">
+        <img src="@SiteUrl/Content/themes/Factor/content/img/9.png" />
+    </span>
+</div>
+
+<div class="row description">
+    <p>This time period includes travel time, arrival could be effected by traffic or other variable. You can always call in advance to get estimated arrival time.</p>
+</div>
+
+
+@Html.HiddenFor(model => model.InstallTime)
+
+@Html.HiddenFor(model => model.FactorID)
+@Html.HiddenFor(model => model.Time)
+@Html.HiddenFor(model => model.Time12H)
+@Html.HiddenFor(model => model.DateStr)
+@Html.HiddenFor(model => model.InstallerID)
+@for (int i = 0; i < Model.ListDateTime.Count; i++)
+
+{
+    <div class="col-md-12  seprate-calender margin-top-30">
+        <div class="row margin-btm-30">
+            <div class="seprate-calender">
+                <div class="date-text">
+                    @if (Model.ListDateTime.Count == 1 & Model.ListDateTime.FirstOrDefault().ListTimes.FirstOrDefault().TimeStr == "Nothing available")
+                    {
+                        <span>Nothing available</span>
+                    }
+                    else
+                    {
+                        <span>@Model.ListDateTime[i].DateStr</span>
+                    }
+                </div>
+                <div class="hours">
+                    <div class="owl-carousel owl-theme" id="owl-demo">
+
+                        @foreach (var time in Model.ListDateTime[i].ListTimes)
+                        {
+
+                            if (!time.TimeStr.Contains("Nothing available"))
+                            {
+                                <a href="#tab2" onclick="BookInstall(this)" data-fid="@Model.FactorID" data-uid="@time.UserID" data-time="@time.TimeStr" data-time12="@(time.Time12H + " To "+ time.Time.AddHours(Model.InstallTime).ToString("h:m tt") )" data-i="@i" data-date="@Model.ListDateTime[i].Date.ToString("yyyy/MM/dd")" data-selecttext="@Model.ListDateTime[i].DateStr" class="item link">  <span>@time.Time12H</span> </a>
+                            }
+
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row " id="select-@i" style="display:none">
+            <div class="date-selection">
+                <div class="col-sm-9"><p class="reserve-time" id="text-@i">Monday,13 May 2020, 1 PM to 3 PM</p></div>
+                <div class="col-sm-3 no-padding"><a class="btn" data-toggle="tab" href="#tab2">select</a></div>
+            </div>
+        </div>
+    </div>
+
+
+}
+@if (Model.ListDateTime.Count >= 5)
+{
+    <div class="text-center">
+        <a href="javascript:;" onclick="LoadMoreTime(this)" class="btn btn-info ">Load More <i class="fa fa-spinner"></i> </a>
+    </div>
+}
+<div id="scrolldown"></div>
+<div id="moreTime">
+
+</div>
+
+
+
+<script>
+     $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 0,
+                nav: true,
+                dots: false,
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    600: {
+                        items: 5
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+
+            $('.link').on('click', function (event) {
+                var $this = $(this);
+
+                    $('.link').removeClass('item-active');
+                   $this.addClass('item-active');
+
+            });
+
+
+        });
+</script>

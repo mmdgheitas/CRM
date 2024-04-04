@@ -1,0 +1,484 @@
+﻿@model Interface.Models.Email.EmailValue
+@{
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Model.EmailTitle</title>
+    <style>
+        #outlook a {
+            padding: 0;
+        }
+
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+                line-height: 100%;
+            }
+
+        #backgroundTable {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            line-height: 100% !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        a img {
+            border: none;
+        }
+
+        .image_fix {
+            display: block;
+        }
+
+        p {
+            margin-top: 60px;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+            table[class=full] {
+                width: 100%;
+                clear: both;
+            }
+    </style>
+
+</head>
+<body>
+    <div class="block">
+        <!-- Start of preheader -->
+        <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="preheader">
+            <tbody>
+                <tr>
+                    <td width="100%">
+                        <table width="580" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                            <tbody>
+                                <!-- Spacing -->
+                                <tr>
+                                    <td width="100%" height="30"></td>
+                                </tr>
+                                <!-- Spacing -->
+                                @*<tr>
+                                        <td align="right" valign="middle" style="font-family: 'Open Sans', arial, sans-serif; font-size: 10px;color:black" st-content="preheader">
+                                            اگر قادر به مشاهده این ایمیل نمی باشید<a class="hlite" href="javascript:;" style="text-decoration: none; color: #0db9ea"> اینجا را کلیک کنید</a>
+                                        </td>
+                                    </tr>*@
+                                <!-- Spacing -->
+                                <tr>
+                                    <td width="100%" height="5"></td>
+                                </tr>
+                                <!-- Spacing -->
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- End of preheader -->
+    </div>
+    <div class="block">
+        <!-- start of header -->
+        <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="header">
+            <tbody>
+                <tr>
+                    <td>
+                        <table width="580" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth" hlitebg="edit" shadow="edit">
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <!-- logo -->
+                                        @if (!string.IsNullOrEmpty(Model.LogoURL))
+                                        {
+                                        <table  cellpadding="0" cellspacing="0" border="0" align="left" class="devicewidth">
+                                            <tbody>
+                                                <tr>
+                                                    <td valign="middle"  style="padding: 10px 0 10px 20px;" class="logo">
+                                                        <div class="imgpop">
+                                                            <a href="http://glassma.us"><img src="@Model.LogoURL" alt="logo" border="0" style="display:block; border:none; outline:none; text-decoration:none;" st-image="edit" class="logo" width="150" height="150"  /></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        }
+                                        else
+                                        {
+                                            <table width="100" cellpadding="0" cellspacing="0" border="0" align="left" class="devicewidth">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="middle" width="270" style="padding: 10px 0 10px 20px;" class="logo">
+                                                            <div class="imgpop">
+                                                                <a href="http://glassma.us"><img src="https://www.glassma.us/wp-content/uploads/2019/02/glass-and-mirror-shop-glassma-logo-230x100.svg" alt="glassma " border="0" style="display:block; border:none; outline:none; text-decoration:none;" st-image="edit" class="logo" width="100" height="100" /></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        }
+                                        <!-- End of logo -->
+                                        <!-- menu -->
+                                        @*<table width="180" cellpadding="0" cellspacing="0" border="0" align="right" class="devicewidth">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="300" valign="middle" style="font-family:'Open Sans', Tahoma, sans-serif;font-size: 14px; color: #000000;line-height: 24px; padding: 10px 0;" align="right" class="menu" st-content="menu">
+                                                        <a href="@Model.HomePage" style="text-decoration: none; color: #ffffff;">Home Page</a>
+                                                        &nbsp;
+                                                        @if (Model.Login != null)
+                                                        {
+                                                            @Html.Raw("|&nbsp;")
+                                                            <a href="@Model.Login" style="text-decoration: none; color: #ffffff;">Login</a>
+                                                        }
+                                                    </td>
+                                                    <td width="20"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>*@
+                                        <!-- End of Menu -->
+
+                                        @*<table width="300" cellpadding="0" cellspacing="0" border="0" align="left" class="devicewidth">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="300  " valign="middle" style="font-family:'Open Sans', Tahoma, sans-serif;font-size: 18px; color: #000000;line-height: 24px; padding: 5px 0;" align="left" class="menu" st-content="menu">
+                                                        <p>@Model.WebsiteName</p>
+                                                    </td>
+                                                    <td width="20"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>*@
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- end of header -->
+    </div>
+    <div class="block">
+        <!-- start textbox-with-title -->
+        <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="fulltext">
+            <tbody>
+                <tr>
+                    <td>
+                        <table bgcolor="#ffffff" width="580" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth" modulebg="edit">
+                            <tbody>
+                                <!-- Spacing -->
+                                <tr>
+                                    <td width="100%" height="30"></td>
+                                </tr>
+                                <!-- Spacing -->
+                                <tr>
+                                    <td>
+                                        <table width="540" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                                            <tbody>
+                                                <!-- Title -->
+                                                <!-- End of Title -->
+                                                <!-- spacing -->
+                                                <tr>
+                                                    <td height="5"></td>
+                                                </tr>
+                                                <!-- End of spacing -->
+                                                <!-- content -->
+                                                <!-- End of content -->
+                                                <!-- Spacing -->
+                                                <tr>
+                                                    <td width="100%" height="10"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- end of textbox-with-title -->
+    </div>
+    <div class="block">
+        <!-- start of left image -->
+        <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="leftimage">
+            <tbody>
+                <tr>
+                    <td>
+                        <table bgcolor="#ffffff" width="580" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth" modulebg="edit">
+                            <tbody>
+                                <!-- Spacing -->
+                                <tr>
+                                    <td height="20"></td>
+                                </tr>
+                                <!-- Spacing -->
+                                <tr>
+                                    <td>
+                                        <table width="540" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <!-- start of text content table -->
+                                                        <!-- mobile spacing -->
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mobilespacing">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- mobile spacing -->
+                                                        <!-- start of right column -->
+                                                        <table width="540" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                            <tbody>
+                                                                <!-- title -->
+                                                                @if (Model.EmailTitle != null)
+                                                                {
+                                                                    <tr>
+                                                                        <td style="font-family: 'Open Sans', arial, sans-serif; font-size: 18px; color: #333333; text-align:left;line-height: 20px;" st-title="leftimage-title">
+                                                                            @Model.EmailTitle
+                                                                        </td>
+                                                                    </tr>
+                                                                }
+                                                                <!-- end of title -->
+                                                                <!-- Spacing -->
+                                                                @if (Model.Content != null)
+                                                                {
+                                                                    <tr>
+                                                                        <td width="100%" height="20"></td>
+                                                                    </tr>
+                                                                    <!-- Spacing -->
+                                                                    <!-- content -->
+                                                                    <tr>
+                                                                        <td style="white-space: pre-line;font-family: 'Open Sans', arial, sans-serif; font-size: 13px; color: #232a2a; text-align:left;line-height: 24px;direction:ltr" st-content="leftimage-paragraph">
+                                                                            @Html.Raw(Model.Content)
+                                                                        </td>
+                                                                    </tr>
+                                                                }
+                                                                <!-- end of content -->
+                                                                <!-- Spacing -->
+                                                                @if (Model.ButtonClick != null)
+                                                                {
+                                                                    <tr>
+                                                                        <td width="100%" height="10"></td>
+                                                                    </tr>
+                                                                    <!-- button -->
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table height="30" align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="tablet-button" st-button="edit">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="auto" align="center" valign="middle" height="30" style=" background-color:#dc2026; border-top-left-radius:4px; border-bottom-left-radius:4px;border-top-right-radius:4px; border-bottom-right-radius:4px; background-clip: padding-box;font-size:13px; font-family:'Open Sans', arial, sans-serif; text-align:center;  color:#ffffff; font-weight: 300; padding-left:18px; padding-right:18px;">
+
+                                                                                            <span style="color: #ffffff; font-weight: 300;">
+                                                                                                <a style="color: #ffffff; text-align:center;text-decoration: none;" href="@Model.ButtonClick">@Model.ButtonText</a>
+                                                                                            </span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                }
+
+                                                                @if (Model.ButtonClick != null)//Model.SecoundLink != null
+                                                                {
+
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Or click the link below :
+                                                                        </td>
+                                                                    </tr>
+                                                                    <!-- End of spacing -->
+                                                                    <!-- content -->
+                                                                    <tr>
+                                                                        <td style="font-family: 'Open Sans', arial, sans-serif; font-size: 12px; color: #03b2e2; text-align:center;line-height: 30px;direction:ltr" st-content="fulltext-paragraph">
+
+                                                                            <a style=" text-align:center;text-decoration: none;" href="@Model.ButtonClick">@Model.ButtonClick</a>
+
+                                                                        </td>
+                                                                    </tr>
+
+                                                                
+                                                                }
+                                                                <!-- /button -->
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- end of right column -->
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Spacing -->
+                                <tr>
+                                    <td height="20"></td>
+                                </tr>
+                                <!-- Spacing -->
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- end of left image -->
+    </div>
+
+    <div class="block">
+        <!-- start textbox-with-title -->
+        <table bgcolor="#fff" height="200" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="fulltext">
+            <tbody>
+                <tr>
+                    <td>
+                        <table bgcolor="#ffffff" width="580" height="200" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth" modulebg="edit">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table width="540" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                                            <tbody>
+                                                <!-- Title -->
+                                                <tr>
+                                                    <td style="font-family: 'Open Sans', arial, sans-serif; font-size: 13px; color: #fff; text-align:center;line-height: 10px;" st-title="fulltext-title">
+                                                      Contact us
+                                                    </td>
+                                                </tr>
+                                                <!-- spacing -->
+                                                <!--<tr>
+                                                    <td height="20"></td>
+                                                </tr>-->
+                                                <!-- End of spacing -->
+                                                <!--<tr>
+                                                    <td style="font-family: 'Times New Roman', arial, sans-serif; font-size: 12px;  text-align:center;line-height: 10px;" st-title="fulltext-title">
+                                                        <a href="javascript:;" style="color:#0395bf">telegram.me/ParsisSoft</a>
+                                                    </td>
+                                                </tr>-->
+                                                <!-- End of Title -->
+                                                <!-- spacing -->
+                                                @if (Model.Phone != null)
+                                                {
+                                                    <tr>
+                                                        <td height="5"></td>
+                                                    </tr>
+                                                <!-- End of spacing -->
+                                                <!-- content -->
+                                                    <tr>
+                                                        <td style="font-family: 'Open Sans', arial, sans-serif; font-size: 12px; color: #03b2e2; text-align:center;line-height: 30px;direction:ltr" st-content="fulltext-paragraph">
+                                                            @Model.Phone
+                                                        </td>
+                                                    </tr>
+                                                }
+                                                <!-- End of content -->
+                                                <!-- Spacing -->
+                                                <tr>
+                                                    <td width="100%" height="5"></td>
+                                                </tr>
+                                                <!-- Spacing -->
+                                                <tr>
+                                                    <td style="font-family: 'Times New Roman', arial, sans-serif; font-size: 13px;  text-align:center;line-height: 10px;" st-title="fulltext-title">
+                                                        <a href="@Model.HomePage" style="color:#03b2e2">@Model.HomePage</a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Spacing -->
+                                                @if (Model.EnableDontAnswer)
+                                                {
+                                                <tr>
+                                                    <td width="100%" height="25"></td>
+                                                </tr>
+                                                <!-- Spacing -->
+                                                <tr>
+                                                    @*<td style="font-family: 'Open Sans', arial, sans-serif; font-size: 11px; color: #fff; text-align:center;direction:rtl;line-height: 10px;" st-title="fulltext-title">
+                                                        این ایمیل از طرف سیستم به صورت اتوماتیک برای شما ارسال شده است، لطفا به آن پاسخ ندهید
+                                                    </td>*@
+                                                </tr>
+                                                }
+                                                <!-- Spacing -->
+                                                <!--<tr>
+                                                    <td width="100%" height="10"></td>
+                                                </tr>-->
+                                                <!-- Spacing -->
+                                                <!--<tr>
+                                                    <td style="font-family: 'Open Sans', arial, sans-serif; font-size: 10px;  text-align:center;line-height: 10px;" st-title="fulltext-title">
+                                                        <a href="javascript:;" style="color:#0395bf">لغو اشتراک</a>
+                                                    </td>
+                                                </tr>-->
+                                                <tr>
+                                                    <td width="100%" height="20"></td>
+                                                </tr>
+                                                <!-- Spacing -->
+                                                <tr>
+                                                    <td>
+                                                        <table height="20" align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="tablet-button" st-button="edit">
+                                                            <tbody>
+                                                                <tr>
+                                                                    @*<td style="font-family: 'Open Sans', arial, sans-serif; font-size: 11px; color: #fff; text-align:center;direction:rtl;line-height: 10px;" st-title="fulltext-title">
+                                                                        طراحی و توسعه  <a href="http://takprogram.ir/" style="color:#ff7f00;text-decoration: none;"> &nbsp;تک پروگرم</a>
+                                                                    </td>*@
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- end of textbox-with-title -->
+    </div>
+    <div class="block">
+        <!-- Start of preheader -->
+        <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="postfooter">
+            <tbody>
+                <tr>
+                    <td width="100%">
+                        <table width="580" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                            <tbody>
+                                <!-- Spacing -->
+                                <tr>
+                                    <td width="100%" height="40"></td>
+                                </tr>
+                                <!-- Spacing -->
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- End of preheader -->
+    </div>
+</body>
+</html>
