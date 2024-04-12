@@ -1,0 +1,43 @@
+﻿body{
+    font-family:'Open Sans', Times, serif;
+    font-size:14px;
+}
+.booking-container{
+    background:#f6f7f9;
+}
+.booking-inner{
+    background:#fff;
+    padding:30px 70px;
+}
+.glassma-booking-logo img{
+    width:200px;
+}
+.line-title{
+    border-top:2px solid #4d4d4d;
+    margin-top:30px;
+}
+.booking-title-part{
+    position:relative;
+}
+.appoinment-time{
+    position: absolute;
+    left: 0;
+    background: #fff;
+    top: 5px;
+    padding: 15px;
+    font-weight:bold;
+}
+.appoinment-icon i{
+        color: #76a6cc;
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    background: #fff;
+    padding: 15px;
+}
+.description{
+    padding:40px 20px;
+    color:#000;
+    font-size:16px;
+}

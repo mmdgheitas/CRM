@@ -21573,6 +21573,14 @@
       "PackagePath": "staticwebassets\\newAdded\\js\\bootstrap.min.js"
     },
     {
+      "Id": "E:\\programming\\CRMCore7Ponisha\\CRMCore7Ponisha\\Interface\\wwwroot\\newAdded\\picker.min.css",
+      "PackagePath": "staticwebassets\\newAdded\\picker.min.css"
+    },
+    {
+      "Id": "E:\\programming\\CRMCore7Ponisha\\CRMCore7Ponisha\\Interface\\wwwroot\\newAdded\\picker.min.js",
+      "PackagePath": "staticwebassets\\newAdded\\picker.min.js"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Interface.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

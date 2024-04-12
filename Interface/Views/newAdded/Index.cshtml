@@ -3,11 +3,14 @@
     ViewData["Title"] = "CRM_Core";
 }
 @model Interface.Models.Price.PriceViewModel
+@section Links{
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+}
 
     <section class="container">
         <div class="border border-shadow text-center pt-4 mb-2">
-            <p class="fs-2">$ @Model.FinalPrice</p>
+        <p id="finalPrice" class="fs-2">$ @Model.FinalPrice</p>
         </div>
         <p class="text-danger">The calculated price only includes the price of the glass and the installation cost</p>
         <form asp-action="Index">
@@ -19,7 +22,7 @@
                 <div class="mb-3 w-50 col-md-6">
                     <label class="form-label">Height</label>
                     <input id="height" type="number" class="form-control" aria-describedby="emailHelp"
-                           placeholder="centimeter" name="height">
+                           placeholder="centimeter" name="height" onchange="">
                 </div>
             </div>
             @if (ViewBag.squareFoot != null){
@@ -27,13 +30,13 @@
                 <p>minimum glass thickness @ViewBag.minimumThicknes</p>
             }
             else{
-            <p class="mb-1">minimum size is 5 ft2</p>
-            <p>minimum glass thickness 1/8</p>
+            <p id="squareFoot" class="mb-1">minimum size is 5 ft2</p>
+            <p id="glassThickness">minimum glass thickness 1/8</p>
             }
             
             <div class="mb-3">
                 <div class="form-label">Select glass type</div>
-                <select class="form-select" aria-label="Default select example" name="glassType">
+            <select id="glassType" class="form-select" aria-label="Default select example" name="glassType">
                     <option selected>Glass type</option>
                 @foreach (var i in Model.ListnewGlassType)
                 {
@@ -58,19 +61,20 @@
             else
             {
                 <div class="col-4">
-                    <p class="text-muted">0 lib</p>
+                    <p id="lib" class="text-muted">0 lib</p>
                 </div>
                 <div class="col-4">
-                    <p class="text-muted">$0.00/st</p>
+                    <p id="perUnit" class="text-muted">$0.00/st</p>
                 </div>
                 <div class="col-4">
-                    <p class="text-muted">$0.00</p>
+                    <p id="glassPrise" class="text-muted">$0.00</p>
                 </div>
             }
             </div>
             <div class="mb-3">
                 <div class="form-label mb-2">Select frame type</div>
-            <select class="form-select" aria-label="Default select example" name="frameType">
+            @* @Html.DropDownList("ReportSelect", ViewBag.ListItems,"Frame type",new { @class = "form-select", @onchange = "reportchange(this)" }) *@
+            <select id="frameType" class="form-select" aria-label="Default select example" name="frameType">
                 <option selected>Frame type</option>
                 @foreach (var i in Model.ListnewFrameType)
                 {
@@ -84,12 +88,12 @@
             }
             else
             {
-                <p class="mt-2 text-muted">0 Hours</p>
+                <p id="hours" class="mt-2 text-muted">0 Hours</p>
             }
             </div>
             <div class="mb-5">
                 <label class="form-label">Glass elevation</label>
-                <input type="number" class="form-control" aria-describedby="emailHelp"
+            <input id="elevation" type="number" class="form-control" aria-describedby="emailHelp"
                    placeholder="centimeter" name="elevation">
             
             @if (ViewBag.installers != null)
@@ -98,7 +102,7 @@
             }
             else
             {
-                <p class="mt-2 text-muted">installers: 0</p>
+                <p id="installers" class="mt-2 text-muted">installers: 0</p>
             }
             </div>
             <div class="text-center">
@@ -106,3 +110,79 @@
             </div>
         </form>
     </section>
+
+
+@section Scripts{
+
+    <script> $('#frameType').picker({ search: true });</script>
+    <script>
+        $(document).ready(function () {
+                $('#width').on('input', function () {
+                    var width = $(this).val(); 
+                    var height = $('#height').val(); 
+                    $.ajax({
+                        type: 'POST',
+                        url: '/newAdded/calculateSquareFoot', 
+                        data: { width: width, height: height },
+                        success: function (data) {
+                            $('#squareFoot').text('minimum size is ' + data[0] + ' ft2');
+                            $('#glassThickness').text('minimum glass thickness ' + data[1]);
+                    }
+                    });
+                });
+                $('#height').on('input', function () {
+                    var height = $(this).val(); 
+                    var width = $('#width').val(); 
+                    $.ajax({
+                        type: 'POST',
+                        url: '/newAdded/calculateSquareFoot', 
+                        data: { height: height, width: width },
+                        success: function (data) {
+                            $('#squareFoot').text('minimum size is ' + data[0] + ' ft2');
+                            $('#glassThickness').text('minimum glass thickness ' + data[1]);
+                    }
+                    });
+                });
+
+            $('#glassType').change(function () {
+                var selectedValue = $(this).val(); 
+                $.ajax({
+                    type: 'POST',
+                    url: '/newAdded/calculateGlassType',
+                    data: { glassType: selectedValue, squareFootInput: $('#squareFoot').text() },
+                    success: function (data) {
+                        alert($('#squareFoot').text())
+                        $('#lib').text(data[0] + ' lib');
+                        $('#perUnit').text('$ ' + data[1] + ' /st'); 
+                        $('#glassPrise').text('$ ' + data[2]); 
+                    }
+                });
+            });
+
+            $('#frameType').change(function () {
+                var selectedValue = $(this).val(); 
+                $.ajax({
+                    type: 'POST',
+                    url: '/newAdded/calculateFrameType', 
+                    data: { frameType: selectedValue },
+                    success: function (data) {
+                        $('#hours').text(data + ' Hours');
+                    }
+                });
+            });
+
+            $('#elevation').on('input', function () {
+                var inputValue = $(this).val(); 
+                $.ajax({
+                    type: 'POST',
+                    url: '/newAdded/calculateInstallers',
+                    data: { glassPriseInput: $('#glassPrise').text(), hoursInput: $('#hours').text(), elevation: inputValue, glssLibInput: $('#lib').text(), squareFootInput: $('#squareFoot').text() },
+                    success: function (data) {
+                        $('#installers').text('installers: ' + data[0]);
+                        $('#finalPrice').text('$ ' + data[1]); 
+                    }
+                });
+            });
+        });
+    </script>
+}

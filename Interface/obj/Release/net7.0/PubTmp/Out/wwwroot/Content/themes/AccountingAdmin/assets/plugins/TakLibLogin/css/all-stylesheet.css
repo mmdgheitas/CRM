@@ -1,0 +1,17 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans|Roboto:300,400,500,700');*/
+
+@import url('bootstrap-rtl.css');
+@import url("stylesheet.css");
+@import url("../fonts/font-awesome/css/font-awesome.css");
+@import url("../fonts/font-awesome/css/font-awesome.min.css");
+
+/* REVOLUTION STYLE SHEETS */
+@import url("../revolution/css/settings.css");
+@import url("../revolution/css/layers.css");
+@import url("../revolution/css/navigation.css");
+@import url("../revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css");
+@import url("../revolution/fonts/font-awesome/css/font-awesome.css");
+
+

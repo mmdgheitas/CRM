@@ -1,0 +1,102 @@
+﻿
+/*********user-part************/
+.user-part {
+    float: right;
+}
+
+    .user-part .user-pic {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .user-part .user-img img {
+        width: 100%;
+    }
+
+    .user-part .user-img {
+        border-radius: 100%;
+     
+        padding: 7px;
+        float: left;
+        width: 70px;
+    }
+
+    .user-part .user-message .user-title i {
+        font-size: 30px;
+        color: #f1f1f1;
+        margin-right: -30px;
+        margin-left: 20px;
+    }
+
+    .user-part .user-message {
+        margin: 25px 0;
+        padding: 15px 20px;
+        background: #f1f1f1;
+        min-width: 30%;
+        max-width: 100%;
+        float: right;
+    }
+
+        .user-part .user-message .message-date, .admin-message .message-date {
+            padding-top: 10px;
+            font-size: 12px;
+        }
+
+            .user-part .user-message .message-date i, .admin-message .message-date i {
+                color: #0094ff;
+                font-size: 16px;
+                margin-left: 5px;
+            }
+
+        .user-part .user-message .user-title {
+            color: #0094ff;
+        }
+
+/***********admin-part***************/
+
+.admin-part {
+    float: left;
+}
+
+    .admin-part .admin-pic {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .admin-part .admin-img {
+        border-radius: 100%;
+      
+        padding: 7px;
+        float: right;
+        width: 70px;
+    }
+
+        .admin-part .admin-img img {
+            width: 100%;
+        }
+
+    .admin-part .admin-message {
+        margin: 25px 0;
+        padding: 20px;
+        background: #f8fba1;
+        min-width: 30%;
+        max-width: 100%;
+        float: left;
+    }
+
+        .admin-part .admin-message .admin-content, .user-message .user-content {
+            color: #666;
+            line-height: 25px;
+        }
+
+
+        .admin-part .admin-message .admin-title {
+            color: #ff6a00;
+        }
+
+            .admin-part .admin-message .admin-title i {
+                font-size: 30px;
+                color: #f8fba1;
+                margin-left: -29px;
+                float: left;
+            }

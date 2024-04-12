@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang=fa>
+<head>
+    <meta charset="UTF-8">
+    <title>Job Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="content/css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="content/css/font-awesome.css" rel="stylesheet" />
+
+    <link href="content/css/style.css" rel="stylesheet" />
+</head>
+<body>
+   <div class="container-fluid">
+       <div class="container invoice-inner">
+           <section class="logo-date row">
+               <div class="col-md-6 col-sm-6 col-sx-6 glassma-logo">
+                   <img class="img-responsive" src="content/img/glassma3.png" />
+               </div>
+               <div class="col-md-6 col-sm-6 col-sx-6 contact-info ">
+                   <div class="float-right">
+                       <p>206332548</p>
+                       <p>808 industery Dr,Tukwilla, WA 98155</p>
+                       <p>glassma.llc@gmail.com</p>
+                       <p>www.glassma.us</p>
+                   </div>
+               </div>
+           </section>
+           <section class="bill-ship row">
+               <div class="col-md-6 col-sm-6 col-xs-12">
+                   <div class="bill-box">
+                       <span class="bill-box-title">BILL TO</span>
+                   </div>
+               </div>
+               <div class="col-md-6 col-sm-6 col-xs-12">
+                   <div class="bill-box float-right">
+                       <span class="bill-box-title">SHIP TO</span>
+                   </div>
+               </div>
+           </section>
+           <section class="row bill-table">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                   <div class="table-responsive">
+                       <table class="table">
+                           <thead>
+                               <tr>
+                                   <th>191234Item</th>
+                                   <th>Quontity</th>
+                                   <th>price</th>
+                                   <th>total</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <td>
+                                       single pane glass repaire,single pane glass repaire,
+                                       <p class="product-detail">size: 24 * 36, clear ann glass</p>
+                                   </td>
+                                   <td class="text-center">2</td>
+                                   <td>$ 150.00</td>
+                                   <td>$ 300.00</td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                       single pane glass repaire,single pane glass repaire,
+                                       <p class="product-detail">size: 24 * 36, clear ann glass</p>
+                                   </td>
+                                   <td class="text-center">2</td>
+                                   <td>$ 150.00</td>
+                                   <td>$ 300.00</td>
+                               </tr>
+
+                           </tbody>
+                       </table>
+                   </div>
+               </div>
+           </section>
+
+
+           <section class="row tax-subtotal">
+               <div class="col-md-7 col-sm-8 col-xs-12">
+                   <table class="table table-bordered">
+                       <thead>
+                           <tr>
+                               <th>Subtotal</th>
+                               <th>Tax</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td>$ 800.00</td>
+                               <td>$ 800.00</td>
+                           </tr>
+                           
+                       </tbody>
+                   </table>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 float-right">
+                   <table class="table table-bordered">
+                       <thead>
+                           <tr>
+                               <th>Total</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td>$ 800.00</td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+           </section>
+
+           <section class="row bill-table">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                   <div class="table-responsive">
+                       <table class="table table-bordered">
+                           <thead>
+                               <tr>
+                                   <th>Minimum Deposit</th>
+                                   <th>Paid</th>
+                                   <th>Remaining</th>
+                                   <th>Due</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <td> $ 800.00 </td>
+                                   <td> $ 800.00 </td>
+                                   <td> $ 800.00 </td>
+                                   <td> Compitation on job</td>
+                               </tr>
+                        
+
+                           </tbody>
+                       </table>
+                   </div>
+               </div>
+           </section>
+
+               <section class="row contract-text">
+                   <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                       <label for="comment">Contract text:</label>
+                       <textarea class="form-control" rows="8" id="comment"></textarea>
+                   </div>
+               </section>
+           <section class="row contract-detaile">
+               <label class="checkbox-inner">
+                   I Agree to the Quote
+                   <input type="checkbox" checked="checked">
+                   <span class="checkmark"></span>
+               </label>
+               <label class="checkbox-inner">
+                   I Agree to the Contract
+                   <input type="checkbox">
+                   <span class="checkmark"></span>
+               </label>
+               <label class="checkbox-inner">
+                   I Authorize Glassma LLc to Process this payment
+                   <input type="checkbox">
+                   <span class="checkmark"></span>
+               </label>
+               
+           </section>
+           <section class="row form">
+               <form class="form-horizontal" id="myform" action="#">
+                   <div class="col-md-6">
+                       <div class="form-group">
+                           <label class="control-label col-sm-4 no-padding" for="name">Your name</label>
+                           <div class="col-sm-7 no-padding">
+                               <input type="text" class="form-control" id="name" placeholder="">
+                           </div>
+                       </div>
+                       <div class="form-group">
+                           <label class="control-label col-sm-4 no-padding" for="family">Payable</label>
+                           <div class="col-sm-7 no-padding">
+                               <input type="text" class="form-control" id="family" placeholder="">
+                           </div>
+                       </div>
+                       <div class="form-group">
+                           <label class="control-label col-sm-4 no-padding" for="family">Type of payment</label>
+                           <div class="col-sm-7 degree-field no-padding">
+                               <select class="selectpicker" data-style="btn-primary">
+                                   <option></option>
+                                   <option>option1</option>
+                                   <option>option2</option>
+                                   <option> option3</option>
+                               </select>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-6">
+                       <div class="form-group col-sm-12">
+                           <label class="control-label" for="comment">Sign Here:</label>
+                           <textarea class="form-control" rows="6" id="comment" placeholder="Sign Here..."></textarea>
+                       </div>
+                       <div class="form-group btn-btn">
+                           <button class="btn btn-clear" type="submit">Clear</button>
+                           <button class="btn btn-accept" type="submit">Accept</button>
+                       </div>
+                   </div>
+               </form>
+           </section>
+           <section class="row btn-process">
+               <div class="form-group">
+                   <button class="btn btn-close" type="submit">Close</button>
+                   <button class="btn btn-print" type="submit"><i class="fa fa-print"></i>Print</button>
+                   <button class="btn btn-pay" type="submit">Pay</button>
+               </div>
+           </section>
+       </div>
+   </div>
+
+
+    <script src="content/js/jquery-2.1.4.min.js"></script>
+    <script src="content/js/bootstrap.min.js"></script>
+    <script src="content/js/bootstrap-select.min.js"></script>
+</body>
+</html>

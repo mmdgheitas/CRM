@@ -1,0 +1,77 @@
+﻿
+.calender-inner{
+    background:#fff;
+    padding:30px;
+    padding-bottom:10px;
+    border-radius:20px;
+}
+
+.calender-inner .docs-datepicker{
+    text-align:center;
+}
+.calender-inner .docs-datepicker input{
+    width:252px;
+    text-align:center;
+    padding:10px;
+    background:#5496ea;
+    font-size:17px;
+    font-weight:bold;
+    border: 1px solid #5496ea;
+    color:#fff;
+}
+.calender-inner .docs-datepicker input[type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+ color:#fff;
+  opacity: 1; /* Firefox */
+}
+
+.calender-inner .docs-datepicker input[type="text"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:#fff;
+}
+
+.calender-inner .docs-datepicker input[type="text"]:-ms-input-placeholder { /* Microsoft Edge */
+  color:#fff;
+}
+.calender-inner .datepicker-inline {
+    position: initial !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:0 0 1px;
+}
+.calender-inner .datepicker-panel > ul > li[data-view="month next"],.datepicker-panel > ul > li[data-view="month prev"]{
+    font-size:28px;
+    color: #5496ea;
+    font-weight: bold;
+}
+.calender-inner .datepicker-panel > ul > li[data-view="years current"], .datepicker-panel > ul > li[data-view="year current"], .datepicker-panel > ul > li[data-view="month current"] {
+    font-weight: bold;
+    font-size: 15px;
+}
+.calender-inner .datepicker-container {
+    background-color: #fff;
+    direction: ltr;
+    font-size: 14px;
+    left: 0;
+    line-height:30px;
+    position: fixed;
+    top: 0;
+    width:250px;
+    text-align: center;
+    padding:10px 20px;
+}
+.calender-inner .datepicker-panel > ul{
+    margin-bottom:5px;
+}
+.calender-inner .datepicker-panel > ul:nth-child(2n){
+    border-bottom:1px solid #888;
+    font-weight:bold;
+}
+.calender-inner .datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
+    color: #fff;
+    background: #5496ea;
+    border-radius: 50%;
+}
+.calender-inner .datepicker-panel > ul > li:hover,.datepicker-panel > ul > li.highlighted {
+    border-radius:50%;
+    border:1px solid #5496ea;
+}

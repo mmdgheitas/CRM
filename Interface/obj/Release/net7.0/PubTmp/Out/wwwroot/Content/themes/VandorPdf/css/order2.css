@@ -1,0 +1,355 @@
+.container-inner {
+    padding: 0;
+    /*border: 1px solid #1ca5ce;*/
+    /*padding: 20px;*/
+    position: relative;
+    /*height: 100vh;*/
+    background:#fff;
+}
+body{
+    background:#ededed;
+}
+.row {
+    margin: 0;
+}
+
+.no-padding-left {
+    padding-left: 0;
+}
+
+.no-padding-right {
+    padding-right: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.glass-order {
+    text-align: end;
+    font-size: 24px;
+    color: #1ca5ce;
+    margin-top: 50px;
+    padding-right: 0;
+    margin-bottom: 0px;
+   /*background-image: url('../images/12.jpg');*/
+}
+
+.blue-part {
+    /*background: #5777de;*/
+    /*background-image: url('../images/12.jpg');*/
+    padding: 0px;
+}
+
+    .blue-part img {
+        width: 100%;
+        /*height: 30px;*/
+    }
+
+/*.blue-part:after {
+        content: '';
+        position: absolute;
+        left: -29px;
+        top: 0px;
+        bottom: 0;
+        right: auto;
+        z-index: 0;
+        height: 0;
+        width: 0;
+        border-top: solid 40px transparent;
+        border-right: solid 29px #5777de;
+        background-image: url('../images/12.jpg');
+    }*/
+
+.header {
+    /*background: #ebebeb;*/
+    padding: 0;
+    /*height: 220px;*/
+}
+
+/*.header:after {
+        content: '';
+        position: absolute;
+        left: -185px;
+        top: 0px;
+        bottom: 0;
+        right: auto;
+        z-index: 0;
+        height: 0;
+        width: 0;
+        border-top: solid 200px transparent;
+        border-right: solid 185px #ebebeb;
+    }*/
+
+.company-info {
+    /*background: #5777de;*/
+    padding: 20px;
+    margin-top: 50px;
+}
+.report{
+    margin-top:70px;
+}
+/*.company-info::after {
+        content: '';
+        position: absolute;
+        right: -150px;
+        top: 0px;
+        bottom: 0;
+        left: auto;
+        z-index: 0;
+        height: 0;
+        width: 0;
+        border-bottom: solid 144px transparent;
+        border-left: solid 150px #5777de;
+    }*/
+.line-logo{
+     float: left;
+    height: 110px;
+    display:inline-block;
+}
+.order-glass{
+    position: absolute;
+    right: 0;
+    height: 45px;
+    top:80px;
+}
+.text-order{
+    position: absolute;
+    right: 165px;
+    color: #fff;
+    top:90px;
+    font-size: 18px;
+}
+.company-logo {
+    float: left;
+    height: 115px;
+    display:inline-block;
+    position:absolute;
+}
+
+.nameofcompany {
+    color: #5777de;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    line-height: 110px;
+    text-shadow: 1px 1px 0px #999;
+    font-size: 40px;
+}
+
+.report-info {
+    /*border: 1px solid red;*/
+    width: 230px;
+    float: right;
+    /* padding: 50px; */
+    /* list-style: none; */
+    margin-left: 0;
+    list-style: none;
+    padding-left: 0;
+    /*margin-top:45px;*/
+}
+
+    .report-info li {
+        /*border: 1px solid red;*/
+        margin: 0px 0px 2px 0;
+        padding: 3px 5px;
+    }
+
+        .report-info li:nth-child(2n) {
+            border: 1px solid #1ca5ce;
+            width:59%;
+        }
+        .report-info li:nth-child(2n+1) {
+            width:39%;
+        }
+        .report-info li span {
+            color: #717070;
+            font-family: 'Times New Roman';
+            font-size: 15px;
+        }
+.company-info-list li {
+    margin-bottom:10px;
+}
+.company-info-list li span {
+    color:#717070;
+    font-family: 'Times New Roman';
+    font-size:15px;
+}
+.company-info-list li i{
+    font-size:20px;
+    padding-right:5px;
+    color:#1ca5ce;
+}
+
+.company-info-list {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left:0;
+}
+
+.middle {
+    /*background:#ebebeb;*/
+    margin: 30px 0;
+    padding: 50px 20px;
+}
+.middle table thead{
+    background:#1ca5ce;
+    color:#fff;
+    font-weight:normal;
+}
+.middle table thead tr th{
+    text-align:center;
+}
+.middle table tbody tr td{
+    text-align:center;
+}
+/*.middle .table-bordered{
+    border-bottom:none ;
+    border-top:none;
+}*/
+table.table-bordered {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+    table.table-bordered > thead > tr > th {
+        border: 1px solid #ddd;
+    }
+
+    table.table-bordered > tbody > tr > td {
+        border: 1px solid #ddd;
+    }
+
+.footer-gray {
+    /*background: #ebebeb;*/
+    padding: 25px;
+    /*bottom:0;*/
+    /*position:absolute;*/
+    /*float:right;*/
+    /*right:98px;*/
+    /*left:35%;
+    width:46%;*/
+}
+
+/*.footer-gray:after {
+        content: '';
+        position: absolute;
+        left: -60px;
+        top: 0px;
+        bottom: 0;
+        right: auto;
+        z-index: 0;
+        height: 0;
+        width: 0;
+        border-top: solid 50px transparent;
+        border-right: solid 60px #ebebeb;
+    }*/
+
+.footer-blue {
+    background: #5777de;
+    padding: 15px;
+    margin-top: -29px;
+    z-index: 1;
+}
+
+    .footer-blue:after {
+        content: '';
+        position: absolute;
+        right: -29px;
+        top: 0px;
+        bottom: 0;
+        left: auto;
+        z-index: 0;
+        height: 0;
+        width: 0;
+        border-bottom: solid 30px transparent;
+        border-left: solid 29px #5777de;
+    }
+
+.footer-gray {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    /*float:right;*/
+    left: 30%;
+}
+
+.footer-blue {
+    position: absolute;
+    bottom: -1px;
+    /*width: 60%;*/
+}
+/*page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}*/
+@media (max-width:992px) {
+    .blue-part {
+        width: 450px;
+        float: right;
+    }
+
+    .company-logo {
+        height: 100px;
+    }
+
+    /*.nameofcompany {
+        font-size: 30px;
+        line-height: 99px;
+    }
+
+    .header {
+        width: 650px;
+        float: right;
+        position: relative;
+    }
+
+        .header:after {
+            left: -100px;
+            border-right: solid 100px #ebebeb;
+        }*/
+
+    /*.report-info {
+        margin-top: -50px;
+    }*/
+
+    .company-info {
+        /*width: 410px;*/
+    }
+
+        /*.company-info::after {
+            right: -80px;
+            border-bottom: solid 145px transparent;
+            border-left: solid 80px #5777de;
+        }*/
+
+    .footer-blue {
+        width: 60%;
+    }
+}
+.col-sx-12{
+     width:50%;
+}
+@media (max-width:480px){
+    .col-sx-12{
+        width:100%;
+}
+    .middle{
+        padding:0;
+    }
+}
+.table-responsive{
+    border:0;
+}

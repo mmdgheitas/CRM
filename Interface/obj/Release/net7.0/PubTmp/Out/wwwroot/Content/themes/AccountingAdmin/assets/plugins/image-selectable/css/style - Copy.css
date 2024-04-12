@@ -1,0 +1,126 @@
+﻿.img-selection .row {
+    margin: 0;
+}
+
+.img-selection div.clearfix {
+    position: relative;
+    margin: 10px auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 40px;
+    color: #555;
+    margin-top: 25px;
+}
+
+.img-selection ul {
+    position: relative;
+    margin: 10px auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 16px;
+    color: #555;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.img-selection img {
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1px;
+    box-shadow: 0 0 0 4px #fff;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    /position:relative;
+    /
+}
+
+.img-selection ul li {
+    position: relative;
+    margin: 10px;
+    width: 120px;
+    height: 100px;
+    padding: 0;
+}
+
+.img-selection input[type=checkbox] + label.img-select-lable {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+    width: 100px;
+    height: 90px;
+    position: absolute;
+}
+
+.img-selection input[type=checkbox] {
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+    .img-selection input[type=checkbox] + label.img-select-lable:before {
+        content: "\2714";
+        border: 0.1em solid #f3f3f3;
+        border-radius: 3px;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        vertical-align: bottom;
+        color: transparent;
+        transition: .2s;
+        position: absolute;
+        bottom: 2px;
+        left: 3px;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .img-selection input[type=checkbox] + label.img-select-lable:active:before {
+        transform: scale(0);
+    }
+
+    .img-selection input[type=checkbox]:checked + label.img-select-lable:before {
+        background-color: #00c09e;
+        border-color: #00c09e;
+        color: #fff;
+        z-index: 4;
+        position: absolute;
+        bottom: 2px;
+        left: 3px;
+    }
+
+    .img-selection input[type=checkbox]:disabled + label.img-select-lable:before {
+        transform: scale(1);
+        border-color: #aaa;
+    }
+
+    .img-selection input[type=checkbox]:checked:disabled + label.img-select-lable:before {
+        transform: scale(1);
+        background-color: #bfb;
+        border-color: #bfb;
+    }
+
+    .img-selection input[type=checkbox]:checked + label.img-select-lable:after {
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 100px;
+        background: rgba(255,255,255,0.7);
+        left: -4px;
+        top: -4px;
+        border: 3px solid #00c09e;
+        border-radius: 5px;
+        z-index: 3;
+    }

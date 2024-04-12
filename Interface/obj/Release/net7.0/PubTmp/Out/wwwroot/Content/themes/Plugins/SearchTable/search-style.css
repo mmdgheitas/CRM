@@ -1,0 +1,44 @@
+﻿
+.table-fixed thead {
+    width: 97%;
+}
+
+.table-fixed tbody {
+    height: 230px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+    display: block;
+}
+
+    .table-fixed tbody td, .table-fixed thead > tr > th {
+        float: right;
+        border-bottom-width: 0;
+    }
+
+td {
+    text-align: center; /* center checkbox horizontally */
+    vertical-align: middle; /* center checkbox vertically */
+}
+
+table {
+    width: 200px;
+}
+
+.highlight {
+    background-color: #44b7f1 !important;
+}
+
+
+
+#myInput {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 15px 8px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+

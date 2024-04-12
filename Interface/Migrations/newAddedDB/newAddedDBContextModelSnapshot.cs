@@ -360,16 +360,10 @@ namespace Interface.Migrations.newAddedDB
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<double>("PerUnit")
-                        .HasColumnType("float");
-
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Value")
-                        .HasColumnType("float");
-
-                    b.Property<double>("lib")
                         .HasColumnType("float");
 
                     b.Property<string>("modifiedInfo")
@@ -388,20 +382,20 @@ namespace Interface.Migrations.newAddedDB
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<int>("Priority")
-                        .HasColumnType("int");
+                    b.Property<double>("Priority")
+                        .HasColumnType("float");
 
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("lib")
-                        .HasColumnType("int");
+                    b.Property<double>("lib")
+                        .HasColumnType("float");
 
                     b.Property<string>("modifiedInfo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("perUnit")
-                        .HasColumnType("int");
+                    b.Property<double>("perUnit")
+                        .HasColumnType("float");
 
                     b.HasKey("ID");
 

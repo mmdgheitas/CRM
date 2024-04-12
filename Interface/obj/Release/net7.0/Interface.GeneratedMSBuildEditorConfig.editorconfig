@@ -1,0 +1,249 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Interface
+build_property.RootNamespace = Interface
+build_property.ProjectDir = E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = E:\programming\CRMCore7Ponisha\CRMCore7Ponisha\Interface
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/ConfirmChangeEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtQ2hhbmdlRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/ConfirmEmailAgain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW1haWxBZ2Fpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/Contactus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb250YWN0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/GoogleLoginCallback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxHb29nbGVMb2dpbkNhbGxiYWNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/Login1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbjEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/RecoveryPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWNvdmVyeVBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/ResetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/SchedulAppointment - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTY2hlZHVsQXBwb2ludG1lbnQgLSBDb3B5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/SchedulAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTY2hlZHVsQXBwb2ludG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/_loadtimeList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfbG9hZHRpbWVMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/_loginbackground.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfbG9naW5iYWNrZ3JvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/_MailSender.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfTWFpbFNlbmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/_userProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfdXNlclByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Account/_websiteName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfd2Vic2l0ZU5hbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/newAdded/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV3QWRkZWRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Price/ExtraPrice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpY2VcRXh0cmFQcmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Price/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpY2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Price/_editEdgePrice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpY2VcX2VkaXRFZGdlUHJpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Price/_ExtraPrice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpY2VcX0V4dHJhUHJpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Price/_glassTypeChange.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpY2VcX2dsYXNzVHlwZUNoYW5nZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Accounting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9BY2NvdW50aW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Calendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9DYWxlbmRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Employee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9FbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Item.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9JdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Job.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9Kb2IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9QYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Plaid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9QbGFpZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Price.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9QcmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Report.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9SZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Setting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9TZXR0aW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_TimeCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9UaW1lQ2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Tools.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9Ub29scy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Admin/_LayoutAdmin_Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXF9MYXlvdXRBZG1pbl9Vc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/_LayoutLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/_LayoutNewAdded.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXROZXdBZGRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/_LayoutProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRQcm9qZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/_MailSender.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWlsU2VuZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/_topMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF90b3BNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/_websiteName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF93ZWJzaXRlTmFtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Time/ListTimeCards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVxMaXN0VGltZUNhcmRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Time/MyTimeCards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVxNeVRpbWVDYXJkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Time/_clockIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVxfY2xvY2tJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Time/_editTimeCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVxfZWRpdFRpbWVDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Time/_reloadTimeCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVxfcmVsb2FkVGltZUNhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Time/_timeCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVxfdGltZUNhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/programming/CRMCore7Ponisha/CRMCore7Ponisha/Interface/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-836hpe9gyc

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang=fa>
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="content/css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="content/css/font-awesome.css" rel="stylesheet" />
+    <link href="content/css/datepicker.css" rel="stylesheet" />
+    <link href="content/css/style.css" rel="stylesheet" />
+</head>
+<body>
+   <div class="container-fluid booking-container">
+       <div class="container booking-inner">
+           <div class="row glassma-booking-logo">
+               <img class="img-responsive center-block" src="content/img/glassma3.png" />
+           </div>
+           <div class="row booking-title-part">
+               <div class="line-title col-md-12"></div>
+               <span class="appoinment-time">1Hour Estimate Appointment </span>
+               <span class="appoinment-icon">
+                   <img src="content/img/9.png" />
+               </span>
+           </div>
+           <div class="row description">
+               <p>1 hour window appoinment, to survay and provide a quote for customer. please fill out the form, select a day and time from availabilitys.</p>
+           </div>
+           <div class="row">
+               <div class="docs-datepicker">
+                   <input type="text" data-toggle="datepicker" placeholder="Time schedule">
+                   <div class="docs-datepicker-container" id="dateshow" style="display:block"></div>
+               </div>
+       </div>
+           <div class="row available-appoinment">
+               <ul>
+                   <li class="title">Available Appointments on August 5,2019 </li>
+                   <li>
+                       <span><i class="fa fa-clock-o"></i>11-30 am - 16-30 pm</span>
+                       <button class="btn btn-primary">Book Appointment</button>
+                   </li>
+                   <li>
+                       <span><i class="fa fa-clock-o"></i>12-00 am - 18-30 pm</span>
+                       <button class="btn btn-primary">Book Appointment</button>
+                   </li>
+               </ul>
+
+           </div>
+   </div>
+       </div>
+
+    <script src="content/js/jquery-2.1.4.min.js"></script>
+    <script src="content/js/bootstrap.min.js"></script>
+    <script src="content/js/datepicker.js"></script>
+       <script>
+           //$('[data-toggle="datepicker"]').datepicker();
+           $('[data-toggle="datepicker"]').datepicker({
+               //   autoHide: false,
+               autoShow: false,
+               container: "#dateshow",
+               inline: true,
+               zIndex: 2048,
+             
+               format: 'yyyy/mm/dd'
+           });
+           
+       </script>
+</body>
+</html>

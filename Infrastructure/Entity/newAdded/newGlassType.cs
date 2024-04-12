@@ -9,8 +9,8 @@ namespace Infrastructure.Entity.newAdded
     public class newGlassType : EntityBase<int>
     {
         public string? Title { get; set; }
-        public int Priority { get; set; }
-        public int perUnit { get; set; }
-        public int lib { get; set; }
+        public double Priority { get; set; }
+        public double perUnit { get; set; }
+        public double lib { get; set; }
     }
 }

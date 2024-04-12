@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>فرم ثبت نام</title>
+    <!-- ALL STYLESHEETS -->
+    <link href="css/all-stylesheet.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container-fluid">
+        <section id="login-container">
+            <div class="topnav nav2">
+                <ul class="list-inline loginnav">
+                    <li class="wow fadeInRight animated" data-wow-duration="1200ms" data-wow-delay="600ms"><a href="#"><i class="fa fa-sign-in"></i>ورود به سیستم</a></li>
+                    <li class="wow fadeInRight animated" data-wow-duration="1200ms" data-wow-delay="1100ms"><a href="#"><i class="fa fa-user"></i>ثبت نام اعضا</a></li>
+                    <li class="wow fadeInRight animated" data-wow-duration="1200ms" data-wow-delay="1500ms"><a href="#"><i class="fa fa-book"></i>ثبت نام کتابخانه ها</a></li>
+                </ul>
+                <a href="#">
+                    <img class="swing1 wow fadeInLeftBig animated" data-wow-duration="1500ms" data-wow-delay="1500ms" src="~/Content/themes/AccountingAdmin/assets/plugins/TakLibLogin/img/taklib2.png" />
+                </a>
+            </div>
+            <div class="login-inner">
+                <div class="col-md-8 bg2">
+                    <p class="takprogram">طراحی و توسعه توسط : <a>تک پروگرم</a></p>
+                </div>
+                <div class="space-75"></div>
+                <div class="form">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1  outer">
+                            <!--title of form-->
+                            <div class="row">
+                                <div class="login-img">
+                                    <img class="center-block" src="~/Content/themes/AccountingAdmin/assets/plugins/TakLibLogin/img/user5.png" />
+                                </div>
+                                <div class="title">
+                                    <h4>سیستم ثبت نام اعضا</h4>
+                                </div>
+                            </div>
+
+                            <div class="subheader">
+                                <div class="row" style="margin:0">
+                                    <div class="col-md-12" style="padding:0">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div>
+                                                    <div class="alert alert-danger">
+                                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                                        <img src="~/Content/themes/AccountingAdmin/assets/plugins/TakLibLogin/img/error.png" />
+                                                        نام کاربری یا رمز عبور صحیح نمی باشند.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Info Form-->
+                            <div class="row">
+                               
+                                    <div class="item" style="padding-left:0;">
+                                        <form class="form-horizontal" id="myform" action="#">
+                                            <fieldset>
+                                                <div class="row">
+                                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                                        <!--<label class="control-label col-sm-4" for="name"></label>-->
+                                                        <div class="col-lg-10 col-lg-offset-1 col-sm-12 col-xs-12">
+                                                            <input type="text" class="form-control" id="name" placeholder="نام">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                                        <!--<label class="control-label col-sm-4" for="family"><strong>نام خانوادگی</strong></label>-->
+                                                        <div class="col-lg-10 col-lg-offset-1 col-sm-12 col-xs-12">
+                                                            <input type="text" class="form-control" id="family" placeholder="نام خانوادگی">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                                        <!--<label class="control-label col-sm-4" for="melicod"><strong>کد ملی</strong></label>-->
+                                                        <div class="col-lg-10 col-lg-offset-1  col-sm-12 col-xs-12">
+                                                            <input type="text" class="form-control" id="melicod" placeholder="کد ملی">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                                        <!--<label class="col-sm-4 control-label" for="DocumentGroupID">گروه :</label>-->
+                                                        <div class="col-lg-10 col-lg-offset-1  col-sm-12 col-xs-12">
+                                                            <select class="form-control valid" data-val="true" data-val-number="The field گروه : must be a number." data-val-required="لطفا گروه را انتخاب کنید" id="DocumentGroupID" name="DocumentGroupID">
+                                                                <option value="">گروه</option>
+                                                                <option value="">برق</option>
+                                                                <option value="">صنایع غذایی</option>
+                                                                <option value="">کامپیوتر</option>
+                                                                <option value="">کشاورزی-آب</option>
+                                                                <option value="">گروه پیش فرض</option>
+                                                                <option value="">مکانیک</option>
+                                                            </select>
+                                                            <span class="control-label vali-error field-validation-valid" data-valmsg-for="DocumentGroupID" data-valmsg-replace="true"></span>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                                        <!--<label class="col-sm-4 control-label" for="PersonallyCode"> شماره دانشجویی :</label>-->
+                                                        <div class="col-lg-10 col-lg-offset-1  col-sm-12 col-xs-12">
+                                                            <input class="form-control" data-val="true" data-val-length="مقدار وارد شده برای شماره دانشجویی بیش از حد مجاز است." data-val-length-max="120" data-val-minlength="شماره دانشجویی باید حداقل 5 کارکتری باشد" data-val-minlength-min="5" data-val-required="لطفا شماره دانشجویی را وارد کنید" id="PersonallyCode" name="PersonallyCode" value="" type="text" placeholder="شماره دانشجویی">
+                                                            <span class="field-validation-valid control-label vali-error" data-valmsg-for="PersonallyCode" data-valmsg-replace="true"></span>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                                        <!--<label class="col-sm-4 control-label" for="Email">ایمیل :</label>-->
+                                                        <div class="col-lg-10 col-lg-offset-1  col-sm-12 col-xs-12">
+                                                            <input class="form-control" data-val="true" data-val-email="لطفا ایمیل صحیح را وارد کنید" data-val-required="لطفا ایمیل را وارد کنید" id="Email" name="Email" value="" type="text" placeholder="ایمیل">
+                                                            <span class="field-validation-valid control-label vali-error" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                                        <!--<label class="col-sm-4 control-label" for="Password">رمز عبور :</label>-->
+                                                        <div class="col-lg-10 col-lg-offset-1  col-sm-12 col-xs-12">
+                                                            <input class="form-control" data-val="true" data-val-length="مقدار وارد شده بیش از حد مجاز است." data-val-length-max="120" data-val-minlength="پسور شما باید حداقل 6 کارکتر باشد" data-val-minlength-min="6" data-val-required="لطفا رمز عبور را وارد کنید" id="Password" name="Password" type="password" placeholder="رمز عبور">
+                                                            <span class="field-validation-valid control-label vali-error" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                                        <!--<label class="col-sm-4 control-label" for="ConfirmPassword">تکرار رمز عبور :</label>-->
+                                                        <div class="col-lg-10 col-lg-offset-1  col-sm-12 col-xs-12">
+                                                            <input class="form-control" data-val="true" data-val-equalto="رمز عبور و تکرار آن یکی نیستند" data-val-equalto-other="*.Password" id="ConfirmPassword" name="ConfirmPassword" type="password" placeholder="تکرار رمز عبور">
+                                                            <span class="field-validation-valid control-label vali-error" data-valmsg-for="ConfirmPassword" data-valmsg-replace="true"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 text-center">
+                                                            <a href="javascript:;" id="refresh" title="تعویض تصویر"><img src="/Content/themes/my/login/images/reload.png" style="margin-top:15px;margin-bottom:15px"></a>
+                                                            <img alt="Captcha" id="imgcpatcha" src="/Captcha/CaptchaImage" style="margin-bottom:5px;">
+                                                        </div>
+                                                        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                                                            <input class="form-control " data-val="true" data-val-required="لطفا حاصل جمع را وارد کنید" id="Captcha" name="Captcha" placeholder="حاصل را وارد کنید" value="" type="text">
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                <div class="row">
+                                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="col-md-4 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-12">
+                                                            <div class="checkbox">
+                                                                <label id="remember">
+                                                                    <input class="checkbox" data-val="true" data-val-required="The AgreeService field is required." id="AgreeService" name="AgreeService" value="true" type="checkbox"><input name="AgreeService" value="false" type="hidden">
+                                                                    <lable style="margin-right:4px;"> من با <a href="#" data-toggle="modal" data-target="#termsModal">قوانین   </a>استفاده از وبسایت موافقم.</lable>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                                <div class="form-group">
+                                                    <div class="col-sm-12" style="text-align:center">
+                                                        <button type="submit" class="btn btn-default">ورود</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 register">
+                                                    <a href="#">ثبت نام</a>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer1">
+            <div><p class="tp">طراحی و توسعه توسط : <a>تک پروگرم</a></p></div>
+        </footer>
+    </div>
+
+
+
+    <!-- Bootstrap -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#myform :input').tooltip();
+        });
+    </script>
+</body>
+
+</html>
