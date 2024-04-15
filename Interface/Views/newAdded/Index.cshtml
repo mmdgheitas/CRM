@@ -17,16 +17,16 @@
             <div class="row">
                 <div class="mb-3 w-50 col-md-6">
                     <label class="form-label">Width</label>
-                    <input id="width" type="number" class="form-control" aria-describedby="emailHelp" placeholder="centimeter" name="width">
+                <input id="width" type="number" class="form-control" aria-describedby="emailHelp" placeholder="centimeter" name="width" value="@ViewBag.width">
                 </div>
                 <div class="mb-3 w-50 col-md-6">
                     <label class="form-label">Height</label>
                     <input id="height" type="number" class="form-control" aria-describedby="emailHelp"
-                           placeholder="centimeter" name="height" onchange="">
+                       placeholder="centimeter" name="height" value="@ViewBag.height">
                 </div>
             </div>
             @if (ViewBag.squareFoot != null){
-                <p class="mb-1">@ViewBag.squareFoot ft2</p>
+                <p class="mb-1">minimum size is @ViewBag.squareFoot ft2</p>
                 <p>minimum glass thickness @ViewBag.minimumThicknes</p>
             }
             else{
@@ -37,7 +37,14 @@
             <div class="mb-3">
                 <div class="form-label">Select glass type</div>
             <select id="glassType" class="form-select" aria-label="Default select example" name="glassType">
-                    <option selected>Glass type</option>
+                @if (ViewBag.glassType != null)
+                {
+                    <option selected>@ViewBag.glassType</option>
+                }
+                else
+                {
+                     <option selected>Glass type</option>
+                }
                 @foreach (var i in Model.ListnewGlassType)
                 {
                     <option value="@i.Title">@i.Title</option>
@@ -75,7 +82,14 @@
                 <div class="form-label mb-2">Select frame type</div>
             @* @Html.DropDownList("ReportSelect", ViewBag.ListItems,"Frame type",new { @class = "form-select", @onchange = "reportchange(this)" }) *@
             <select id="frameType" class="form-select" aria-label="Default select example" name="frameType">
-                <option selected>Frame type</option>
+                @if (ViewBag.frameType != null)
+                {
+                    <option selected>@ViewBag.frameType</option>
+                }
+                else
+                {
+                    <option selected>Frame type</option>
+                }
                 @foreach (var i in Model.ListnewFrameType)
                 {
                     <option value="@i.Title">@i.Title</option>
@@ -94,7 +108,7 @@
             <div class="mb-5">
                 <label class="form-label">Glass elevation</label>
             <input id="elevation" type="number" class="form-control" aria-describedby="emailHelp"
-                   placeholder="centimeter" name="elevation">
+                   placeholder="centimeter" name="elevation" value="@ViewBag.elevation">
             
             @if (ViewBag.installers != null)
             {
@@ -151,7 +165,6 @@
                     url: '/newAdded/calculateGlassType',
                     data: { glassType: selectedValue, squareFootInput: $('#squareFoot').text() },
                     success: function (data) {
-                        alert($('#squareFoot').text())
                         $('#lib').text(data[0] + ' lib');
                         $('#perUnit').text('$ ' + data[1] + ' /st'); 
                         $('#glassPrise').text('$ ' + data[2]); 

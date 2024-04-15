@@ -176,6 +176,19 @@ namespace Interface.Controllers
             }
             catch { }
 
+            ViewBag.width = width;
+            ViewBag.height = height;
+            ViewBag.glassType = glassType;
+            ViewBag.frameType = frameType;
+            if (elevation == 0)
+            {
+                ViewBag.elevation = null;
+            }
+            else
+            {
+                ViewBag.elevation = elevation;
+            }
+
             return View(model);
             //return View();
         }
