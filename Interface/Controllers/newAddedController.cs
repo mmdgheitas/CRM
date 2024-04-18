@@ -22,6 +22,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using Stimulsoft.System.Windows.Forms;
 using System;
+using System.Linq;
 
 namespace Interface.Controllers
 {
@@ -310,79 +311,102 @@ namespace Interface.Controllers
 
         public string[] calculateSquareFoot(double width, double height)
         {
-            double squareFoot = (width * height) / 144;
-            squareFoot = Math.Round(squareFoot, 2);
-            string minimumThicknes = "1/8";
-            if (squareFoot <= 20)
+            string[] data = { };
+            try
             {
-                minimumThicknes = "1/8";
-            }
-            if (squareFoot >= 20 && squareFoot <= 25)
-            {
-                minimumThicknes = "5/32";
-            }
-            if (squareFoot >= 25 && squareFoot <= 40)
-            {
-                minimumThicknes = "3/16";
-            }
-            if (squareFoot >= 40)
-            {
-                minimumThicknes = "1/4";
-            }
+                double squareFoot = (width * height) / 144;
+                squareFoot = Math.Round(squareFoot, 2);
+                string minimumThicknes = "1/8";
+                if (squareFoot <= 20)
+                {
+                    minimumThicknes = "1/8";
+                }
+                if (squareFoot >= 20 && squareFoot <= 25)
+                {
+                    minimumThicknes = "5/32";
+                }
+                if (squareFoot >= 25 && squareFoot <= 40)
+                {
+                    minimumThicknes = "3/16";
+                }
+                if (squareFoot >= 40)
+                {
+                    minimumThicknes = "1/4";
+                }
 
-            string[] data = { squareFoot.ToString(), minimumThicknes };
+                data = data.Append(squareFoot.ToString()).ToArray();
+                data = data.Append(minimumThicknes).ToArray();
+            }
+            catch { }
+
             return data;
         }
 
         public double[] calculateGlassType(string squareFootInput, string glassType)
         {
-            List<newGlassType> ListnewGlassType = _newAddedService.ListAllnewGlassTypes().OrderBy(i => i.Priority).ToList();
-            double glssLib = ListnewGlassType.Where(i => i.Title == glassType).SingleOrDefault()?.lib ?? 0;
-            double glassPerUnit = ListnewGlassType.Where(i => i.Title == glassType).SingleOrDefault()?.perUnit ?? 0;
+            double[] data = { };
+            try
+            {
+                List<newGlassType> ListnewGlassType = _newAddedService.ListAllnewGlassTypes().OrderBy(i => i.Priority).ToList();
+                double glssLib = ListnewGlassType.Where(i => i.Title == glassType).SingleOrDefault()?.lib ?? 0;
+                double glassPerUnit = ListnewGlassType.Where(i => i.Title == glassType).SingleOrDefault()?.perUnit ?? 0;
 
-            double squareFoot = Convert.ToDouble(squareFootInput.Split(' ')[3]);
+                double squareFoot = Convert.ToDouble(squareFootInput.Split(' ')[3]);
 
-            double glassPrise = glassPerUnit * squareFoot;
-            glassPrise = Math.Round(glassPrise, 2);
+                double glassPrise = glassPerUnit * squareFoot;
+                glassPrise = Math.Round(glassPrise, 2);
 
-            double[] data = { glssLib, glassPerUnit, glassPrise };
+                data = data.Append(glssLib).ToArray();
+                data = data.Append(glassPerUnit).ToArray();
+                data = data.Append(glassPrise).ToArray();
+            }
+            catch { }
+
             return data;
         }
 
         public double calculateFrameType(string? frameType)
         {
-            List<newFrameType> ListnewFrameType = _newAddedService.ListAllnewFrameTypes().OrderBy(i => i.Value).ToList();
-            double hours = ListnewFrameType.Where(i => i.Title == frameType).SingleOrDefault()?.Value ?? 0;
+            double hours = 0;
+            try
+            {
+                List<newFrameType> ListnewFrameType = _newAddedService.ListAllnewFrameTypes().OrderBy(i => i.Value).ToList();
+                hours = ListnewFrameType.Where(i => i.Title == frameType).SingleOrDefault()?.Value ?? 0;
+            }
+            catch { }
             return hours;
         }
 
         public double[] calculateInstallers(string glassPriseInput, string glssLibInput, string squareFootInput, string hoursInput, int elevation)
         {
-            int[] installersArray = { 0 };
-            int id = 0;
-
-            double squareFoot = Convert.ToDouble(squareFootInput.Split(' ')[3]);
-            double glassPrise = Convert.ToDouble(glassPriseInput.Split(' ')[1]);
-            double glssLib = Convert.ToDouble(glssLibInput.Split(' ')[0]);
-            double hours = Convert.ToDouble(hoursInput.Split(' ')[0]);
-
-            foreach (var lid in lidInfos)
+            double[] data = { };
+            int[] installersArray = { };
+            try
             {
-                if (elevation <= lid[1] && glssLib >= lid[2] && squareFoot >= lid[3])
-                {
-                    id = lid[0];
-                    installersArray = installersArray.Append(lid[4]).ToArray();
-                }
-                else
-                {
-                    // If no suitable match is found
-                    installersArray = installersArray.Append(-1).ToArray();
-                }
-            }
-            int installers = installersArray.Max();
-            double FinalPrice = glassPrise + (hours + installers) * 100;
+                double squareFoot = Convert.ToDouble(squareFootInput.Split(' ')[3]);
+                double glassPrise = Convert.ToDouble(glassPriseInput.Split(' ')[1]);
+                double glssLib = Convert.ToDouble(glssLibInput.Split(' ')[0]);
+                double hours = Convert.ToDouble(hoursInput.Split(' ')[0]);
 
-            double[] data = { installers, FinalPrice };
+                foreach (var lid in lidInfos)
+                {
+                    if (elevation <= lid[1] && glssLib >= lid[2] && squareFoot >= lid[3])
+                    {
+                        installersArray = installersArray.Append(lid[4]).ToArray();
+                    }
+                    else
+                    {
+                        // If no suitable match is found
+                        installersArray = installersArray.Append(-1).ToArray();
+                    }
+                }
+                int installers = installersArray.Max();
+                double FinalPrice = glassPrise + (hours + installers) * 100;
+                data = data.Append(installers).ToArray();
+                data = data.Append(FinalPrice).ToArray();
+            }
+            catch (Exception ex) { }
+
             return data;
         }
     }
